@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🧺</text></svg>">
+    <title>Модуль управления стиральной машины Bosch: диагностика и ремонт — Мастер Стирки</title>
+    <meta name="description" content="Подробный гид по модулям управления Bosch. Как найти номер, расшифровать ошибки, проверить плату и заменить электронку своими руками.">
+    <link rel="canonical" href="https://master-stirki.vercel.app/articles/m/mo/modul-upravleniya-stiralnoj-mashiny-bosch.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Модуль управления стиральной машины Bosch: диагностика и ремонт">
+    <meta property="og:description" content="Подробный гид по модулям управления Bosch. Как найти номер, расшифровать ошибки, проверить плату и заменить электронку своими руками.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777869443">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🧺</span>
+                <span class="pb-logo-text">Мастер Стирки</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/remont-stiralnykh-mashin/" class="pb-nav-active">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/remont-stiralnykh-mashin/" class="pb-dropdown-item">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/" class="pb-dropdown-item">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/" class="pb-dropdown-item">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/" class="pb-dropdown-item">👕 Уход за тканями</a>
+<a href="/category/bytovaya-khimiya/" class="pb-dropdown-item">🧴 Бытовая химия</a>
+<a href="/category/udalenie-pyaten/" class="pb-dropdown-item">🧼 Удаление пятен</a>
+<a href="/category/obzory-tekhniki/" class="pb-dropdown-item">🏠 Обзоры техники</a>
+<a href="/category/chistka-i-obsluzhivanie/" class="pb-dropdown-item">✨ Чистка и обслуживание</a>
+<a href="/category/aksessuary-dlya-stirki/" class="pb-dropdown-item">🎱 Аксессуары для стирки</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-stiralnykh-mashin/">Ремонт стиральных машин</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Модуль управления стиральной машины Bosch: диагностика и ремонт</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#устройство-и-функции-электронного-контроллера">Устройство и функции электронного контроллера</a></li><li><a href="#типичные-симптомы-неисправности-платы-управления">Типичные симптомы неисправности платы управления</a></li><li><a href="#как-найти-и-расшифровать-номер-модуля-bosch">Как найти и расшифровать номер модуля Bosch</a></li><li><a href="#диагностика-и-проверка-контактов-мультиметром">Диагностика и проверка контактов мультиметром</a></li><li><a href="#процесс-снятия-и-замены-модуля-управления">Процесс снятия и замены модуля управления</a></li><li><a href="#прошивка-и-адаптация-нового-контроллера">Прошивка и адаптация нового контроллера</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/e/e4/e40-oshibka-u-stiralnoj-mashinki-elektrolyuks.html">Ошибка E40 Electrolux: причины, расшифровка и ремонт своими руками</a></li><li><a href="/articles/s/st/stiralnaya-mashina-atlant-ne-otzhimaet-bele-v-chem-prichina.html">Стиральная машина Атлант не отжимает: причины и ремонт</a></li><li><a href="/articles/m/ma/mashinka-stiralnaya-avtomat-lzh.html">Стиральная машина LG: коды ошибок, ремонт и обслуживание</a></li><li><a href="/articles/k/ka/kak-pomenyat-podshipnik-v-stiralnoj-mashine-atlant-na-barabane-video.html">Как поменять подшипник в стиральной машине Атлант: видео и инструкция</a></li><li><a href="/articles/s/st/stiralnaya-mashina-electrolux-abc.html">Стиральная машина Electrolux ABC: Ремонт, Коды ошибок и Обзор</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Модуль управления стиральной машины Bosch: диагностика и ремонт</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#устройство-и-функции-электронного-контроллера">Устройство и функции электронного контроллера</a></li><li><a href="#типичные-симптомы-неисправности-платы-управления">Типичные симптомы неисправности платы управления</a></li><li><a href="#как-найти-и-расшифровать-номер-модуля-bosch">Как найти и расшифровать номер модуля Bosch</a></li><li><a href="#диагностика-и-проверка-контактов-мультиметром">Диагностика и проверка контактов мультиметром</a></li><li><a href="#процесс-снятия-и-замены-модуля-управления">Процесс снятия и замены модуля управления</a></li><li><a href="#прошивка-и-адаптация-нового-контроллера">Прошивка и адаптация нового контроллера</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Стиральные машины немецкого бренда <em>Bosch</em> заслуженно считаются эталоном надежности и долговечности на рынке бытовой техники. Однако даже самое совершенное оборудование со временем выходит из строя, и чаще всего причиной поломки становится <strong>модуль управления</strong>. Этот электронный «мозг» координирует работу всех узлов: от нагрева воды до отжима барабана, и его отказ парализует весь агрегат.</p>
+
+<p>Владельцы часто сталкиваются с ситуацией, когда машина перестает реагировать на кнопки или выдает непонятные коды ошибок. Понимание того, как устроена и функционирует <strong>электронная плата</strong>, позволяет не только сэкономить значительную сумму на вызове мастера, но и быстро вернуть технику к жизни. В этой статье мы детально разберем устройство контроллеров Bosch, методы их диагностики и нюансы самостоятельного ремонта.</p>
+
+<p>Не стоит паниковать, если ваша <em>стиральная машина</em> внезапно перестала работать. В большинстве случаев проблема кроется в окислении контактов, перегорании предохранителя или сбое программного обеспечения, а не в фатальной поломке всей системы. Грамотный подход к диагностике поможет выявить истинную причину неисправности.</p>
+
+<h2 id="устройство-и-функции-электронного-контроллера">Устройство и функции электронного контроллера</h2>
+
+<p>Основной модуль управления в стиральных машинах <em>Bosch</em> представляет собой сложную печатную плату, защищенную пластиковым корпусом от влаги и пыли. Внутри этого корпуса находится <strong>микропроцессор</strong>, который обрабатывает сигналы от датчиков и отдает команды исполнительным механизмам. Именно здесь принимаются решения о том, когда включить ТЭН, запустить насос или заблокировать люк.</p>
+
+<blockquote>⚠️ Внимание: Внутри корпуса модуля может скапливаться конденсат, который является главной причиной коррозии дорожек и выхода из строя микросхем. Визуальный осмотр платы часто помогает найти следы окисления.</blockquote>
+
+<p>Конструктивно плата разделена на несколько ключевых зон. Входная группа отвечает за прием напряжения из сети, силовая часть управляет мощными потребителями энергии, а логический блок обрабатывает алгоритмы стирки. Все эти компоненты связаны между собой тонкими дорожками, нарушение целостности которых приводит к сбоям в работе.</p>
+
+<p>Современные модели оснащаются модулями с функцией <strong>Home Connect</strong>, что добавляет еще один уровень сложности — беспроводной коммуникации. Однако базовые принципы работы остаются неизменными: получение сигнала, его обработка и выполнение действия. Понимание этой логики необходимо для правильной диагностики.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед вскрытием модуля управления обязательно сфотографируйте расположение всех шлейфов и проводов. Это поможет избежать ошибок при обратной сборке устройства.</p></aside>
+
+<h2 id="типичные-симптомы-неисправности-платы-управления">Типичные симптомы неисправности платы управления</h2>
+
+<p>Определить, что проблема кроется именно в электронике, можно по ряду характерных признаков. Чаще всего владельцы замечают, что <strong>стиральная машина</strong> перестает реагировать на нажатия кнопок панели или самопроизвольно меняет программы стирки. Это явный сигнал о том, что логическая цепочка нарушена.</p>
+
+<p>Другим распространенным симптомом является отказ отдельных узлов при исправности самих элементов. Например, двигатель может быть рабочим, но не запускаться из-за того, что модуль не подает на него напряжение. Аналогичная ситуация возникает с клапанами набора воды или сливным насосом.</p>
+
+<p>Иногда неисправность проявляется в виде хаотичного мигания индикаторов или появления на дисплее кодов ошибок, которые не устраняются после перезагрузки. В таких случаях <strong>электронный блок</strong> может находиться в аварийном режиме, блокируя запуск циклов во избежание дальнейших повреждений.</p>
+
+<ul>
+<li>🔴 Стиральная машина не включается, хотя индикаторы на панели могут гореть.</li>
+<li>🔴 На дисплее появляются абстрактные символы или коды ошибок (например, F18, E67), сбрасывающиеся после выключения.</li>
+<li>🔴 Отсутствует реакция на поворот селектора программ или нажатие кнопок.</li>
+<li>🔴 Машина останавливается посередине цикла и не продолжает стирку после паузы.</li>
+</ul>
+
+<p>Важно отличать симптомы поломки модуля от проблем с другими узлами. Например, если машина не греет воду, это может быть как ТЭН, так и реле на плате. Поэтому комплексная проверка всех систем является обязательным этапом перед принятием решения о ремонте.</p>
+
+<div class="pb-poll" id="poll-25b0baf6"><div class="pb-poll-question">📊 С каким симптомом неисправности модуля вы столкнулись?</div><div class="pb-poll-option" data-poll="25b0baf6" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Машина не включается</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="25b0baf6" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Горят все индикаторы</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="25b0baf6" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Не реагирует на кнопки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="25b0baf6" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Выдает ошибку и останавливается</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="25b0baf6" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Другое</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="как-найти-и-расшифровать-номер-модуля-bosch">Как найти и расшифровать номер модуля Bosch</h2>
+
+<p>Для поиска запасных частей или схем критически важно точно идентифицировать установленный в вашей машине модуль управления. В технике <em>Bosch</em> используется сложная система маркировок, и простой поиск по модели стиральной машины часто не дает результата, так как в одной и той же серии могут стоять разные платы.</p>
+
+<p>Номер модуля обычно нанесен на этикетку, расположенную на внешней стороне пластикового корпуса, или прямо на текстолите платы. Искать нужно код, начинающийся с префикса <code>WFL</code>, <code>WFK</code> или <code>WXT</code>, за которым следует набор цифр. Именно этот номер является ключевым для подбора аналогов.</p>
+
+<pre><code>Пример маркировки: WFL2060/01 FD 9807 12345</code></pre>
+
+<p>В таблице ниже приведены основные типы маркировок и их значение для подбора комплектующих:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип маркировки</th>
+<th>Расположение</th>
+<th>Значение для поиска</th>
+<th>Пример кода</th>
+</tr>
+<tr>
+<th>Основной E-Nr</th>
+<td>Шильдик на корпусе СМ</td>
+<td>Определяет модель машины</td>
+<td>WAE24460OE/01</td>
+</tr>
+<tr>
+<th>Код платы</th>
+<td>На модуле управления</td>
+<td>Точный номер для замены</td>
+<td>WFK2060/01</td>
+</tr>
+<tr>
+<th>Серийный номер</th>
+<td>На плате (FD...)</td>
+<td>Дата производства (год/месяц)</td>
+<td>FD9807</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Артикул Siemens</td>
+<td>Часто дублируется</td>
+<td>Может использоваться для поиска</td>
+<td>662355</td>
+</tr>
+<tr>
+<td>Версия ПО</td>
+<td>На дисплее (тест)</td>
+<td>Важна при перепрошивке</td>
+<td>V 1.02</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Обратите внимание, что модули от разных серий могут быть физически похожи, но иметь разную разводку контактов. Установка неподходящей платы может привести к короткому замыканию. Всегда перепроверяйте <strong>номер детали</strong> перед покупкой.</p>
+
+<details class="pb-accordion"><summary>Что делать, если номер на плате не читается?</summary><div class="pb-accordion-body"><p>Если маркировка стерлась или повреждена влагой, попробуйте найти номер в сервисном меню. Для этого часто требуется перевести машину в режим диагностики комбинацией кнопок (зависит от модели) и считать код ошибки или версию ПО, по которому можно идентифицировать плату.</p></div></details>
+
+<h2 id="диагностика-и-проверка-контактов-мультиметром">Диагностика и проверка контактов мультиметром</h2>
+
+<p>Прежде чем нести модуль в сервис или покупать новый, необходимо провести первичную диагностику. Первым шагом всегда должна быть визуальная inspection. Снимите крышку модуля и внимательно осмотрите плату на предмет почернений, вздувшихся конденсаторов или трещин в пайке.</p>
+
+<p>Для более глубокой проверки вам понадобится мультиметр. В первую очередь проверяется цепь питания. Убедитесь, что напряжение поступает на входные клеммы модуля. Отсутствие напряжения может указывать на проблему с сетевым фильтром или проводкой, а не с самой платой.</p>
+
+<blockquote>⚠️ Внимание: Все измерения мультиметром проводите только при отключенном от сети электропитании, за исключением случаев, когда инструкция требует проверки под напряжением. Будьте осторожны, на плате может оставаться остаточный заряд.</blockquote>
+
+<p>Проверка целостности дорожек и работоспособности элементов требует навыков работы с электроникой. «Прозвоните» предохранитель — он должен показывать ноль или близкое к нему сопротивление. Если предохранитель сгорел, просто менять его нельзя: нужно найти причину, вызвавшую скачок тока, иначе новый элемент также сгорит.</p>
+
+<ul>
+<li>🔵 Проверьте целостность термопредохранителя и варистора на входе платы.</li>
+<li>🔵 Прозвоните симисторы управления двигателем и ТЭНом на предмет пробоя.</li>
+<li>🔵 Осмотрите места пайки разъемов — от вибрации контакты часто отходят.</li>
+</ul>
+
+<p>Особое внимание уделите состоянию разъемов. Окисление контактов — частая проблема в ванных комнатах. Зачистка контактов спиртом и восстановление их плотности часто решает проблему «плавающих» неисправностей.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист первичной диагностики</h4><label class="check-item"><input type="checkbox"><span>Визуальный осмотр на предмет гари</span></label><label class="check-item"><input type="checkbox"><span>Проверка входного напряжения</span></label><label class="check-item"><input type="checkbox"><span>Прозвонка предохранителя</span></label><label class="check-item"><input type="checkbox"><span>Осмотр разъемов на окисление</span></label><label class="check-item"><input type="checkbox"><span>Проверка целостности проводов</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="процесс-снятия-и-замены-модуля-управления">Процесс снятия и замены модуля управления</h2>
+
+<p>Замена модуля управления в стиральных машинах <em>Bosch</em> — процедура, требующая аккуратности, но вполне доступная для выполнения в домашних условиях. Расположение блока зависит от модели: в некоторых он находится под верхней крышкой, в других — в нижней части корпуса за декоративной панелью.</p>
+
+<p>Для начала необходимо обесточить appliance и перекрыть воду. Снимите верхнюю крышку (обычно два винта сзади) или нижний плинтус. Найдите пластиковый короб, в котором спрятана электроника. Отсоедините все подходящие к нему шлейфы, предварительно запомнив их положение.</p>
+
+<p>Крепежные элементы модуля могут быть представлены винтами или пластиковыми защелками. Действуйте осторожно, чтобы не сломать фиксаторы корпуса. После извлечения старой платы, установите новую, убедившись, что она плотно села в пазы.</p>
+
+<p>Самый ответственный этап — подключение разъемов. Здесь нельзя полагаться на память, используйте сделанные ранее фотографии. Неправильное подключение может мгновенно вывести из строя новый дорогостоящий модуль.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главное правило замены: никогда не подключайте разъемы силой. Если штекер не входит легко, проверьте совпадение ключей и ориентацию контактов.</p></aside>
+
+<p>После сборки не спешите запускать полноценную стирку с бельем. Проведите тестовый запуск в режиме быстрой стирки, наблюдая за работой всех узлов. Убедитесь, что вода набирается, нагревается, барабан вращается, а слив происходит корректно.</p>
+
+<h2 id="прошивка-и-адаптация-нового-контроллера">Прошивка и адаптация нового контроллера</h2>
+
+<p>В современных моделях <em>Bosch</em> с прямым приводом и системой <strong>Home Connect</strong> простая замена платы может не заработать сразу. Новый модуль часто поставляется с «чистой» памятью или базовой прошивкой, не адаптированной под конкретную конфигурацию вашей машины.</p>
+
+<p>Для полноценной работы может потребоваться перепрошивка EEPROM или адаптация через сервисное меню. Это делается с помощью специального оборудования или определенной последовательности нажатий на кнопки панели управления, зависящей от серии машины.</p>
+
+<p>Если после замены модуля машина ведет себя неадекватно (не видит датчики, неправильно дозирует порошок, не развивает обороты), скорее всего, требуется программная настройка. В некоторых случаях помогает сброс к заводским настройкам через длительное удержание комбинации кнопок.</p>
+
+<p>Для моделей с интеллектуальными функциями может потребоваться подключение к приложению для обновления firmware. Следуйте инструкциям на экране, если машина поддерживает вывод кодов ошибок или статусов обновления.</p>
+
+<details class="pb-accordion"><summary>Нужно ли перепрошивать модуль?</summary><div class="pb-accordion-body"><p>В 80% случаев при установке оригинального модуля с таким же номером (E-Nr) перепрошивка не требуется. Машина сама считает данные с датчиков. Перепрошивка нужна, если вы ставите аналог или модуль от другой модели.</p></div></details>
+
+<details>
+<summary>Можно ли отремонтировать модуль управления Bosch самостоятельно?</summary>
+<p>Ремонт возможен, если у вас есть навыки пайки и знания в электронике. Часто выходят из строя симисторы, реле или сгорает дорожка. Однако, если поврежден сам микропроцессор или память, ремонт экономически нецелесообразен.</p>
+</details>
+
+<details>
+<summary>Сколько стоит новый модуль управления для стиральной машины Bosch?</summary>
+<p>Цена оригинального модуля варьируется от 6000 до 15000 рублей в зависимости от серии и функционала. Восстановленные (refurbished) платы стоят дешевле, но могут иметь меньший ресурс.</p>
+</details>
+
+<details>
+<summary>Почему сгорает модуль управления?</summary>
+<p>Основные причины: скачки напряжения в сети, попадание воды внутрь корпуса машины, короткое замыкание в одном из исполнительных механизмов (например, заклинивший двигатель) или естественный износ компонентов.</p>
+</details>
+
+<details>
+<summary>Как сбросить ошибки после замены платы?</summary>
+<p>Часто достаточно выключить машину из розетки на 10-15 минут. В некоторых моделях требуется вход в сервисный режим и выполнение команды сброса (Reset). Конкретная комбинация зависит от модели.</p>
+</details>
+
+<details>
+<summary>Где найти схему модуля управления Bosch?</summary>
+<p>Официальные сервисные схемы (service manuals) распространяются через авторизованные центры. В интернете можно найти любительские распиновки и схемы для популярных серий WFL, WFX, WXT на специализированных форумах.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/e/e4/e40-oshibka-u-stiralnoj-mashinki-elektrolyuks.html" class="pb-related-card">
+                <span class="pb-related-title">Ошибка E40 Electrolux: причины, расшифровка и ремонт своими руками</span>
+                <span class="pb-related-desc">Подробная инструкция по устранению ошибки E40 в стиральных машинах Electrolux. Разбор причин, пошаго</span>
+            </a><a href="/articles/s/st/stiralnaya-mashina-atlant-ne-otzhimaet-bele-v-chem-prichina.html" class="pb-related-card">
+                <span class="pb-related-title">Стиральная машина Атлант не отжимает: причины и ремонт</span>
+                <span class="pb-related-desc">Почему стиральная машина Атлант не отжимает белье? Разбор всех причин: от засора фильтра до поломки </span>
+            </a><a href="/articles/m/ma/mashinka-stiralnaya-avtomat-lzh.html" class="pb-related-card">
+                <span class="pb-related-title">Стиральная машина LG: коды ошибок, ремонт и обслуживание</span>
+                <span class="pb-related-desc">Полный гид по стиральным машинам LG: расшифровка кодов ошибок, инструкция по разборке, советы по уст</span>
+            </a><a href="/articles/k/ka/kak-pomenyat-podshipnik-v-stiralnoj-mashine-atlant-na-barabane-video.html" class="pb-related-card">
+                <span class="pb-related-title">Как поменять подшипник в стиральной машине Атлант: видео и инструкция</span>
+                <span class="pb-related-desc">Подробная инструкция по замене подшипника на барабане стиральной машины Атлант. Видео-гайд, выбор де</span>
+            </a><a href="/articles/s/st/stiralnaya-mashina-electrolux-abc.html" class="pb-related-card">
+                <span class="pb-related-title">Стиральная машина Electrolux ABC: Ремонт, Коды ошибок и Обзор</span>
+                <span class="pb-related-desc">Полный гид по стиральной машине Electrolux ABC: расшифровка кодов ошибок, инструкции по ремонту, уст</span>
+            </a><a href="/articles/z/za/zamena-uplotnitelnoj-manzhety-v-stiralnoj-mashine.html" class="pb-related-card">
+                <span class="pb-related-title">Замена уплотнительной манжеты в стиральной машине своими руками</span>
+                <span class="pb-related-desc">Подробная инструкция по замене манжеты люка стиральной машины. Разборка, снятие старого уплотнителя,</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🧺 Мастер Стирки</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/remont-stiralnykh-mashin/">🔧 Ремонт стиральных машин</a> · <a href="/category/kody-oshibok/">⚠️ Коды ошибок</a> · <a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a> · <a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a> · <a href="/category/bytovaya-khimiya/">🧴 Бытовая химия</a> · <a href="/category/udalenie-pyaten/">🧼 Удаление пятен</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Стирки. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

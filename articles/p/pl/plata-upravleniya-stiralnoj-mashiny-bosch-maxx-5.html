@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🧺</text></svg>">
+    <title>Плата управления Bosch Maxx 5: диагностика, коды ошибок и ремонт — Мастер Стирки</title>
+    <meta name="description" content="Полный гид по ремонту платы управления стиральной машины Bosch Maxx 5. Разбор кодов ошибок, замена модуля, проверка контактов и устранение неисправностей своими руками.">
+    <link rel="canonical" href="https://master-stirki.vercel.app/articles/p/pl/plata-upravleniya-stiralnoj-mashiny-bosch-maxx-5.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Плата управления Bosch Maxx 5: диагностика, коды ошибок и ремонт">
+    <meta property="og:description" content="Полный гид по ремонту платы управления стиральной машины Bosch Maxx 5. Разбор кодов ошибок, замена модуля, проверка контактов и устранение неисправностей своими руками.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777869443">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🧺</span>
+                <span class="pb-logo-text">Мастер Стирки</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/remont-stiralnykh-mashin/" class="pb-nav-active">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/remont-stiralnykh-mashin/" class="pb-dropdown-item">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/" class="pb-dropdown-item">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/" class="pb-dropdown-item">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/" class="pb-dropdown-item">👕 Уход за тканями</a>
+<a href="/category/bytovaya-khimiya/" class="pb-dropdown-item">🧴 Бытовая химия</a>
+<a href="/category/udalenie-pyaten/" class="pb-dropdown-item">🧼 Удаление пятен</a>
+<a href="/category/obzory-tekhniki/" class="pb-dropdown-item">🏠 Обзоры техники</a>
+<a href="/category/chistka-i-obsluzhivanie/" class="pb-dropdown-item">✨ Чистка и обслуживание</a>
+<a href="/category/aksessuary-dlya-stirki/" class="pb-dropdown-item">🎱 Аксессуары для стирки</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-stiralnykh-mashin/">Ремонт стиральных машин</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Плата управления Bosch Maxx 5: диагностика, коды ошибок и ремонт</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#основные-признаки-неисправности-электронного-модуля">Основные признаки неисправности электронного модуля</a></li><li><a href="#типичные-коды-ошибок-связанные-с-платой-управления">Типичные коды ошибок, связанные с платой управления</a></li><li><a href="#диагностика-и-визуальный-осмотр-модуля">Диагностика и визуальный осмотр модуля</a></li><li><a href="#проверка-контактов-и-шлейфов">Проверка контактов и шлейфов</a></li><li><a href="#замена-платы-управления-пошаговая-инструкция">Замена платы управления: пошаговая инструкция</a></li><li><a href="#профилактика-поломок-электроники-bosch">Профилактика поломок электроники Bosch</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/l/ly/lyuk-stiralnoj-mashiny-ne-otkryvaetsya.html">Люк стиральной машины не открывается: причины и ремонт</a></li><li><a href="/articles/k/ka/kak-otklyuchit-mashinu-indezit-stiralnuyu-vo-vremya-stirki-i-otkryt-dver.html">Как отключить стиральную машину Indesit и открыть дверь: инструкция</a></li><li><a href="/articles/k/ka/kak-podtyanut-baraban-v-stiralnoj-mashine-samsung.html">Как подтянуть барабан в стиральной машине Samsung: инструкция</a></li><li><a href="/articles/p/po/podtekaet-stiralnaya-mashinka-iz-pod-kontejnera-dlya-poroshka.html">Подтекает стиральная машина из под лотка: причины и ремонт</a></li><li><a href="/articles/z/za/zamena-shchetok-dvigatelya-stiralnoj-mashiny-bosch.html">Замена щеток двигателя стиральной машины Bosch: пошаговая инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Ремонт и диагностика платы управления стиральной машины Bosch Maxx 5</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основные-признаки-неисправности-электронного-модуля">Основные признаки неисправности электронного модуля</a></li><li><a href="#типичные-коды-ошибок-связанные-с-платой-управления">Типичные коды ошибок, связанные с платой управления</a></li><li><a href="#диагностика-и-визуальный-осмотр-модуля">Диагностика и визуальный осмотр модуля</a></li><li><a href="#проверка-контактов-и-шлейфов">Проверка контактов и шлейфов</a></li><li><a href="#замена-платы-управления-пошаговая-инструкция">Замена платы управления: пошаговая инструкция</a></li><li><a href="#профилактика-поломок-электроники-bosch">Профилактика поломок электроники Bosch</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+<p>Стиральные машины серии <em>Bosch Maxx 5</em> заслуженно считаются одними из самых надежных агрегатов в своем классе, однако даже немецкая инженерия не застрахована от сбоев в электронике. Чаще всего владельцы сталкиваются с проблемами, связанными с <strong>платой управления</strong>, которая отвечает за все циклы стирки, отбор воды и нагрев. Именно этот модуль, часто называемый «мозгом» устройства, принимает сигналы от датчиков и отдает команды исполнительным механизмам.</p>
+
+<p>Если ваша машина перестала реагировать на кнопки, самопроизвольно останавливается или выдает непонятные коды ошибок на дисплее, вероятнее всего, проблема кроется в электронном контроллере. <strong>Диагностика</strong> требует внимательного подхода, так как симптомы могут быть схожи с поломками других узлов, например, ТЭНа или двигателя. В этой статье мы подробно разберем, как определить неисправность именно в модуле управления и можно ли восстановить его работу самостоятельно.</p>
+
+<p>Стоит отметить, что современные модули управления для <em>Bosch Maxx 5</em> представляют собой сложные микропроцессорные системы. Они чувствительны к скачкам напряжения в сети и попаданию влаги. Прежде чем приступать к разборке, необходимо полностью обесточить устройство и убедиться, что проблема не вызвана банальным отсутствием электричества в розетке или повреждением сетевого кабеля.</p>
+
+<h2 id="основные-признаки-неисправности-электронного-модуля">Основные признаки неисправности электронного модуля</h2>
+<p>Первым звоночком, указывающим на проблемы с электроникой, часто становится некорректное поведение индикаторов. Лампочки могут мигать в хаотичном порядке, гореть постоянно или не загораться вовсе, даже если машина включена в сеть. Иногда дисплей показывает бессмысленный набор символов или «зависает» на одном значении, игнорируя любые действия пользователя.</p>
+
+<p>Другим характерным признаком является отказ машины выполнять программы. Вы выбираете режим, запускаете стирку, барабан делает несколько оборотов, после чего процесс останавливается, и машина начинает мигать индикаторами, сигнализируя об ошибке. В некоторых случаях <strong>электронный блок</strong> может вообще не подавать признаков жизни, что часто путают с поломкой кнопки включения или сетевого фильтра.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если вы чувствуете запах гари или видите следы копоти на задней стенке машины, немедленно прекратите попытки включения. Это может свидетельствовать о коротком замыкании внутри модуля управления или проводки.</p>
+</blockquote>
+
+<p>Также стоит обратить внимание на «фантомные» включения. Машина может сама запустить слив воды или попытаться открыть люк без вашего участия. Это верный признак того, что <strong>логическая цепь</strong> нарушена, и контроллер получает ложные сигналы или некорректно их обрабатывает.</p>
+
+<div class="pb-poll" id="poll-cbbf50a4"><div class="pb-poll-question">📊 Как ведет себя ваша стиральная машина?</div><div class="pb-poll-option" data-poll="cbbf50a4" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Не включается совсем</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="cbbf50a4" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Мигают все индикаторы</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="cbbf50a4" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Останавливается посередине стирки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="cbbf50a4" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Выдает код ошибки на экране</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="типичные-коды-ошибок-связанные-с-платой-управления">Типичные коды ошибок, связанные с платой управления</h2>
+<p>Система самодиагностики <em>Bosch Maxx 5</em> способна выявлять множество неисправностей и отображать их в виде буквенно-цифровых кодов. Хотя многие ошибки указывают на проблемы с механикой (например, засор фильтра), некоторые из них напрямую говорят о сбоях в коммуникации между модулем управления и другими узлами.</p>
+
+<p>Одной из самых распространенных проблем является ошибка, связанная с рассинхронизацией данных. Когда <strong>центральный процессор</strong> перестает получать ответ от двигателя или насоса в установленное время, он блокирует программу. Ниже приведена таблица основных кодов, которые часто требуют проверки именно электронной части машины.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Код ошибки</th>
+<th>Описание проблемы</th>
+<th>Вероятная причина в электронике</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F18</td>
+<td>Проблема со сливом воды</td>
+<td>Обрыв цепи управления насосом на плате</td>
+</tr>
+<tr>
+<td>F21</td>
+<td>Остановка двигателя</td>
+<td>Неисправность симистора управления мотором</td>
+</tr>
+<tr>
+<td>F43</td>
+<td>Ошибка запуска двигателя</td>
+<td>Сбой в работе таходатчика или цепи питания</td>
+</tr>
+<tr>
+<td>F67</td>
+<td>Проблема с модулем управления</td>
+<td>Внутренний сбой процессора или памяти</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Важно понимать, что появление кода ошибки не всегда означает физическую смерть платы. Часто проблема кроется в окислившихся контактах или сбое программного обеспечения. Однако, если после перезагрузки и проверки контактов ошибка <strong>F67</strong> или аналогичная появляется снова, вероятность повреждения микросхем велика.</p>
+
+<details class="pb-accordion"><summary>Что такое сброс ошибок?</summary><div class="pb-accordion-body"><p>Сброс ошибок — это процедура перезагрузки модуля управления, которая позволяетить временные данные из оперативной памяти. Для Bosch Maxx 5 это часто делается комбинацией поворота селектора программ и нажатия кнопки старта, но точная последовательность зависит от конкретной модели.</p></div></details>
+
+<h2 id="диагностика-и-визуальный-осмотр-модуля">Диагностика и визуальный осмотр модуля</h2>
+<p>Прежде чем нести модуль в сервис или покупать новый, необходимо провести тщательный визуальный осмотр. Для этого машину нужно отключить от сети, снять верхнюю крышку и извлечь блок управления. Обычно он находится в верхней части корпуса под пластиковой панелью с кнопками.</p>
+
+<p>При осмотре платы в первую очередь ищите следы термического воздействия. <strong>Вздувшиеся конденсаторы</strong>, почерневшие дорожки или оплавленные элементы — это явные признаки того, что модуль подвергался перегрузке или короткому замыканию. Особое внимание уделите местам пайки крупных элементов, так как вибрация при отжиме часто приводит к образованию микротрещин.</p>
+
+<ul>
+<li> 🔍 Проверьте целостность всех дорожек на печатной плате, особенно тех, что подходят к разъемам.</li>
+<li> 💧 Ищите следы коррозии или окисления контактов, что может быть результатом протечки воды.</li>
+<li> ⚡ Обратите внимание на состояние предохранителя, если он присутствует в доступной части схемы.</li>
+</ul>
+
+<p>Если визуально плата выглядит чистой и целой, это еще не гарантирует ее исправность. Микроскопические дефекты в <strong>полупроводниковых элементах</strong> можно выявить только с помощью мультиметра, прозванивая цепи на наличие короткого замыкания или обрыва.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Никогда не прикасайтесь к элементам платы мокрыми руками и не проводите диагностику, если устройство подключено к электросети. Остаточное напряжение в конденсаторах может быть опасным.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед снятием платы сфотографируйте расположение всех проводов и шлейфов. Это поможет вам правильно подключить их обратно и избежать ошибок при сборке.</p></aside>
+
+<h2 id="проверка-контактов-и-шлейфов">Проверка контактов и шлейфов</h2>
+<p>Часто причиной «смерти» электроники становится банальное нарушение контакта. Вибрация, которой сопровождается работа стиральной машины, постепенно ослабляет соединения. Поэтому перед заменой дорогостоящего модуля обязательно проверьте все <strong>разъемные соединения</strong>.</p>
+
+<p>Снимите шлейфы и осмотрите контакты на предмет окисления. Если вы заметили зеленый налет или потемнение металла, аккуратно зачистите их спиртом или специальным средством для контактов. Также проверьте сами разъемы на плате: они не должны болтаться или иметь трещин в местах пайки.</p>
+
+<p>Особое внимание следует уделить контактам, идущим к двигателю и ТЭНу. Именно через них проходят большие токи, и плохой контакт в этом месте приводит к нагреву и прогоранию дорожек на плате управления. Если вы обнаружили оплавившийся пластик вокруг разъема, его необходимо заменить.</p>
+
+
+
+<h2 id="замена-платы-управления-пошаговая-инструкция">Замена платы управления: пошаговая инструкция</h2>
+<p>Если диагностика подтвердила неисправность модуля и ремонт отдельных элементов невозможен или нецелесообразен, остается вариант замены. Для <em>Bosch Maxx 5</em> можно найти как оригинальные запчасти, так и универсальные модули, требующие перепрошивки.</p>
+
+<p>Процесс замены начинается с демонтажа старого блока. Аккуратно отсоедините все провода, предварительно запомнив или сфотографировав их положение. Затем открутите крепежные винты и извлеките модуль из корпуса. Установите новую плату, плотно зафиксировав ее на месте, и подключите все разъемы до характерного щелчка.</p>
+
+<p>После установки нового модуля необходимо провести тестовый запуск. Включите машину в сеть и запустите короткую программу стирки без белья. Следите за тем, как машина набирает воду, нагревает ее и вращает барабан. Если все этапы прошли успешно, можно считать <strong>замену успешной</strong>.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При установке универсального модуля управления может потребоваться перепрошивка под конкретную модель двигателя и конфигурацию вашей стиральной машины Bosch.</p></aside>
+
+<h2 id="профилактика-поломок-электроники-bosch">Профилактика поломок электроники Bosch</h2>
+<p>Чтобы продлить жизнь плате управления вашей <em>Bosch Maxx 5</em>, важно обеспечить стабильные условия работы. Скачки напряжения в сети — главный враг любой электроники. Установка качественного стабилизатора напряжения или хотя бы сетевого фильтра с защитой от перегрузок может спасти дорогостоящий ремонт.</p>
+
+<p>Также следует регулярно проверять состояние сливного шланга и фильтра. Засоры приводят к тому, что вода остается в баке, повышая влажность внутри корпуса машины. Это создает идеальные условия для окисления контактов и возникновения коротких замыканий на <strong>печатной плате</strong>.</p>
+
+<ul>
+<li> 🛡️ Используйте сетевой фильтр для защиты от скачков напряжения.</li>
+<li> 💧 Следите за герметичностью соединений, чтобы исключить попадание воды на электронику.</li>
+<li> 🧹 Регулярно очищайте машину от накипи, которая может вызывать перегрузки по току.</li>
+</ul>
+
+<p>Не забывайте и о правильном заземлении розетки. Отсутствие заземления может приводить к накоплению статического электричества, которое негативно влияет на чувствительную микропроцессорную технику.</p>
+
+<details>
+<summary>Можно ли восстановить сгоревшую плату самостоятельно?</summary>
+<p>Восстановление возможно только при наличии глубоких знаний в электронике и специнструмента. Чаще всего сгорают дорожки или симисторы, что требует перепайки. Однако, если поврежден сам процессор или память, ремонт в домашних условиях практически невозможен.</p>
+</details>
+
+<details>
+<summary>Где найти оригинальную плату для Bosch Maxx 5?</summary>
+<p>Оригинальные запчасти можно найти в авторизованных сервисных центрах Bosch или у специализированных поставщиков запчастей. Обязательно сверяйте номер детали (E-Nr) на наклейке вашей машины с каталожным номером платы.</p>
+</details>
+
+<details>
+<summary>Сколько в среднем служит плата управления?</summary>
+<p>При соблюдении условий эксплуатации и стабильном напряжении в сети, электронный модуль служит 10 и более лет. Однако резкие скачки напряжения или попадание влаги могут сократить этот срок до нескольких месяцев.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/l/ly/lyuk-stiralnoj-mashiny-ne-otkryvaetsya.html" class="pb-related-card">
+                <span class="pb-related-title">Люк стиральной машины не открывается: причины и ремонт</span>
+                <span class="pb-related-desc">Заблокирован люк стиральной машины? Узнайте причины поломки блокировки, способы аварийного открытия </span>
+            </a><a href="/articles/k/ka/kak-otklyuchit-mashinu-indezit-stiralnuyu-vo-vremya-stirki-i-otkryt-dver.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить стиральную машину Indesit и открыть дверь: инструкция</span>
+                <span class="pb-related-desc">Экспертное руководство: как разблокировать люк Indesit во время стирки. Методы аварийного открытия, </span>
+            </a><a href="/articles/k/ka/kak-podtyanut-baraban-v-stiralnoj-mashine-samsung.html" class="pb-related-card">
+                <span class="pb-related-title">Как подтянуть барабан в стиральной машине Samsung: инструкция</span>
+                <span class="pb-related-desc">Узнайте, как подтянуть барабан в стиральной машине Samsung. Пошаговая инструкция по регулировке амор</span>
+            </a><a href="/articles/p/po/podtekaet-stiralnaya-mashinka-iz-pod-kontejnera-dlya-poroshka.html" class="pb-related-card">
+                <span class="pb-related-title">Подтекает стиральная машина из под лотка: причины и ремонт</span>
+                <span class="pb-related-desc">Почему течет вода из порошкоприемника? Разбор причин: засор, напор, трещины. Инструкция по чистке и </span>
+            </a><a href="/articles/z/za/zamena-shchetok-dvigatelya-stiralnoj-mashiny-bosch.html" class="pb-related-card">
+                <span class="pb-related-title">Замена щеток двигателя стиральной машины Bosch: пошаговая инструкция</span>
+                <span class="pb-related-desc">Как заменить щетки двигателя в стиральной машине Bosch своими руками. Признаки износа, выбор запчаст</span>
+            </a><a href="/articles/k/ka/kak-nadet-manzhetu-na-baraban-stiralnoj-mashiny-samsung.html" class="pb-related-card">
+                <span class="pb-related-title">Как надеть манжету на барабан стиральной машины Самсунг: Инструкция</span>
+                <span class="pb-related-desc">Подробный гид по замене уплотнителя люка Samsung. Как правильно натянуть манжету, установить пружинн</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🧺 Мастер Стирки</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/remont-stiralnykh-mashin/">🔧 Ремонт стиральных машин</a> · <a href="/category/kody-oshibok/">⚠️ Коды ошибок</a> · <a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a> · <a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a> · <a href="/category/bytovaya-khimiya/">🧴 Бытовая химия</a> · <a href="/category/udalenie-pyaten/">🧼 Удаление пятен</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Стирки. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

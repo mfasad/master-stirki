@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🧺</text></svg>">
+    <title>Приложение для стиральной Candy: настройка SmartFi и управление — Мастер Стирки</title>
+    <meta name="description" content="Подробный обзор приложения Candy Smart для стиральных машин. Настройка Wi-Fi, расшифровка кодов ошибок, удаленный запуск циклов и диагностика.">
+    <link rel="canonical" href="https://master-stirki.vercel.app/articles/c/ca/candy-prilozhenie-dlya-stiralnoj.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Приложение для стиральной Candy: настройка SmartFi и управление">
+    <meta property="og:description" content="Подробный обзор приложения Candy Smart для стиральных машин. Настройка Wi-Fi, расшифровка кодов ошибок, удаленный запуск циклов и диагностика.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777869443">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🧺</span>
+                <span class="pb-logo-text">Мастер Стирки</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/remont-stiralnykh-mashin/">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/remont-stiralnykh-mashin/" class="pb-dropdown-item">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/" class="pb-dropdown-item">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/" class="pb-dropdown-item">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/" class="pb-dropdown-item">👕 Уход за тканями</a>
+<a href="/category/bytovaya-khimiya/" class="pb-dropdown-item">🧴 Бытовая химия</a>
+<a href="/category/udalenie-pyaten/" class="pb-dropdown-item">🧼 Удаление пятен</a>
+<a href="/category/obzory-tekhniki/" class="pb-dropdown-item">🏠 Обзоры техники</a>
+<a href="/category/chistka-i-obsluzhivanie/" class="pb-dropdown-item">✨ Чистка и обслуживание</a>
+<a href="/category/aksessuary-dlya-stirki/" class="pb-dropdown-item">🎱 Аксессуары для стирки</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/obzory-tekhniki/">Обзоры техники</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Приложение для стиральной Candy: настройка SmartFi и управление</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#установка-и-первоначальная-настройка-соединения">Установка и первоначальная настройка соединения</a></li><li><a href="#функциональные-возможности-приложения-candy-smart">Функциональные возможности приложения Candy Smart</a></li><li><a href="#диагностика-неисправностей-и-коды-ошибок">Диагностика неисправностей и коды ошибок</a></li><li><a href="#настройка-расписания-и-удаленный-запуск">Настройка расписания и удаленный запуск</a></li><li><a href="#обновление-прошивки-и-обслуживание-системы">Обновление прошивки и обслуживание системы</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/m/ma/mashinka-kerkher-dlya-mytya-okon.html">Машинка Керхер для мытья окон: обзор, модели и советы</a></li><li><a href="/articles/s/st/stiralka-atlant-otzyvy-pokupatelej.html">Стиралка Атлант: отзывы покупателей, плюсы и минусы</a></li><li><a href="/articles/k/ka/kakaya-stiralnaya-mashinka-luchshe-beko-ili-indesit.html">Beko или Indesit: какую стиральную машину выбрать?</a></li><li><a href="/articles/s/st/stiralnaya-mashina-electrolux-7-kg.html">Стиральная машина Electrolux 7 кг: модели, функции, плюсы и минусы</a></li><li><a href="/articles/b/bo/bosch-maxx-4-kak-stirat.html">Стиральная машина Bosch Maxx 4: как стирать, режимы и уход</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Управление стиральной машиной Candy через приложение: полный гид</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#установка-и-первоначальная-настройка-соединения">Установка и первоначальная настройка соединения</a></li><li><a href="#функциональные-возможности-приложения-candy-smart">Функциональные возможности приложения Candy Smart</a></li><li><a href="#диагностика-неисправностей-и-коды-ошибок">Диагностика неисправностей и коды ошибок</a></li><li><a href="#настройка-расписания-и-удаленный-запуск">Настройка расписания и удаленный запуск</a></li><li><a href="#обновление-прошивки-и-обслуживание-системы">Обновление прошивки и обслуживание системы</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Современные бытовые приборы все чаще превращаются в сложные гаджеты, которыми можно управлять со смартфона. Стиральные машины итальянского бренда <em>Candy</em> не стали исключением и получили поддержку технологии <strong>SmartFi</strong>. Это позволяет владельцам взаимодействовать с устройством на расстоянии, получая доступ к расширенным функциям, которые недоступны через стандартную панель управления. Мобильное приложение становится ключом к полному раскрытию потенциала вашей техники.</p>
+
+<p>Основной инструмент для связи — это программа <em>Candy Smart</em> (ранее известная как <em>Candy Simply-Fi</em>). Она работает как на операционных системах Android, так и на iOS, обеспечивая стабильное соединение. Пользователи получают возможность не просто запускать стирку, но и проводить глубокую диагностику, отслеживать расход воды и электроэнергии, а также получать уведомления о завершении цикла в реальном времени.</p>
+
+<p>Для корректной работы системы <strong>интернета вещей</strong> (IoT) критически важно наличие стабильного Wi-Fi сигнала в зоне установки машины. Приложение выступает посредником, переводя команды с экрана смартфона на язык, понятный электронике стирального агрегата. Это открывает новые горизонты для автоматизации быта, позволяя интегрировать стирку в расписание пользователя, даже если он находится далеко от дома.</p>
+
+<h2 id="установка-и-первоначальная-настройка-соединения">Установка и первоначальная настройка соединения</h2>
+
+<p>Процесс подключения начинается с загрузки программного обеспечения из официального магазина. Для устройств Apple это App Store, а для Android — Google Play Market. После установки необходимо создать учетную запись или войти в существующий профиль. Важно использовать надежный пароль, так как через этот аккаунт осуществляется доступ к управлению бытовым прибором.</p>
+
+<p>Далее следует этап сопряжения. На панели управления стиральной машины обычно есть кнопка с символом Wi-Fi или значком смартфона. Ее необходимо удерживать несколько секунд до появления соответствующего индикатора. В приложении нужно выбрать опцию добавления нового устройства и следовать инструкциям на экране. Система предложит выбрать модель из списка или отсканировать QR-код, расположенный на наклейке с технической информацией.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед подключением</h4><label class="check-item"><input type="checkbox"><span>Убедиться, что роутер раздает сеть 2.4 ГГц</span></label><label class="check-item"><input type="checkbox"><span>Проверить заряд батареи смартфона</span></label><label class="check-item"><input type="checkbox"><span>Находиться в радиусе 5 метров от машины</span></label><label class="check-item"><input type="checkbox"><span>Знать пароль от Wi-Fi сети</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Часто возникают сложности с частотой сигнала. Большинство модулей в бытовой технике работают в диапазоне <code>2.4 ГГц</code>, тогда как современные роутеры часто объединяют сети или приоритизируют <code>5 ГГц</code>. Если телефон не видит машину, попробуйте временно разделить сети в настройках роутера или отключить 5 ГГц на время настройки.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если индикатор Wi-Fi на панели мигает слишком быстро или горит красным, это может свидетельствовать о сбое модуля связи. В этом случае попробуйте перезагрузить саму стиральную машину, отключив ее от электросети на 10-15 секунд.</p>
+</blockquote>
+
+<h2 id="функциональные-возможности-приложения-candy-smart">Функциональные возможности приложения Candy Smart</h2>
+
+<p>Интерфейс программы разработан с учетом эргономики, позволяя управлять основными параметрами в пару касаний. Главная особенность — возможность дистанционного запуска. Вы можете положить белье утром, а запустить цикл вечером, когда тарифы на электроэнергию ниже, находясь при этом на работе. Это обеспечивает реальную экономию семейного бюджета.</p>
+
+<p>Внутри приложения доступно множество дополнительных циклов, которых нет на физической панели. Это так называемые"цифровые программы". Они оптимизированы для конкретных типов загрязнений или тканей и используют уникальные алгоритмы вращения барабана и температурные режимы, недоступные в стандартном меню.</p>
+
+<details class="pb-accordion"><summary>Скрытые функции диагностики</summary><div class="pb-accordion-body"><p>В приложении доступен режим самодиагностики, который проверяет состояние помпы, ТЭНа и двигателя. Система анализирует историю ошибок и может предупредить о потенциальной поломке задолго до ее возникновения, рекомендуя профилактические действия.</p></div></details>
+
+<p>Также реализована функция голосового управления через интеграцию с <strong>Amazon Alexa</strong> и <strong>Google Assistant</strong>. Это позволяет отдавать команды голосом, что особенно удобно, когда руки заняты. Статистика потребления ресурсов помогает анализировать, какие режимы стирки наиболее затратны, и корректировать привычки использования.</p>
+
+<h2 id="диагностика-неисправностей-и-коды-ошибок">Диагностика неисправностей и коды ошибок</h2>
+
+<p>Одной из самых полезных функций приложения является мгновенное уведомление об ошибках. Если в машине возникает неисправность, на экран смартфона приходит Push-уведомление с описанием проблемы. Вместо непонятного мигания лампочек или кода вида <code>E03</code>, пользователь видит текстовое пояснение, например:"Проблема со сливом воды".</p>
+
+<p>Система диагностики не просто сообщает об ошибке, но и предлагает алгоритм действий по ее устранению. Это может быть инструкция по чистке фильтра, проверке шланга или перезапуску программы. В некоторых случаях приложение позволяет сбросить ошибку программным путем, если сбой был вызван временным скачком напряжения.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Код ошибки</th>
+<th>Описание проблемы</th>
+<th>Действие в приложении</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>E01 / E02</code></td>
+<td>Неисправность модуля связи</td>
+<td>Переподключение к сети</td>
+</tr>
+<tr>
+<td><code>E03</code></td>
+<td>Ошибка слива воды</td>
+<td>Инструкция по чистке фильтра</td>
+</tr>
+<tr>
+<td><code>E04</code></td>
+<td>Ошибка подачи воды</td>
+<td>Проверка крана и давления</td>
+</tr>
+<tr>
+<td><code>E09</code></td>
+<td>Неравномерное распределение белья</td>
+<td>Совет по перераспределению</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Важно понимать, что приложение не является панацеей от всех механических поломок. Если система сообщает о критической ошибке двигателя или утечке тока, эксплуатацию необходимо немедленно прекратить. Цифровая диагностика служит первым этапом выявления проблемы, но не заменяет вызов мастера в сложных случаях.</p>
+
+<div class="pb-poll" id="poll-12891903"><div class="pb-poll-question">📊 Как часто вы используете приложение для стирки?</div><div class="pb-poll-option" data-poll="12891903" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Ежедневно</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="12891903" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Пару раз в неделю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="12891903" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Только при ошибках</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="12891903" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда не пользовался</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="настройка-расписания-и-удаленный-запуск">Настройка расписания и удаленный запуск</h2>
+
+<p>Функция отложенного старта через приложение работает гораздо гибче, чем таймер на самой машине. Вы можете задать точное время окончания стирки, чтобы белье не мялось в барабане, или приурочить запуск к определенному времени суток. Это особенно актуально для владельцев ночных тарифов на электроэнергию.</p>
+
+<p>Для активации удаленного запуска необходимо предварительно нажать кнопку с символом Wi-Fi на панели управления, переводя машину в режим ожидания команды. После этого в приложении выбирается программа и нажимается кнопка"Старт". Машина заблокирует люк и начнет цикл.</p>
+
+<p>Существуют ограничения безопасности. Дверца машины должна быть плотно закрыта, а в баке не должно быть воды от предыдущей стирки. Также некоторые модели не позволяют использовать функцию"Удаленная стирка" одновременно с физическим поворотом селектора программ.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Удаленный запуск возможен только если машина предварительно переведена в режим ожидания через кнопку Wi-Fi на корпусе.</p></aside>
+
+<h2 id="обновление-прошивки-и-обслуживание-системы">Обновление прошивки и обслуживание системы</h2>
+
+<p>Производители регулярно выпускают обновления программного обеспечения для улучшения стабильности работы и добавления новых функций. Приложение Candy Smart автоматически уведомляет о наличии новой версии прошивки. Процесс обновления занимает несколько минут и требует, чтобы машина была подключена к Wi-Fi.</p>
+
+<p>Во время обновления категорически запрещается отключать электропитание или прерывать соединение с интернетом. Это может привести к"окирпучиванию" модуля управления, после чего машина перестанет реаг!
+<p>Регулярное обслуживание через приложение включает в себя запуск циклов самоочистки барабана и
+<p>Своевременное обновление ПО обеспечивает совместимость с новыми версиями операционных систем смартфонов и закрывает потенциальные уязвимости безопасности.</p>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Работает ли приложение без интернета?</summary>
+<p>Для первоначальной настройки и удаленного управления интернет обязателен. Однако некоторые функции, такие как просмотр истории стирок, могут быть доступны в кэше, но полноценное управление без подключения к серверам производителя невозможно.</p>
+</details>
+
+<details>
+<summary>Можно ли подключить одну машину к нескольким телефонам?</summary>
+<p>Да, приложение позволяет доступ к устройству. Основной пользователь может предоставить доступ другим членам семьи через функцию"Семейный аккаунт" или передав логин и пароль от основного профиля, хотя второй вариант менее безопасен.</p>
+</details>
+
+<details>
+<summary>Что делать, если телефон не видит машину при настройке?</summary>
+<p>Убедитесь, что на смартфоне включены GPS и Bluetooth (они используются для поиска устройства), а также что вы подключены к Wi-Fi сети 2.4 ГГц. Попробуйте подойти ближе к стиральной машине и перезапустить приложение.</p>
+</details>
+
+<details>
+<summary>Совместимо ли приложение со старыми моделями Candy?</summary>
+<p>Функционал SmartFi поддерживается только моделями, оснащенными соответствующим модулем. Обычно это машины, выпущенные после 2017-2018 годов, имеющие на панели значок Wi-Fi или NFC. Точную совместимость можно проверить на официальном сайте по серийному номеру.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/m/ma/mashinka-kerkher-dlya-mytya-okon.html" class="pb-related-card">
+                <span class="pb-related-title">Машинка Керхер для мытья окон: обзор, модели и советы</span>
+                <span class="pb-related-desc">Полный гид по аккумуляторным пылесосам Kärcher для мытья окон. Сравнение моделей, техника безопаснос</span>
+            </a><a href="/articles/s/st/stiralka-atlant-otzyvy-pokupatelej.html" class="pb-related-card">
+                <span class="pb-related-title">Стиралка Атлант: отзывы покупателей, плюсы и минусы</span>
+                <span class="pb-related-desc">Честные отзывы о стиральных машинах Атлант: реальный опыт владельцев, частые поломки, достоинства и </span>
+            </a><a href="/articles/k/ka/kakaya-stiralnaya-mashinka-luchshe-beko-ili-indesit.html" class="pb-related-card">
+                <span class="pb-related-title">Beko или Indesit: какую стиральную машину выбрать?</span>
+                <span class="pb-related-desc">Подробное сравнение стиральных машин Beko и Indesit. Анализ надежности, функций, ремонтопригодности </span>
+            </a><a href="/articles/s/st/stiralnaya-mashina-electrolux-7-kg.html" class="pb-related-card">
+                <span class="pb-related-title">Стиральная машина Electrolux 7 кг: модели, функции, плюсы и минусы</span>
+                <span class="pb-related-desc">Обзор стиральных машин Electrolux 7 кг. Разбор технологий SensiCare, EcoValve, защита от протечек. С</span>
+            </a><a href="/articles/b/bo/bosch-maxx-4-kak-stirat.html" class="pb-related-card">
+                <span class="pb-related-title">Стиральная машина Bosch Maxx 4: как стирать, режимы и уход</span>
+                <span class="pb-related-desc">Полный гид по эксплуатации Bosch Maxx 4: как правильно стирать, расшифровка программ, загрузка порош</span>
+            </a><a href="/articles/s/st/stiralnaya-mashina-lg-direct-drive-4-kg-instruktsiya.html" class="pb-related-card">
+                <span class="pb-related-title">Стиральная машина LG Direct Drive 4 кг: инструкция и обзор</span>
+                <span class="pb-related-desc">Полная инструкция для стиральной машины LG Direct Drive 4 кг. Настройка программ, расшифровка кодов </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🧺 Мастер Стирки</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/remont-stiralnykh-mashin/">🔧 Ремонт стиральных машин</a> · <a href="/category/kody-oshibok/">⚠️ Коды ошибок</a> · <a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a> · <a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a> · <a href="/category/bytovaya-khimiya/">🧴 Бытовая химия</a> · <a href="/category/udalenie-pyaten/">🧼 Удаление пятен</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Стирки. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

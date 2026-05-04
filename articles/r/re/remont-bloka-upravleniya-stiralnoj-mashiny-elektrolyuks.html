@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🧺</text></svg>">
+    <title>Ремонт блока управления стиральной машины Electrolux: диагностика — Мастер Стирки</title>
+    <meta name="description" content="Полное руководство по ремонту ЭБУ стиральных машин Электролюкс. Разбор кодов ошибок, проверка платы, замена конденсаторов и прошивка модуля.">
+    <link rel="canonical" href="https://master-stirki.vercel.app/articles/r/re/remont-bloka-upravleniya-stiralnoj-mashiny-elektrolyuks.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ремонт блока управления стиральной машины Electrolux: диагностика">
+    <meta property="og:description" content="Полное руководство по ремонту ЭБУ стиральных машин Электролюкс. Разбор кодов ошибок, проверка платы, замена конденсаторов и прошивка модуля.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777869443">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🧺</span>
+                <span class="pb-logo-text">Мастер Стирки</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/remont-stiralnykh-mashin/" class="pb-nav-active">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/remont-stiralnykh-mashin/" class="pb-dropdown-item">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/" class="pb-dropdown-item">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/" class="pb-dropdown-item">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/" class="pb-dropdown-item">👕 Уход за тканями</a>
+<a href="/category/bytovaya-khimiya/" class="pb-dropdown-item">🧴 Бытовая химия</a>
+<a href="/category/udalenie-pyaten/" class="pb-dropdown-item">🧼 Удаление пятен</a>
+<a href="/category/obzory-tekhniki/" class="pb-dropdown-item">🏠 Обзоры техники</a>
+<a href="/category/chistka-i-obsluzhivanie/" class="pb-dropdown-item">✨ Чистка и обслуживание</a>
+<a href="/category/aksessuary-dlya-stirki/" class="pb-dropdown-item">🎱 Аксессуары для стирки</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-stiralnykh-mashin/">Ремонт стиральных машин</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Ремонт блока управления стиральной машины Electrolux: диагностика</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#симптомы-неисправности-электронного-модуля-electrolux">Симптомы неисправности электронного модуля Electrolux</a></li><li><a href="#диагностика-и-извлечение-платы-управления">Диагностика и извлечение платы управления</a></li><li><a href="#типичные-неисправности-и-методы-ремонта">Типичные неисправности и методы ремонта</a></li><li><a href="#проблемы-с-прошивкой-и-программные-сбои">Проблемы с прошивкой и программные сбои</a></li><li><a href="#замена-компонентов-и-пайка-технические-нюансы">Замена компонентов и пайка: технические нюансы</a></li><li><a href="#профилактика-и-защита-блока-управления">Профилактика и защита блока управления</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-snyat-uplotnitel-na-stiralnoj-mashine.html">Как снять уплотнитель на стиральной машине: пошаговая инструкция</a></li><li><a href="/articles/p/po/pochemu-ne-otkryvaetsya-stiralka.html">Почему не открывается стиралка: причины и решение</a></li><li><a href="/articles/n/ne/ne-otzhimaet-stiralnaya-mashina-bosh.html">Не отжимает стиральная машина Бош: причины и ремонт</a></li><li><a href="/articles/s/sm/smazka-amortizatorov-stiralnoj-mashiny-bosch.html">Смазка амортизаторов стиральной машины Bosch: чем и как смазать</a></li><li><a href="/articles/z/za/zamena-amortizatorov-v-stiralnoj-mashinke.html">Замена амортизаторов в стиральной машине: пошаговая инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Ремонт блока управления стиральной машины Электролюкс: пошаговое руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#симптомы-неисправности-электронного-модуля-electrolux">Симптомы неисправности электронного модуля Electrolux</a></li><li><a href="#диагностика-и-извлечение-платы-управления">Диагностика и извлечение платы управления</a></li><li><a href="#типичные-неисправности-и-методы-ремонта">Типичные неисправности и методы ремонта</a></li><li><a href="#проблемы-с-прошивкой-и-программные-сбои">Проблемы с прошивкой и программные сбои</a></li><li><a href="#замена-компонентов-и-пайка-технические-нюансы">Замена компонентов и пайка: технические нюансы</a></li><li><a href="#профилактика-и-защита-блока-управления">Профилактика и защита блока управления</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+<p>Стиральные машины <em>Electrolux</em> заслуженно считаются эталоном надежности в своем классе, однако даже шведская инженерная мысль не застрахована от сбоев. Часто причиной внезапной остановки цикла стирки или отказа машины включаться становится не двигатель и не насос, а электроника. <strong>Блок управления</strong> — это «мозг» устройства, который координирует работу всех узлов, от ТЭНа до замка люка. Когда этот компонент выходит из строя, машина перестает реагировать на команды или начинает выдавать хаотичные ошибки.</p>
+
+<p>Владельцы часто пугаются сложной диагностики, полагая, что ремонт электроники под силу только специалистам с осциллографом. На самом деле, значительную часть неисправностей можно выявить и устранить самостоятельно, обладая минимальным набором инструментов и понимая базовые принципы работы <strong>электронного модуля</strong>. В этой статье мы подробно разберем устройство платы, типичные поломки и методы их устранения, чтобы вы могли вернуть технику к жизни без переплат сервисным центрам.</p>
+
+<p>Прежде чем приступать к разборке, необходимо убедиться, что проблема кроется именно в управлении. Иногда сбои в сети или проблемы с проводкой имитируют поломку <strong>ЭБУ</strong>. Грамотная диагностика начинается с внешнего осмотра и анализа поведения машины, что позволит сэкономить время и избежать покупки ненужных запчастей.</p>
+
+<h2 id="симптомы-неисправности-электронного-модуля-electrolux">Симптомы неисправности электронного модуля Electrolux</h2>
+<p>Понимание того, как именно ведет себя стиральная машина при поломке контроллера, является первым шагом к успешному ремонту. Симптомы могут варьироваться от полного молчания агрегата до хаотичного мигания индикаторов. <strong>Электронный модуль</strong> в машинах <em>Electrolux</em> (особенно серий <em>EWM</em> и <em>EWS</em>) часто страдает от скачков напряжения или влаги. Если вы заметили, что машина самопроизвольно меняет режимы стирки или не греет воду при исправном ТЭНе, это прямой сигнал к проверке платы.</p>
+
+<p>Частым признаком является блокировка люка без начала стирки или, наоборот, разблокировка в процессе набора воды. <strong>Процессор</strong> может терять связь с исполнительными механизмами, из-за чего циклы не запускаются. Также стоит обратить внимание на дисплей: если на нем появляются артефакты, нечитаемые символы или он горит тускло, проблема может крыться в цепях питания платы.</p>
+
+<blockquote>⚠️ Внимание: Если вы чувствуете запах гари или видите оплавленные элементы на плате при визуальном осмотре, дальнейшая самостоятельная диагностика без опыта работы с электроникой может привести к окончательному выходу модуля из строя.</blockquote>
+
+<ul>
+<li>🔌 Машина не реагирует на включение, хотя напряжение в розетке есть.</li>
+<li>🌀 Барабан не вращается, но вода набирается и сливается (или наоборот).</li>
+<li>💡 Индикаторы горят постоянно или мигают в хаотичном порядке.</li>
+<li>🚫 Люк блокируется, но стирка не начинается, или разблокируется с водой внутри.</li>
+</ul>
+
+<div class="pb-poll" id="poll-be21835a"><div class="pb-poll-question">📊 С каким симптомом неисправности вы столкнулись?</div><div class="pb-poll-option" data-poll="be21835a" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Машина не включается</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="be21835a" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Горят все индикаторы</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="be21835a" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Выдает ошибку и останавливается</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="be21835a" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Работает, но не греет воду</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="be21835a" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Другое</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="диагностика-и-извлечение-платы-управления">Диагностика и извлечение платы управления</h2>
+<p>Для проведения качественной диагностики модуль необходимо извлечь из корпуса машины. В стиральных машинах <em>Electrolux</em> блок управления чаще всего расположен в верхней части корпуса, под декоративной панелью. Перед началом работ <strong>обязательно отключите</strong> appliance от электросети. Это базовое правило безопасности, игнорирование которого может привести к поражению током или короткому замыканию.</p>
+
+<p>Процесс демонтажа требует аккуратности. Сначала снимается верхняя крышка, затем откручивается панель управления. Важно не повредить пластиковые защелки и шлейфы. <strong>Коннекторы</strong>, соединяющие плату с остальными узлами, могут быть загрязнены окислами, поэтому их состояние нужно оценивать сразу же после снятия.</p>
+
+<p>После извлечения модуля проведите тщательный визуальный осмотр. Ищите следы коррозии, вздутия конденсаторов или почернения дорожек. <strong>Оксидация контактов</strong> — частая причина сбоев в машинах, долго стоявших во влажных помещениях. Если визуально плата чистая, потребуется мультиметр для «прозвонки» элементов.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист перед разборкой</h4><label class="check-item"><input type="checkbox"><span>Отключить шнур питания из розетки</span></label><label class="check-item"><input type="checkbox"><span>Перекрыть подачу воды</span></label><label class="check-item"><input type="checkbox"><span>Снять верхнюю крышку корпуса</span></label><label class="check-item"><input type="checkbox"><span>Подготовить емкость для мелких деталей</span></label><label class="check-item"><input type="checkbox"><span>Сфотографировать подключение проводов</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="типичные-неисправности-и-методы-ремонта">Типичные неисправности и методы ремонта</h2>
+<p>Статистика ремонтов показывает, что большинство поломок <strong>блока управления</strong> <em>Electrolux</em> связано с определенными узлами. Чаще всего выходят из строя элементы, работающие под нагрузкой или подверженные тепловому расширению. Понимание природы этих неисправностей позволяет быстро локализовать проблему.</p>
+
+<p>Одной из самых распространенных проблем является выход из строя <strong>конденсаторов</strong>. Они обеспечивают стабильность напряжения в цепях питания процессора. Со временем электролит внутри них высыхает или, наоборот, вскипает, вызывая вздутие. Это приводит к нестабильной работе логики машины.</p>
+
+<p>Также часто перегорают <strong>резисторы</strong> в цепях управления двигателем или ТЭНом. Если на плате виден почерневший резистор, его замена — лишь полдела. Необходимо найти причину, почему он перегрелся: возможно, коротит сам исполнительный механизм. Еще одна уязвимая точка — <strong>реле</strong>, контакты которых могут подгорать, из-за чего перестает включаться насос или клапан.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Неисправный элемент</th>
+<th>Внешний признак</th>
+<th>Последствие для машины</th>
+<th>Сложность замены</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Конденсатор</td>
+<td>Вздутие верхней крышки, потеки</td>
+<td>Сбои в программе, перезагрузки</td>
+<td>Низкая</td>
+</tr>
+<tr>
+<td>Реле</td>
+<td>Нагар на контактах, копоть</td>
+<td>Не работает насос или ТЭН</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>Резистор</td>
+<td>Почернение, трещины</td>
+<td>Обрыв цепи управления</td>
+<td>Низкая</td>
+</tr>
+<tr>
+<td>Транзистор/Симистор</td>
+<td>Пробой, дырка в корпусе</td>
+<td>Короткое замыкание, выбивает пробки</td>
+<td>Высокая</td>
+</tr>
+</tbody>
+</table></div>
+
+<details class="pb-accordion"><summary>Как проверить конденсатор мультиметром?</summary><div class="pb-accordion-body"><p>Для проверки конденсатора переключите мультиметр в режим измерения сопротивления (20 кОм). Коснитесь щупами выводов конденсатора. Исправный элемент должен сначала показать низкое сопротивление, а затем плавно увеличивать его до бесконечности. Если сопротивление сразу равно нулю или бесконечности — конденсатор неисправен.</p></div></details>
+
+<h2 id="проблемы-с-прошивкой-и-программные-сбои">Проблемы с прошивкой и программные сбои</h2>
+<p>Не всегда причина кроется в «железе». В современных моделях <em>Electrolux</em> с системой <strong>EWM 2000</strong> или <strong>EWM 3000</strong> часто встречаются программные сбои. Микроконтроллер может «зависнуть» или потерять часть данных из-за скачка напряжения в сети. В таких случаях физическая замена деталей не требуется.</p>
+
+<p>Для устранения программных ошибок используется режим тестирования или перепрошивка. Вход в сервисный режим осуществляется комбинацией кнопок на панели управления. Например, для многих моделей нужно одновременно зажать кнопки выбора температуры и режима стирки, а затем повернуть селектор в определенное положение. Коды ошибок, отображаемые в этом режиме, помогут точнее определить узел.</p>
+
+<p>Если машина «глючит» после скачка света, часто помогает полный сброс настроек. Однако, если повреждена сама <strong>EEPROM-память</strong>, потребуется перепрошивка чипа программатором. Это сложная процедура, требующая специального оборудования и навыков пайки SMD-компонентов.</p>
+
+<blockquote>⚠️ Внимание: Не пытайтесь перепрошить модуль, если не уверены в целостности аппаратной части платы. Запись новой прошивки на неисправное «железо» может окончательно «убить» контроллер.</blockquote>
+
+<ul>
+<li>🔧 Сбросьте ошибки через длительное отключение от сети (на 30-40 минут).</li>
+<li>🔧 Проверьте актуальность версии ПО для вашей модели на сайте производителя.</li>
+<li>🔧 Используйте сервисный режим для диагностики датчиков.</li>
+</ul>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед началом любых работ с электроникой сфотографируйте расположение всех проводов и шлейфов. Это поможет вам безошибочно собрать машину обратно, так как цветовая маркировка проводов в разных моделях Electrolux может отличаться.</p></aside>
+
+<h2 id="замена-компонентов-и-пайка-технические-нюансы">Замена компонентов и пайка: технические нюансы</h2>
+<p>Если диагностика выявила сгоревшие элементы, их необходимо заменить. Для этого потребуется паяльник, припой, флюс и, желательно, паяльная станция с феном для SMD-компонентов. Важно использовать детали с аналогичными или лучшими характеристиками. <strong>Температурный режим</strong> пайки должен быть строго соблюден, чтобы не повредить дорожки платы.</p>
+
+<p>При замене <strong>симисторов</strong> или мощных транзисторов обязательно наносите термопасту, если элемент контактирует с радиатором. Плохой теплоотвод приведет к быстрому повторному выходу из строя. Также следует внимательно осмотреть дорожки под сгоревшим элементом — часто они перегорают сами, и их нужно восстанавливать проводом.</p>
+
+<p>После пайки плату необходимо тщательно очистить от остатков флюса спиртом. Кислотный флюс, оставшийся на плате, со временем может вызвать коррозию и новые замыкания. Собранную плату перед установкой в корпус желательно «прогнать» в тестовом режиме, подключив только основные узлы.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Качество пайки и чистота контактов определяют 90% успеха ремонта. Не экономьте на припое и флюсе, используйте только качественные расходники для электроники.</p></aside>
+
+<h2 id="профилактика-и-защита-блока-управления">Профилактика и защита блока управления</h2>
+<p>Чтобы ремонт блока управления стиральной машины <em>Electrolux</em> не потребовался в ближайшем будущем, стоит позаботиться о профилактике. Электроника не любит влаги, вибрации и скачков напряжения. Установка машины в сухом помещении и использование стабилизатора напряжения значительно продлят жизнь «мозгам» аппарата.</p>
+
+<p>Регулярно проверяйте состояние фильтров и шлангов. Протечка воды — главный враг нижней части платы, где часто расположены дорожки питания. Даже небольшая капля, попавшая на работающий модуль, может вызвать короткое замыкание. Также не забывайте чистить контакты заземления, чтобы статическое электричество не выводило из строя чувствительную логику.</p>
+
+<p>Соблюдение правил эксплуатации, таких как равномерная загрузка белья и использование качественных моющих средств, также снижает нагрузку на двигатель и, соответственно, на управляющие реле. Бережное отношение к технике — лучшая гарантия ее долгой службы.</p>
+
+<details>
+<summary>Можно ли отремонтировать блок управления своими руками без опыта?</summary>
+<p>Если речь идет о простой замене конденсатора или восстановлении контакта, то да, при наличии паяльника и аккуратности. Однако, если проблема в процессоре или сложных цепях управления, лучше обратиться к профессионалам, чтобы не усугубить ситуацию.</p>
+</details>
+
+<details>
+<summary>Сколько стоит новый блок управления на Electrolux?</summary>
+<p>Цена нового оригинального модуля может варьироваться от 5 до 15 тысяч рублей и выше, в зависимости от модели. Ремонт старого блока часто обходится в 3-4 раза дешевле покупки нового.</p>
+</details>
+
+<details>
+<summary>Почему после замены платы машина пишет ошибку?</summary>
+<p>Новые платы часто поставляются без прошивки или с базовой прошивкой, не адаптированной под конкретную модель. В таких случаях требуется перепрошивка модуля под параметры вашей стиральной машины.</p>
+</details>
+
+<details>
+<summary>Как часто ломаются стиральные машины Electrolux?</summary>
+<p>Машины Electrolux считаются надежными. Проблемы с электроникой обычно возникают после 5-7 лет эксплуатации или из-за внешних факторов (скачки напряжения, затопления), а не из-за заводского брака.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-snyat-uplotnitel-na-stiralnoj-mashine.html" class="pb-related-card">
+                <span class="pb-related-title">Как снять уплотнитель на стиральной машине: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробный гид по демонтажу резиновой манжеты люка. Узнайте, как снять уплотнитель со стиральной маши</span>
+            </a><a href="/articles/p/po/pochemu-ne-otkryvaetsya-stiralka.html" class="pb-related-card">
+                <span class="pb-related-title">Почему не открывается стиралка: причины и решение</span>
+                <span class="pb-related-desc">Стиральная машина заблокировалась после стирки? Разбираем причины, коды ошибок и способы, как безопа</span>
+            </a><a href="/articles/n/ne/ne-otzhimaet-stiralnaya-mashina-bosh.html" class="pb-related-card">
+                <span class="pb-related-title">Не отжимает стиральная машина Бош: причины и ремонт</span>
+                <span class="pb-related-desc">Стиральная машина Bosch не отжимает белье? Разбираем все причины: от засора фильтра до поломки двига</span>
+            </a><a href="/articles/s/sm/smazka-amortizatorov-stiralnoj-mashiny-bosch.html" class="pb-related-card">
+                <span class="pb-related-title">Смазка амортизаторов стиральной машины Bosch: чем и как смазать</span>
+                <span class="pb-related-desc">Правильная смазка амортизаторов стиральной машины Bosch продлит срок службы. Узнайте, какой состав в</span>
+            </a><a href="/articles/z/za/zamena-amortizatorov-v-stiralnoj-mashinke.html" class="pb-related-card">
+                <span class="pb-related-title">Замена амортизаторов в стиральной машине: пошаговая инструкция</span>
+                <span class="pb-related-desc">Как заменить амортизаторы в стиральной машине своими руками. Признаки поломки, выбор запчастей и инс</span>
+            </a><a href="/articles/p/pl/plokho-greet-ten-v-stiralnoj-mashine.html" class="pb-related-card">
+                <span class="pb-related-title">Плохо греет ТЭН в стиральной машине: причины и ремонт</span>
+                <span class="pb-related-desc">Стиральная машина плохо греет воду? Узнайте, как проверить ТЭН, найти накипь, диагностировать поломк</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🧺 Мастер Стирки</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/remont-stiralnykh-mashin/">🔧 Ремонт стиральных машин</a> · <a href="/category/kody-oshibok/">⚠️ Коды ошибок</a> · <a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a> · <a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a> · <a href="/category/bytovaya-khimiya/">🧴 Бытовая химия</a> · <a href="/category/udalenie-pyaten/">🧼 Удаление пятен</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Стирки. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

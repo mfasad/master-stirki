@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🧺</text></svg>">
+    <title>Тестирование стиральной машины LG: диагностика, коды ошибок и проверки — Мастер Стирки</title>
+    <meta name="description" content="Полный гид по проверке стиральных машин LG. Как запустить тестовую стирку, расшифровать коды ошибок и проверить ТЭН, насос и двигатель.">
+    <link rel="canonical" href="https://master-stirki.vercel.app/articles/t/te/testirovanie-stiralnoj-mashiny-lg.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Тестирование стиральной машины LG: диагностика, коды ошибок и проверки">
+    <meta property="og:description" content="Полный гид по проверке стиральных машин LG. Как запустить тестовую стирку, расшифровать коды ошибок и проверить ТЭН, насос и двигатель.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777869443">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🧺</span>
+                <span class="pb-logo-text">Мастер Стирки</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/remont-stiralnykh-mashin/" class="pb-nav-active">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/remont-stiralnykh-mashin/" class="pb-dropdown-item">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/" class="pb-dropdown-item">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/" class="pb-dropdown-item">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/" class="pb-dropdown-item">👕 Уход за тканями</a>
+<a href="/category/bytovaya-khimiya/" class="pb-dropdown-item">🧴 Бытовая химия</a>
+<a href="/category/udalenie-pyaten/" class="pb-dropdown-item">🧼 Удаление пятен</a>
+<a href="/category/obzory-tekhniki/" class="pb-dropdown-item">🏠 Обзоры техники</a>
+<a href="/category/chistka-i-obsluzhivanie/" class="pb-dropdown-item">✨ Чистка и обслуживание</a>
+<a href="/category/aksessuary-dlya-stirki/" class="pb-dropdown-item">🎱 Аксессуары для стирки</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-stiralnykh-mashin/">Ремонт стиральных машин</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Тестирование стиральной машины LG: диагностика, коды ошибок и проверки</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#внешний-осмотр-и-первичная-диагностика">Внешний осмотр и первичная диагностика</a></li><li><a href="#запуск-встроенного-режима-тестирования-service-test">Запуск встроенного режима тестирования (Service Test)</a></li><li><a href="#диагностика-системы-набора-и-слива-воды">Диагностика системы набора и слива воды</a></li><li><a href="#проверка-нагревательного-элемента-и-двигателя">Проверка нагревательного элемента и двигателя</a></li><li><a href="#анализ-кодов-ошибок-на-дисплее">Анализ кодов ошибок на дисплее</a></li><li><a href="#частые-неисправности-и-методы-их-устранения">Частые неисправности и методы их устранения</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/m/ma/mashinka-kandi-ne-otzhimaet-bele-prichina.html">Машинка Канди не отжимает белье: причины и ремонт</a></li><li><a href="/articles/k/ka/kak-dostat-poroshkopriemnik-iz-stiralnoj-mashiny-indezit.html">Как достать порошкоприемник из стиральной машины Indesit</a></li><li><a href="/articles/i/in/indezit-znachki-na-stiralnykh-mashinakh.html">Индесит: расшифровка значков на стиральных машинах и коды ошибок</a></li><li><a href="/articles/o/oc/ochen-silno-tryasetsya-stiralnaya-mashina.html">Сильно трясется стиральная машина: причины и устранение</a></li><li><a href="/articles/e/el/elektrolyuks-kuda-zasypat-poroshok.html">Электролюкс куда засыпать порошок: схема лотка и инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Тестирование стиральной машины LG: полная инструкция по диагностике</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#внешний-осмотр-и-первичная-диагностика">Внешний осмотр и первичная диагностика</a></li><li><a href="#запуск-встроенного-режима-тестирования-service-test">Запуск встроенного режима тестирования (Service Test)</a></li><li><a href="#диагностика-системы-набора-и-слива-воды">Диагностика системы набора и слива воды</a></li><li><a href="#проверка-нагревательного-элемента-и-двигателя">Проверка нагревательного элемента и двигателя</a></li><li><a href="#анализ-кодов-ошибок-на-дисплее">Анализ кодов ошибок на дисплее</a></li><li><a href="#частые-неисправности-и-методы-их-устранения">Частые неисправности и методы их устранения</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Современные бытовые приборы, такие как <em>LG</em>, оснащены сложной электроникой, которая требует периодической проверки для корректной работы. Тестирование стиральной машины LG — это не просто прихоть перфекциониста, а необходимая процедура при покупке б/у техники, после переезда или при появлении первых признаков нестабильности. В отличие от старых механических моделей, здесь важно правильно интерпретировать сигналы панели управления.</p>
+
+<p>Многие пользователи игнорируют встроенные системы самодиагностики, хотя именно они позволяют выявить проблему до того, как она приведет к дорогостоящему ремонту. <strong>Проверка основных узлов</strong> занимает не более 15-20 минут, но экономит часы простоя и значительные средства. В этой статье мы разберем, как провести полную диагностику, используя штатные функции и базовые инструменты.</p>
+
+<p>Стоит отметить, что алгоритмы работы могут незначительно отличаться в зависимости от серии агрегата, будь то классическая модель с загрузкой через люк или компактный вариант с вертикальной загрузкой. <mark>Ключевым моментом является понимание разницы между сервисным тестом (Service Test) и обычной быстрой стиркой.</mark> Если вы пропустите этот нюанс, то рискуете просто потратить воду и электричество без получения диагностических данных.</p>
+
+<h2 id="внешний-осмотр-и-первичная-диагностика">Внешний осмотр и первичная диагностика</h2>
+
+<p>Прежде чем подключать прибор к электросети, необходимо провести тщательный визуальный контроль. Любые механические повреждения корпуса могут свидетельствовать о падении или ударах при транспортировке, что критично для балансировки барабана. Осмотрите заднюю стенку: она должна быть ровной, без вмятин, которые могли бы повредить двигатель или крестовину.</p>
+
+<p>Особое внимание уделите транспортным болтам. Если вы приобрели новую технику или перевозили старую, убедитесь, что они извлечены. <strong>Работа с установленными фиксаторами</strong> гарантированно приведет к разрушению подшипникового узла в первые же минуты отжима. Проверьте целостность шлангов и отсутствие трещин на патрубках.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Никогда не включайте устройство в сеть, если заметили следы коррозии на электрических контактах или повреждение изоляции сетевого кабеля. Это может привести к короткому замыканию или поражению током.</p>
+</blockquote>
+
+<p>Загляните внутрь барабана. Он должен вращаться свободно, без скрежета или заеданий. Легкий люфт барабана в некоторых моделях <em>LG</em> с прямым приводом является допустимым конструктивным особенностью, но он не должен сопровождаться металлическим стуком. Пошатайте агрегат из стороны в сторону — он должен стоять устойчиво на всех четырех ножках.</p>
+
+<h2 id="запуск-встроенного-режима-тестирования-service-test">Запуск встроенного режима тестирования (Service Test)</h2>
+
+<p>Современные машины <em>LG</em> обладают продвинутым функционалом для самодиагностики. Чтобы попасть в меню проверки, обычно требуется выполнить определенную комбинацию нажатий на панели управления. Чаще всего это одновременное зажатие кнопок "Температура" и "Полоскание" при выключенном устройстве, после чего нужно нажать кнопку включения, не отпуская первые две.</p>
+
+<p>После входа в режим на дисплее могут появиться специфические символы или начнется перебор всех сегментов индикатора. Это проверка целостности дисплея. Далее система переходит к проверке исполнительных механизмов. Вы услышите характерные щелчки реле и клапанов. В этом режиме можно принудительно запустить подачу воды, нагрев или вращение барабана.</p>
+
+<div class="pb-poll" id="poll-bbf9d81a"><div class="pb-poll-question">📊 Сталкивались ли вы с кодами ошибок на стиральной машине?</div><div class="pb-poll-option" data-poll="bbf9d81a" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, часто</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="bbf9d81a" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Было пару раз</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="bbf9d81a" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда не видел(а)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="bbf9d81a" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю, что это</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Для перехода между этапами теста часто используются кнопки выбора режима стирки. Важно помнить последовательность: сначала проверяется наполнение бака, затем нагрев, потом вращение в разные стороны и, наконец, слив и отжим. <strong>Коды тестирования</strong> могут отображаться на экране, и их значения лучше заранее найти в технической документации для вашей конкретной модели.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка сервисного режима</h4><label class="check-item"><input type="checkbox"><span>Войти в режим диагностики:Проверить сегменты дисплея:Тест залива воды:Проверка работы ТЭНа:Тест сливного насоса:Проверка вращения барабана</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 1</div></div>
+
+<h2 id="диагностика-системы-набора-и-слива-воды">Диагностика системы набора и слива воды</h2>
+
+<p>Одной из самых частых проблем является некорректная работа системы водоснабжения. В тестовом режиме можно проверить работу впускных клапанов. Машина должна набирать воду в течение заданного времени. Если вода течет слишком слабо, возможно, засорен фильтр-сеточка на входе шланга.</p>
+
+<p>Сливная система тестируется включением насоса. При этом вы должны слышать характерный гул моторчика помпы. Если насос гудит, но вода не уходит, проверьте фильтр слива и патрубки на наличие посторонних предметов. Часто туда попадают монеты, пуговицы или косточки от бюгальтеров.</p>
+
+<p>Датчик уровня воды (прессостат) также играет ключевую роль. Если он неисправен, машина может набрать слишком много воды или, наоборот, запустить нагрев без воды в баке, что приведет к сгоранию <strong>ТЭНа</strong>. В режиме диагностики можно отследить, как быстро система реагирует на изменение уровня жидкости.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Нормальное поведение</th>
+<th>Признаки неисправности</th>
+<th>Действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Впускной клапан</td>
+<td>Открывается по команде, вода идет</td>
+<td>Нет потока или течет постоянно</td>
+<td>Чистка фильтра или замена</td>
+</tr>
+<tr>
+<td>Сливной насос</td>
+<td>Гудит, откачивает воду</td>
+<td>Гудит, но не качает / тишина</td>
+<td>Проверка крыльчатки и обмотки</td>
+</tr>
+<tr>
+<td>Прессостат</td>
+<td>Щелкает при уровне воды</td>
+<td>Не реагирует или дает ложные сигналы</td>
+<td>Продувка трубки или замена</td>
+</tr>
+<tr>
+<td>Аква-стоп</td>
+<td>Герметичность шланга</td>
+<td>Влага в поддоне шланга</td>
+<td>Замена шланга с системой защиты</td>
+</tr>
+</tbody>
+</table></div>
+
+<details class="pb-accordion"><summary>Что делать, если насос гудит, но не сливает?</summary><div class="pb-accordion-body"><p>Если сливной насос издает звук, но вода стоит на месте, скорее всего, крыльчатку заклинило. Попробуйте аккуратно покрутить её через отверстие фильтра (предварительно слив воду). Если вращение заблокировано жестким предметом, его нужно извлечь пинцетом. Если же крыльчатка прокручивается свободно, а мотор гудит — возможно, сгорела обмотка или проблема в модуле управления.">
+</blockquote>
+
+<h2 id="проверка-нагревательного-элемента-и-двигателя">Проверка нагревательного элемента и двигателя</h2>
+
+<p>Нагрев воды — энергоемкий процесс, и исправность ТЭНа критически важна. В обычном режиме стирки с температурой 60°C или 90°C вы можете проверить нагрев, приложив руку к стеклу люка через 10-15 минут после начала цикла. Стекло должно стать теплым. В сервисном режиме можно запустить нагрев принудительно.</p>
+
+<p>Двигатель в машинах <em>LG</em> с прямым приводом (Direct Drive) закреплен непосредственно на баке. При тестировании вращения барабана не должно быть сильной вибрации или искрения. <strong>Электронный модуль</strong> регулирует скорость вращения, плавно разгоняя и тормозя барабан. Рывки при старте свидетельствуют о проблемах с таходатчиком или платой управления.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При проверке ТЭНа мультиметром обязательно отключайте устройство от сети! Прозвонка под напряжением мгновенно выведет измерительный прибор из строя и может быть опасна для жизни.</p>
+</blockquote>
+
+<p>Для точной диагностики ТЭНа используйте мультиметр в режиме измерения сопротивления. Нормальное значение для исправного элемента обычно находится в диапазоне 20-40 Ом. Если прибор показывает единицу (обрыв) или ноль (короткое замыкание), элемент подлежит замене. Также проверьте сопротивление на пробой на корпус.</p>
+
+
+
+<h2 id="анализ-кодов-ошибок-на-дисплее">Анализ кодов ошибок на дисплее</h2>
+
+<p>Электроника <em>LG</em> выводит информацию о неисправностях в виде буквенно-цифровых кодов. Например, код <code>IE</code> указывает на проблемы с подачей воды, а <code>OE</code> — на ошибку слива. Понимание этих сигналов позволяет сразу определить направление поиска поломки.</p>
+
+<p>Некоторые коды, такие как <code>DE</code> (ошибка двери) или <code>LE</code> (ошибка двигателя), могут появляться intermittently (периодически). Если код появляется и исчезает после перезагрузки, проблема может быть в окислившихся контактах или временном скачке напряжения. Постоянно горящий код требует вмешательства.</p>
+
+<p>Важно различать коды, которые блокируют запуск программы, и те, которые лишь предупреждают пользователя. Например, ошибка блокировки люка не даст запустить стирку, тогда как предупреждение о дисбалансе белья (<code>UB</code> или <code>UE</code>) может исчезнуть, если просто равномерно распределить вещи в барабане.</p>
+
+
+
+<h2 id="частые-неисправности-и-методы-их-устранения">Частые неисправности и методы их устранения</h2>
+
+<p>Статистика ремонтов показывает, что большинство проблем с техникой <em>LG</em> связано с засорами, износом резиновых уплотнителей или выходом из строя датчиков. Регулярное обслуживание снижает риск внезапной поломки на 70%. Не игнорируйте странные звуки или изменение времени стирки.</p>
+
+<p>Если машина начала сильнее вибрировать при отжиме, проверьте амортизаторы и противовесы. Ослабление креплений бетонных блоков — распространенная проблема после интенсивной эксплуатации. Также стоит проверить состояние подшипникового узла: гул, нарастающий с увеличением оборотов, — верный признак износа подшипников.</p>
+
+<ul>
+<li>🔍 <strong>Течь воды:</strong> чаще всего виноваты ослабшие хомуты патрубков или износ манжеты люка. Проверьте все соединения и замените уплотнитель при наличии трещин.</li>
+<li>🔊 <strong>Шум при стирке:</strong> посторонние предметы в барабане, износ подшипников или попадание вещей между баком и барабаном. Осмотрите пространство у манжеты.</li>
+<li>🚫 <strong>Не открывается люк:</strong> неисправность блокировочного устройства (УБЛ) или механический заклинивание язычка замка. Попробуйте аккуратно потянуть за трос аварийного открытия.</li>
+</ul>
+
+<p>Самостоятельный ремонт возможен только при наличии базовых навыков и инструментов. Если вы не уверены в своих силах, лучше обратиться к специалистам, особенно если речь идет о замене подшипников или ремонте платы управления.</p>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Как сбросить стиральную машину LG до заводских настроек?</summary>
+<p>Для сброса настроек обычно достаточно выключить машину из розетки на 10-15 минут. Для полного сброса программы (без изменения пользовательских настроек) зажмите кнопку "Спин" (или "Полоскание" в зависимости от модели) на 3-5 секунд при включенном устройстве. Точная комбинация может зависеть от серии.</p>
+</details>
+
+<details>
+<summary>Что означает мигающий индикатор замка?</summary>
+<p>Мигающий значок замка обычно указывает на то, что идет процесс блокировки или разблокировки люка. Если он мигает постоянно и стирка не начинается, возможно, дверь закрыта не до конца или неисправен механизм УБЛ. Также это может быть признаком детской блокировки.</p>
+</details>
+
+<details>
+<summary>Можно ли стирать без тестового режима, если горит ошибка?</summary>
+<p>В большинстве случаев машина с активной критической ошибкой (например, <code>IE</code> или <code>OE</code>) не начнет стирку. Некоторые модели позволяют запустить режим "Полоскание + Отжим", если ошибка не блокирует работу насоса. Однако эксплуатация неисправной техники не рекомендуется.</p>
+</details>
+
+<details>
+<summary>Как часто нужно чистить фильтр сливного насоса?</summary>
+<p>Производители рекомендуют чистить фильтр не реже одного раза в 3-6 месяцев. Если в семье есть маленькие дети или животные (шерсть, мелкие предметы), проверку стоит проводить ежемесячно. Это предотвратит засорение насоса и появление ошибок слива.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/m/ma/mashinka-kandi-ne-otzhimaet-bele-prichina.html" class="pb-related-card">
+                <span class="pb-related-title">Машинка Канди не отжимает белье: причины и ремонт</span>
+                <span class="pb-related-desc">Стиральная машина Candy не отжимает белье? Разбираем основные причины: от засора фильтра до поломки </span>
+            </a><a href="/articles/k/ka/kak-dostat-poroshkopriemnik-iz-stiralnoj-mashiny-indezit.html" class="pb-related-card">
+                <span class="pb-related-title">Как достать порошкоприемник из стиральной машины Indesit</span>
+                <span class="pb-related-desc">Подробная инструкция: как вытащить лоток для порошка в стиралках Индезит. Секреты демонтажа, чистка,</span>
+            </a><a href="/articles/i/in/indezit-znachki-na-stiralnykh-mashinakh.html" class="pb-related-card">
+                <span class="pb-related-title">Индесит: расшифровка значков на стиральных машинах и коды ошибок</span>
+                <span class="pb-related-desc">Полный гид по индикаторам Indesit. Узнайте, что означают значки на панели управления стиральной маши</span>
+            </a><a href="/articles/o/oc/ochen-silno-tryasetsya-stiralnaya-mashina.html" class="pb-related-card">
+                <span class="pb-related-title">Сильно трясется стиральная машина: причины и устранение</span>
+                <span class="pb-related-desc">Почему стиральная машина вибрирует при отжиме? Разбираем причины тряски: от транспортировочных болто</span>
+            </a><a href="/articles/e/el/elektrolyuks-kuda-zasypat-poroshok.html" class="pb-related-card">
+                <span class="pb-related-title">Электролюкс куда засыпать порошок: схема лотка и инструкция</span>
+                <span class="pb-related-desc">Полная инструкция: куда засыпать порошок в стиральной машине Электролюкс. Расшифровка символов лотка</span>
+            </a><a href="/articles/n/ne/ne-otzhimaet-stiralnaya-mashina-ldzhi-prichina.html" class="pb-related-card">
+                <span class="pb-related-title">Не отжимает стиральная машина LG: причины и решения</span>
+                <span class="pb-related-desc">Стиральная машина LG не отжимает белье? Разбираем основные причины: от ошибок на дисплее до поломки </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🧺 Мастер Стирки</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/remont-stiralnykh-mashin/">🔧 Ремонт стиральных машин</a> · <a href="/category/kody-oshibok/">⚠️ Коды ошибок</a> · <a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a> · <a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a> · <a href="/category/bytovaya-khimiya/">🧴 Бытовая химия</a> · <a href="/category/udalenie-pyaten/">🧼 Удаление пятен</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Стирки. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

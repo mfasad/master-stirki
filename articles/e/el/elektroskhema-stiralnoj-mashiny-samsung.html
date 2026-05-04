@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🧺</text></svg>">
+    <title>Электросхема стиральной машины Самсунг: чтение и диагностика — Мастер Стирки</title>
+    <meta name="description" content="Подробный разбор электросхемы стиральных машин Samsung. Как читать чертеж, искать неисправности модуля, мотора и ТЭНа. Советы экспертов.">
+    <link rel="canonical" href="https://master-stirki.vercel.app/articles/e/el/elektroskhema-stiralnoj-mashiny-samsung.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Электросхема стиральной машины Самсунг: чтение и диагностика">
+    <meta property="og:description" content="Подробный разбор электросхемы стиральных машин Samsung. Как читать чертеж, искать неисправности модуля, мотора и ТЭНа. Советы экспертов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777869443">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🧺</span>
+                <span class="pb-logo-text">Мастер Стирки</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/remont-stiralnykh-mashin/" class="pb-nav-active">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/remont-stiralnykh-mashin/" class="pb-dropdown-item">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/" class="pb-dropdown-item">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/" class="pb-dropdown-item">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/" class="pb-dropdown-item">👕 Уход за тканями</a>
+<a href="/category/bytovaya-khimiya/" class="pb-dropdown-item">🧴 Бытовая химия</a>
+<a href="/category/udalenie-pyaten/" class="pb-dropdown-item">🧼 Удаление пятен</a>
+<a href="/category/obzory-tekhniki/" class="pb-dropdown-item">🏠 Обзоры техники</a>
+<a href="/category/chistka-i-obsluzhivanie/" class="pb-dropdown-item">✨ Чистка и обслуживание</a>
+<a href="/category/aksessuary-dlya-stirki/" class="pb-dropdown-item">🎱 Аксессуары для стирки</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-stiralnykh-mashin/">Ремонт стиральных машин</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Электросхема стиральной машины Самсунг: чтение и диагностика</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#общая-структура-электрической-цепи-samsung">Общая структура электрической цепи Samsung</a></li><li><a href="#модуль-управления-центр-коммутации">Модуль управления: центр коммутации</a></li><li><a href="#двигатель-и-система-привода">Двигатель и система привода</a></li><li><a href="#нагревательный-элемент-и-температурный-контроль">Нагревательный элемент и температурный контроль</a></li><li><a href="#сливной-насос-и-система-клапанов">Сливной насос и система клапанов</a></li><li><a href="#датчики-и-система-безопасности">Датчики и система безопасности</a></li><li><a href="#чтение-кодов-ошибок-через-электросхему">Чтение кодов ошибок через электросхему</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/a/am/amortizatory-dlya-stiralnoj-mashiny-elektrolyuks-ewf-1086.html">Амортизаторы для стиральной машины Electrolux EWF 1086: замена и выбор</a></li><li><a href="/articles/k/ka/kak-perezagruzit-stiralnuyu-mashinku-samsung.html">Как перезагрузить стиральную машину Samsung: пошаговая инструкция</a></li><li><a href="/articles/p/po/pomenyat-rezinku-na-stiralnoj-mashine-atlant.html">Замена резинки на стиральной машине Атлант: пошаговая инструкция</a></li><li><a href="/articles/s/st/stiralnaya-mashina-porvalas-rezinka-pod-kryshkoj-lyuka.html">Порвалась резинка в стиральной машине: замена уплотнителя</a></li><li><a href="/articles/p/po/podtekaet-snizu-stiralnaya-mashina-lg.html">Подтекает стиральная машина LG: причины и ремонт</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Электросхема стиральной машины Самсунг: руководство по диагностике</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#общая-структура-электрической-цепи-samsung">Общая структура электрической цепи Samsung</a></li><li><a href="#модуль-управления-центр-коммутации">Модуль управления: центр коммутации</a></li><li><a href="#двигатель-и-система-привода">Двигатель и система привода</a></li><li><a href="#нагревательный-элемент-и-температурный-контроль">Нагревательный элемент и температурный контроль</a></li><li><a href="#сливной-насос-и-система-клапанов">Сливной насос и система клапанов</a></li><li><a href="#датчики-и-система-безопасности">Датчики и система безопасности</a></li><li><a href="#чтение-кодов-ошибок-через-электросхему">Чтение кодов ошибок через электросхему</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Понимание того, как устроена <strong>электросхема стиральной машины Самсунг</strong>, является фундаментальным навыком для любого мастера, занимающегося профессиональным ремонтом бытовой техники. Без знания путей прохождения электрического тока и принципов взаимодействия узлов невозможно провести качественную диагностику сложных поломок, связанных с электроникой. В отличие от механических неисправностей, проблемы с электрической частью часто скрыты от глаз и требуют инструментального контроля.</p>
+
+<p>Современные модели южнокорейского бренда, будь то серии <em>EcoBubble</em> или классические <em>Diamond</em>, построены на базе единых инженерных решений, однако имеют свои уникальные особенности в разводке проводов. <strong>Главный печатный узел</strong> (модуль управления) берет на себя роль мозга аппарата, распределяя напряжение между исполнительными механизмами. Ошибки в чтении схемы могут привести к неправильному диагнозу и замене исправных деталей.</p>
+
+<p>В этой статье мы детально разберем структуру электрических цепей, рассмотрим типовые узлы и научимся находить обрывы или замыкания. Вам не нужно быть инженером-электронщиком, чтобы освоить базовые принципы, но внимательность и соблюдение техники безопасности здесь критически важны. Любая работа с электричеством требует полного отключения прибора от сети.</p>
+
+<h2 id="общая-структура-электрической-цепи-samsung">Общая структура электрической цепи Samsung</h2>
+
+<p>Электрическая цепь любой стиральной машины Samsung начинается с входной группы, куда входит сетевой фильтр и блок питания модуля. Именно здесь переменный ток 220 вольт преобразуется и распределяется для работы низковольтной электроники и мощных потребителей. <strong>Сетевой фильтр</strong> защищает устройство от помех в сети и сам не создает их, что особенно важно для цифровой техники.</p>
+
+<p>От модуля управления сигналы и питание идут к периферийным устройствам: насосу, клапанам залива воды, двигателю и нагревательному элементу. Важно понимать, что <em>электросхема</em> — это не просто картинка, а логическая карта, показывающая последовательность включения компонентов. Например, двигатель не запустится, если датчик уровня воды не сообщит модулю о достаточном объеме жидкости в баке.</p>
+
+<blockquote>⚠️ Внимание: Перед тем как касаться любых контактов внутри корпуса, обязательно убедитесь, что шнур питания извлечен из розетки. Остаточное напряжение на конденсаторах может сохраняться несколько минут.</blockquote>
+
+<p>Особое внимание следует уделить заземлению. В схемах Samsung часто используется металлический корпус бака или двигателя как часть цепи заземления или экранирования. Нарушение целостности таких соединений может привести к появлению напряжения на корпусе машины, что опасно для пользователя.</p>
+
+<div class="pb-poll" id="poll-50eacf16"><div class="pb-poll-question">📊 С какой проблемой в работе стиральной машины вы столкнулись?</div><div class="pb-poll-option" data-poll="50eacf16" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Машина не включается</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="50eacf16" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Не греет воду</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="50eacf16" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Не сливает воду</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="50eacf16" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Сильно шумит при отжиме</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="50eacf16" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Ошибка на дисплее</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="модуль-управления-центр-коммутации">Модуль управления: центр коммутации</h2>
+
+<p><strong>Главный модуль управления</strong> (Main PCB) является самым сложным узлом, где сосредоточена вся логика работы аппарата. На электросхеме он представлен как центральный элемент, к которому сходятся все провода. Внутри модуля расположены силовые симисторы, управляющие подачей напряжения на ТЭН и двигатель, а также микроконтроллер, обрабатывающий данные с датчиков.</p>
+
+<p>Диагностика модуля часто начинается с проверки питающих напряжений. Если на плату приходит 220 вольт, но она не реагирует, проблема может быть в сгоревшем блоке питания или пробитом варисторе. В моделях с прямым приводом <em>Digital Inverter</em> схема управления мотором встроена непосредственно в двигатель, что меняет подход к поиску неисправностей.</p>
+
+<ul>
+<li>🔌 <strong>Входная группа:</strong> проверяется целостность предохранителя и состояние контактов разъема питания.</li>
+<li>🧠 <strong>Микропроцессор:</strong> отвечает за алгоритмы стирки и считывание кодов ошибок с дисплея.</li>
+<li>⚡ <strong>Силовые ключи:</strong> симисторы и реле, которые физически замыкают цепь на мощные потребители.</li>
+</ul>
+
+<p>Частой проблемой является окисление контактов разъемов или нарушение пайки из-за вибраций при отжиме. Визуальный осмотр платы под увеличением часто позволяет найти микротрещины в дорожках, которые разрывают <strong>электрическую цепь</strong>. Восстановление таких дорожек требует навыков работы с паяльником и припоем.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При замене модуля управления обязательно перепаяйте клемы (разъемы) со старой платы на новую, так как они могут отличаться по форме или распиновке в разных ревизиях.</p></aside>
+
+<h2 id="двигатель-и-система-привода">Двигатель и система привода</h2>
+
+<p>Сердцем стиральной машины является двигатель, и в зависимости от модели, его электросхема может существенно отличаться. В классических моделях используется коллекторный двигатель, где ток через щетки подается на ротор, создавая вращающий момент. В более современных сериях Samsung доминируют моторы с прямым приводом, работающие от трехфазного тока, генерируемого инвертором.</p>
+
+<p>Для коллекторных двигателей критически важно состояние таходатчика. Этот маленький элемент снимает показания скорости вращения вала и передает их на модуль. Если <strong>таходатчик</strong> неисправен или его магнит смещен, модуль не сможет корректно управлять разгоном барабана, что приведет к сбоям при отжиме.</p>
+
+<p>В двигателях с прямым приводом схема упрощена за счет отсутствия ремня и шкива, но усложнена электронная часть. Статор такого мотора имеет сложную обмотку, и проверка его сопротивления требует знания нормальных значений для конкретной модели. Обрыв одной из фазных обмоток приведет к гудению и невозможности старта.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип двигателя</th>
+<th>Основной элемент управления</th>
+<th>Типичная неисправность</th>
+<th>Метод проверки</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Коллекторный</td>
+<td>Щетки, таходатчик</td>
+<td>Износ щеток, искрение</td>
+<td>Визуальный осмотр, прозвонка</td>
+</tr>
+<tr>
+<td>Прямой привод (Inverter)</td>
+<td>Инвертор (в двигателе)</td>
+<td>Обрыв обмотки статора</td>
+<td>Замер сопротивления фаз</td>
+</tr>
+<tr>
+<td>Асинхронный (редко)</td>
+<td>Конденсатор пуска</td>
+<td>Выход из строя конденсатора</td>
+<td>Замер емкости</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>При замене двигателя на моделях с прямым приводом часто требуется калибровка через сервисный режим. Без этой процедуры <strong>электросхема</strong> не сможет корректно позиционировать ротор, и машина будет выдавать ошибку.</p>
+
+<h2 id="нагревательный-элемент-и-температурный-контроль">Нагревательный элемент и температурный контроль</h2>
+
+<p>Нагрев воды осуществляется с помощью <strong>ТЭНа</strong> (трубчатого электрического нагревателя), который представляет собой нихромовую спираль, запаянную в металлическую трубку. На электросхеме он обозначается как активное сопротивление. К ТЭну всегда подключен термодатчик, который контролирует температуру воды и предотвращает закипание.</p>
+
+<p>Пробой ТЭНа на корпус — одна из самых частых причин выбивания пробок или срабатывания УЗО при включении режима стирки. Проверка осуществляется мультиметром в режиме измерения сопротивления: между контактами нагревателя должно быть значение около 20-40 Ом, а между контактом и корпусом — бесконечность.</p>
+
+<blockquote>⚠️ Внимание: Никогда не включайте стиральную машину без воды, если вы проверяете ТЭН в разобранном состоянии. Сухой нагреватель мгновенно сгорит или вызовет короткое замыкание.</blockquote>
+
+<p>Термодатчик (термистор) меняет свое сопротивление в зависимости от температуры среды. В холодном состоянии его сопротивление высоко, а при нагреве падает. Если машина греет воду постоянно или не греет вовсе, проблема часто кроется именно в этом маленьком элементе или в обрыве проводов, идущих к нему.</p>
+
+<details class="pb-accordion"><summary>Почему ТЭН обрастает накипью?</summary><div class="pb-accordion-body"><p>Накипь образуется из-за содержания солей кальция и магния в воде. При нагреве эти соли выпадают в осадок на спирали. Магниты на шланге подачи воды не предотвращают этот химический процесс, а лишь меняют структуру кристаллов, делая их менее липкими, но полностью проблему не решают.</p></div></details>
+
+<h2 id="сливной-насос-и-система-клапанов">Сливной насос и система клапанов</h2>
+
+<p>Циркуляция воды в машине обеспечивается насосом и впускными клапанами. <strong>Сливной насос</strong> (помпа) обычно имеет двухпроводную схему подключения. При подаче напряжения якорь двигателя насоса вращается, создавая поток воды. Частая неисправность — заклинивание крыльчатки посторонними предметами, что приводит к сгоранию обмотки двигателя помпы.</p>
+
+<p>Впускные клапаны (КЭН) управляют набором воды. Их электросхема проста: катушка индуктивности, которая при подаче напряжения открывает мембрану, пропуская воду. Если клапан не открывается, машина не набирает воду и выдает соответствующую ошибку. Проверка катушки клапана показывает сопротивление в диапазоне 3-4 кОм.</p>
+
+<ul>
+<li>💧 <strong>Датчик уровня воды (прессостат):</strong> контролирует количество жидкости в баке через воздушную трубку.</li>
+<li>🚿 <strong>Клапан AquaStop:</strong> в некоторых моделях имеет дополнительную соленоидную защиту от протечек.</li>
+<li>🔄 <strong>Циркуляционный насос:</strong> в моделях с EcoBubble подает смесь воды и воздуха для лучшего пенообразования.</li>
+</ul>
+
+<p>Важно проверять не только сами устройства, но и целостность проводов, идущих к ним. Вибрация при отжиме часто приводит к перетиранию изоляции и короткому замыканию жгутов проводов о металлический корпус или острые кромки бака.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Диагностика системы слива</h4><label class="check-item"><input type="checkbox"><span>Проверить крыльчатку насоса на заклинивание</span></label><label class="check-item"><input type="checkbox"><span>Прозвонить обмотку двигателя помпы</span></label><label class="check-item"><input type="checkbox"><span>Проверить целостность проводов</span></label><label class="check-item"><input type="checkbox"><span>Очистить фильтр сливного шланга</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="датчики-и-система-безопасности">Датчики и система безопасности</h2>
+
+<p>Современная <strong>электросхема стиральной машины Самсунг</strong> насыщена датчиками, обеспечивающими безопасность и эффективность стирки. Помимо уже упомянутых термодатчика и прессостата, важную роль играет датчик вибрации (3D-сенсор). Он отслеживает дисбаланс белья в барабане и корректирует скорость вращения или останавливает отжим.</p>
+
+<p>Датчик вибрации представляет собой герметичный элемент, заполненный маслом или гелем, внутри которого находится чувствительный элемент. При сильной тряске его сопротивление меняется, и модуль получает сигнал о нестабильности. Неисправность этого датчика часто приводит к тому, что машина «не видит» белье или останавливается с ошибкой дисбаланса.</p>
+
+<p>Также в цепи стоит блокировка люка (УБЛ). Это устройство не только механически фиксирует дверь, но и подает сигнал на модуль о том, что стирку можно начинать. Внутри УБЛ есть биметаллическая пластина или электромагнит, которые срабатывают с задержкой, что является нормой.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Неисправность любого из датчиков безопасности (УБЛ, прессостат, 3D-сенсор) приводит к остановке программы стирки и выводу кода ошибки на дисплей для защиты оборудования.</p></aside>
+
+<h2 id="чтение-кодов-ошибок-через-электросхему">Чтение кодов ошибок через электросхему</h2>
+
+<p>Диагностика по электросхеме часто начинается с кода ошибки. Машина Samsung сообщает о проблеме, когда электрические параметры узла выходят за допустимые пределы. Например, ошибка <em>4E</em> указывает на проблемы с набором воды, что заставляет мастера проверять цепь от впускного клапана до модуля.</p>
+
+<p>Зная <strong>принцип работы цепи</strong>, можно понять суть ошибки. Если код указывает на проблему слива (<em>5E</em>), это значит, что за отведенное время уровень воды в баке не упал. Следовательно, ток не прошел через насос, либо насос не создал давления. Это сужает круг поиска до помпы, фильтра или проводки.</p>
+
+<p>Для глубокой диагностики используется сервисный режим, который позволяет подавать напряжение на узлы принудительно. Это помогает изолировать проблему: если в сервисном режиме насос работает, а в обычном нет — проблема в логике модуля или датчиках. Если не работает нигде — сгорел исполнительный механизм.</p>
+
+<details>
+<summary>Как войти в сервисный режим для проверки цепей?</summary>
+<p>Для входа в сервисный режим на большинстве моделей Samsung необходимо выключить машину, затем зажать комбинацию кнопок (часто это «Температура» + «Отжим» или специальные скрытые кнопки) и повернуть селектор в положение стирки. Точная комбинация зависит от конкретной модели и года выпуска.</p>
+</details>
+
+<details>
+<summary>Можно ли ремонтировать модуль управления самостоятельно?</summary>
+<p>Замена сгоревших симисторов или дорожек возможна при наличии паяльной станции и схемотехнических знаний. Однако, если поврежден процессор или память, ремонт экономически нецелесообразен. В таких случаях <em>электросхема</em> восстанавливается полной заменой платы.</p>
+</details>
+
+<details>
+<summary>Почему после замены ТЭНа машина может показывать ошибку?</summary>
+<p>Если после замены нагревателя появилась ошибка, проверьте плотность прилегания термодатчика к ТЭНу и целостность проводов. Также возможно, что новый ТЭН имеет другое сопротивление, и модуль воспринимает это как неисправность, требуя сброса ошибок.</p>
+</details>
+
+<p>Понимание электрических процессов, протекающих внутри вашей стиральной машины, дает уверенность при диагностике. Даже если вы не будете паять платы самостоятельно, знание того, какой узел за что отвечает, поможет вам грамотно объяснить проблему мастеру или принять решение о целесообразности ремонта. Берегите свою технику, следите за состоянием проводки и вовремя чистите фильтры.</p></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/a/am/amortizatory-dlya-stiralnoj-mashiny-elektrolyuks-ewf-1086.html" class="pb-related-card">
+                <span class="pb-related-title">Амортизаторы для стиральной машины Electrolux EWF 1086: замена и выбор</span>
+                <span class="pb-related-desc">Полный гид по диагностике и замене амортизаторов на стиральной машине Electrolux EWF 1086. Выбор зап</span>
+            </a><a href="/articles/k/ka/kak-perezagruzit-stiralnuyu-mashinku-samsung.html" class="pb-related-card">
+                <span class="pb-related-title">Как перезагрузить стиральную машину Samsung: пошаговая инструкция</span>
+                <span class="pb-related-desc">Узнайте, как правильно выполнить перезагрузку стиральной машины Samsung. Сброс ошибок, способы отклю</span>
+            </a><a href="/articles/p/po/pomenyat-rezinku-na-stiralnoj-mashine-atlant.html" class="pb-related-card">
+                <span class="pb-related-title">Замена резинки на стиральной машине Атлант: пошаговая инструкция</span>
+                <span class="pb-related-desc">Как поменять уплотнитель люка на стиралке Атлант. Снятие старого манжета, установка новой детали, ге</span>
+            </a><a href="/articles/s/st/stiralnaya-mashina-porvalas-rezinka-pod-kryshkoj-lyuka.html" class="pb-related-card">
+                <span class="pb-related-title">Порвалась резинка в стиральной машине: замена уплотнителя</span>
+                <span class="pb-related-desc">Резинка люка порвалась или потекла? Полная инструкция по замене манжеты своими руками. Как выбрать у</span>
+            </a><a href="/articles/p/po/podtekaet-snizu-stiralnaya-mashina-lg.html" class="pb-related-card">
+                <span class="pb-related-title">Подтекает стиральная машина LG: причины и ремонт</span>
+                <span class="pb-related-desc">Стиральная машина LG подтекает снизу? Разбор причин: шланги, фильтр, бак. Пошаговая инструкция по ди</span>
+            </a><a href="/articles/d/dv/dvigatel-dlya-stiralnoj-mashiny-bosch-maxx-4.html" class="pb-related-card">
+                <span class="pb-related-title">Двигатель для стиральной машины Bosch Maxx 4: выбор и замена</span>
+                <span class="pb-related-desc">Полный гид по двигателям для Bosch Maxx 4. Как отличить мотор, заменить щетки, диагностировать неисп</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🧺 Мастер Стирки</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/remont-stiralnykh-mashin/">🔧 Ремонт стиральных машин</a> · <a href="/category/kody-oshibok/">⚠️ Коды ошибок</a> · <a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a> · <a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a> · <a href="/category/bytovaya-khimiya/">🧴 Бытовая химия</a> · <a href="/category/udalenie-pyaten/">🧼 Удаление пятен</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Стирки. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

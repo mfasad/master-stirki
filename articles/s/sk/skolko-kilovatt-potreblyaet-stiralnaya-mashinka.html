@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🧺</text></svg>">
+    <title>Сколько киловатт потребляет стиральная машина: расчет и классы — Мастер Стирки</title>
+    <meta name="description" content="Узнайте, сколько кВт потребляет стиральная машинка за одну стирку и за год. Расчет расхода энергии, влияние температуры и класса эффективности.">
+    <link rel="canonical" href="https://master-stirki.vercel.app/articles/s/sk/skolko-kilovatt-potreblyaet-stiralnaya-mashinka.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Сколько киловатт потребляет стиральная машина: расчет и классы">
+    <meta property="og:description" content="Узнайте, сколько кВт потребляет стиральная машинка за одну стирку и за год. Расчет расхода энергии, влияние температуры и класса эффективности.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777869443">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🧺</span>
+                <span class="pb-logo-text">Мастер Стирки</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/remont-stiralnykh-mashin/">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/remont-stiralnykh-mashin/" class="pb-dropdown-item">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/" class="pb-dropdown-item">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/" class="pb-dropdown-item">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/" class="pb-dropdown-item">👕 Уход за тканями</a>
+<a href="/category/bytovaya-khimiya/" class="pb-dropdown-item">🧴 Бытовая химия</a>
+<a href="/category/udalenie-pyaten/" class="pb-dropdown-item">🧼 Удаление пятен</a>
+<a href="/category/obzory-tekhniki/" class="pb-dropdown-item">🏠 Обзоры техники</a>
+<a href="/category/chistka-i-obsluzhivanie/" class="pb-dropdown-item">✨ Чистка и обслуживание</a>
+<a href="/category/aksessuary-dlya-stirki/" class="pb-dropdown-item">🎱 Аксессуары для стирки</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Сколько киловатт потребляет стиральная машина: расчет и классы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#основные-факторы-влияющие-на-расход-электроэнергии">Основные факторы, влияющие на расход электроэнергии</a></li><li><a href="#классы-энергопотребления-от-a-до-g">Классы энергопотребления: от A до G</a></li><li><a href="#средний-расход-по-типам-программ-стирки">Средний расход по типам программ стирки</a></li><li><a href="#расчет-стоимости-стирки-в-год">Расчет стоимости стирки в год</a></li><li><a href="#как-снизить-потребление-электроэнергии">Как снизить потребление электроэнергии</a></li><li><a href="#влияние-технического-состояния-на-расход">Влияние технического состояния на расход</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/o/ob/obychnaya-stirka-50-gradusov.html">Обычная стирка 50 градусов: режимы, ткани и нюансы</a></li><li><a href="/articles/k/ka/kak-vklyuchit-mashinku-indezit-starogo-obraztsa.html">Как включить машинку Индезит старого образца: инструкция</a></li><li><a href="/articles/s/st/stiralnye-poroshki-iz-yaponii.html">Стиральные порошки из Японии: рейтинг, состав и особенности</a></li><li><a href="/articles/k/ka/kak-zamenit-postirannuyu-kupyuru.html">Как заменить постиранную купюру: инструкция ЦБ РФ</a></li><li><a href="/articles/u/uk/uksus-pri-stirke-v-mashinke-avtomat-otzyvy.html">Уксус при стирке в машинке автомат: отзывы, пропорции и вред</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Сколько киловатт потребляет стиральная машина: полный разбор</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основные-факторы-влияющие-на-расход-электроэнергии">Основные факторы, влияющие на расход электроэнергии</a></li><li><a href="#классы-энергопотребления-от-a-до-g">Классы энергопотребления: от A до G</a></li><li><a href="#средний-расход-по-типам-программ-стирки">Средний расход по типам программ стирки</a></li><li><a href="#расчет-стоимости-стирки-в-год">Расчет стоимости стирки в год</a></li><li><a href="#как-снизить-потребление-электроэнергии">Как снизить потребление электроэнергии</a></li><li><a href="#влияние-технического-состояния-на-расход">Влияние технического состояния на расход</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Вопрос о том, сколько киловатт потребляет стиральная машина, волнует практически каждого владельца бытовой техники, пытающегося оптимизировать семейный бюджет. Современные модели кардинально отличаются от агрегатов, выпущенных 20-30 лет назад, предлагая гораздо более высокий уровень энергоэффективности.</p>
+
+<p>Точные цифры зависят от множества факторов: класса энергосбережения, выбранной программы, температуры нагрева воды и даже степени загрузки барабана. Понимание этих процессов позволяет не только экономить деньги, но и продлевать срок службы электропроводки.</p>
+
+<p>В этой статье мы детально разберем технические аспекты потребления энергии, рассмотрим реальные цифры для разных режимов и дадим практические советы по снижению затрат на электричество.</p>
+
+<h2 id="основные-факторы-влияющие-на-расход-электроэнергии">Основные факторы, влияющие на расход электроэнергии</h2>
+
+<p>Главным потребителем энергии внутри стиральной машины является <strong>ТЭН</strong> (трубчатый электронагреватель). Именно он отвечает за нагрев воды до заданной температуры, и на его долю приходится до 80-90% всего затрачиваемого электричества за цикл стирки.</p>
+
+<p>Остальные компоненты, такие как электродвигатель, циркуляционный насос и модуль управления, потребляют значительно меньше. Однако их совокупный вклад также нельзя игнорировать, особенно при частом использовании техники.</p>
+
+<ul>
+<li>💡 Температура нагрева: стирка при 90°C потребляет в 2-3 раза больше энергии, чем стирка при 30-40°C.</li>
+<li>🔄 Длительность цикла: программы с замачиванием и дополнительным полосканием увеличивают общее время работы насосов и двигателя.</li>
+<li>👕 Загрузка барабана: работа на полную загрузку эффективнее, чем несколько циклов с малым количеством белья.</li>
+</ul>
+
+<blockquote>⚠️ Внимание: Использование режима «Стирка без нагрева» (Cold Wash) практически исключает работу ТЭНа, снижая потребление до минимума, но может не подойти для удаления сложных загрязнений.</blockquote>
+
+<p>Важно учитывать и техническое состояние прибора. <em>Накипь на ТЭНе</em> или неисправный подшипник могут увеличивать энергопотребление на 10-15% из-за снижения теплоотдачи или возросшего сопротивления вращению.</p>
+
+<h2 id="классы-энергопотребления-от-a-до-g">Классы энергопотребления: от A до G</h2>
+
+<p>Для стандартизации показателей производители обязаны маркировать свою технику согласно единой шкале энергоэффективности. С марта 2021 года в Евросоюзе и многих других странах действует <strong>новая шкала</strong>, где классы снова начинаются с A (самый эффективный) и доходят до G.</p>
+
+<p>Старые обозначения A+, A++, A+++ упразднены, так как технологии шагнули вперед, и большинство машин достигли потолка старой шкалы. Теперь купить машину с классом A крайне сложно и дорого, так как это вершина технологического прогресс.</p>
+
+<p>Ниже приведена таблица, демонстрирующая примерный расход электроэнергии на 100 циклов стирки (стандартный режим Eco 40-60) для различных классов по новой шкале:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Класс</th>
+<th>Расход на 100 циклов (кВт⋅ч)</th>
+<th>Примерный расход за 1 стирку (кВт⋅ч)</th>
+<th>Экономичность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>50 - 63</td>
+<td>0.50 - 0.63</td>
+<td>Максимальная</td>
+</tr>
+<tr>
+<td>C</td>
+<td>75 - 88</td>
+<td>0.75 - 0.88</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>E</td>
+<td>106 - 119</td>
+<td>1.06 - 1.19</td>
+<td>Средняя</td>
+<tr>
+<td>G</td>
+<td>151+</td>
+<td>1.51+</td>
+<td>Низкая</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Разница между классами может показаться незначительной в пересчете на одну стирку, но за год эксплуатации (около 200-220 циклов) она выливается в ощутимую сумму. Машина класса G может «съесть» электричества на 30-40% больше, чем модель класса C.</p>
+
+<div class="pb-poll" id="poll-3130b4b2"><div class="pb-poll-question">📊 Какой класс энергоэффективности у вашей стиральной машины?</div><div class="pb-poll-option" data-poll="3130b4b2" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">A / A+ / A++ / A+++</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3130b4b2" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">B</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3130b4b2" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">C</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3130b4b2" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">D и ниже</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3130b4b2" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю / Старая модель</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="средний-расход-по-типам-программ-стирки">Средний расход по типам программ стирки</h2>
+
+<p>Потребление электроэнергии напрямую зависит от выбранного вами режима. Производители указывают на этикетках расход для стандартного цикла, но в реальности мы используем множество разных программ.</p>
+
+<p>Наиболее энергоемкими являются режимы с кипячением и длительным замачиванием. Здесь <strong>ТЭН</strong> работает практически постоянно или включается очень часто для поддержания высокой температуры воды.</p>
+
+<ul>
+<li>🧼 Экспресс-стирка (15-30 мин): потребляет меньше всего (0.1-0.3 кВт⋅ч), так как вода часто не успевает нагреться до максимума или используется холодная.</li>
+<li>👖 Хлопок 60°C: стандартный режим, расход составляет около 0.8 - 1.0 кВт⋅ч.</li>
+<li>🌡️ Кипячение (90-95°C): самый затратный режим, потребление может достигать 2.0 - 2.5 кВт⋅ч за цикл.</li>
+</ul>
+
+<p>Современные модели с функцией <em>автоматического взвешивания</em> белья могут корректировать расход воды и энергии. Если вы загрузите 2 кг белья вместо 6 кг, умная машина сократит нагрев и время работы, сэкономив ресурсы.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте режим «Eco» для ежедневной стирки слегка загрязненной одежды. Он длится дольше, но нагревает воду более эффективно и экономит до 30% электроэнергии по сравнению с режимом «Хлопок 40°C».</p></aside>
+
+<blockquote>⚠️ Внимание: Режим «Предварительная стирка» удваивает потребление воды и электроэнергии, так как фактически запускает два полных цикла. Используйте его только для действительно грязных вещей.</blockquote>
+
+<h2 id="расчет-стоимости-стирки-в-год">Расчет стоимости стирки в год</h2>
+
+<p>Чтобы понять реальную нагрузку на бюджет, давайте проведем расчет. Предположим, у вас есть стиральная машина с потреблением 1 кВт⋅ч за цикл (усредненное значение для смешанного использования). При тарифе, например, 5 рублей за 1 кВт⋅ч и 220 стирках в год (в среднем 4-5 раз в неделю), математика будет следующей:</p>
+
+<p><code>220 циклов × 1 кВт⋅ч × 5 руб. = 1100 рублей в год.</code></p>
+
+<p>Если же заменить эту машину на современную модель с потреблением 0.6 кВт⋅ч, расходы составят всего 660 рублей. Разница в 440 рублей может показаться небольшой, но она актуальна для одного прибора. В масштабах домохозяйства с посудомоечной машиной, бойлером и кондиционером экономия становится существенной.</p>
+
+<p>Также стоит учитывать косвенные расходы. Энергоэффективные машины часто бережнее относятся к тканям, что позволяет одежде служить дольше, хотя этот фактор сложнее перевести в конкретные цифры киловатт.</p>
+
+<details class="pb-accordion"><summary>Формула расчета для продвинутых</summary><div class="pb-accordion-body"><p>Точный расчет можно сделать по формуле: P = (V × ΔT × c) / η, где V - объем воды, ΔT - разница температур, c - теплоемкость воды, η - КПД нагревателя. Однако проще ориентироваться на данные бирки энергоэффективности.</p></div></details>
+
+<h2 id="как-снизить-потребление-электроэнергии">Как снизить потребление электроэнергии</h2>
+
+<p>Существует ряд проверенных способов уменьшить расход электричества без ущерба для качества стирки. Первое правило — правильная загрузка. Запускать машину ради двух пар носков экономически нецелесообразно.</p>
+
+<p>Второй важный аспект — выбор моющего средства. Современные <strong>гели и капсулы</strong> часто лучше растворяются в холодной или теплой воде, что позволяет снизить температуру нагрева без потери качества очистки.</p>
+
+<ul>
+<li>🧽 Регулярно очищайте фильтр и проверяйте шланги: засоры заставляют насос работать интенсивнее.</li>
+<li>🌡️ Стирайте при 30-40°C: для большинства повседневных вещей этой температуры достаточно.</li>
+<li>🔌 Отключайте машину от сети: в режиме ожидания некоторые модели продолжают потреблять ток для работы индикаторов или Wi-Fi модуля.</li>
+</ul>
+
+<p>Если в вашем доме установлен двухтарифный счетчик, имеет смысл использовать функцию <em>отложенного старта</em>. Запускайте стирку ночью, когда тариф на электроэнергию минимален.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Оптимизация стирки</h4><label class="check-item"><input type="checkbox"><span>Сортировать белье по цвету и типу ткани</span></label><label class="check-item"><input type="checkbox"><span>Использовать полный барабан</span></label><label class="check-item"><input type="checkbox"><span>Выбирать режим Eco</span></label><label class="check-item"><input type="checkbox"><span>Снижать температуру до 30-40°C</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="влияние-технического-состояния-на-расход">Влияние технического состояния на расход</h2>
+
+<p>Старение техники неизбежно сказывается на ее эффективности. Со временем на нагревательном элементе образуется слой накипи, который выступает в роли теплоизолятора. Вода нагревается медленнее, и ТЭН вынужден работать дольше, потребляя лишние киловатты.</p>
+
+<p>Износ подшипников или ремня привода увеличивает сопротивление вращению барабана. Двигателю приходится прилагать больше усилий, что также ведет к росту потребления тока. Если вы заметили, что машина стала работать громче или дольше, это повод для диагностики.</p>
+
+<p>Профилактическое обслуживание, такое как использование средств от накипи (калгона и его аналогов) или лимонной кислоты, помогает поддерживать теплопроводность ТЭНа на высоком уровне.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная профилактика накипи и очистка фильтров могут снизить энергопотребление старой стиральной машины на 10-15%, возвращая ей показатели, близкие к заводским.</p></aside>
+
+<details>
+<summary>Сколько потребляет стиральная машина в режиме ожидания?</summary>
+<p>В режиме ожидания (когда программа завершена, но вилка в розетке, или включена кнопка сети без запуска) современные машины потребляют от 1 до 5 Вт в час. За год это может составить до 10-15 кВт⋅ч, если не выключать прибор полностью.</p>
+</details>
+
+<details>
+<summary>Влияет ли жесткость воды на расход электричества?</summary>
+<p>Да, влияет косвенно. В жесткой воде быстрее образуется накипь на ТЭНе, что снижает эффективность нагрева и увеличивает расход энергии. Кроме того, в жесткой воде требуется больше порошка для качественного постирывания.</p>
+</details>
+
+<details>
+<summary>Правда ли, что стирка при 90 градусах убивает все микробы?</summary>
+<p>Температура 90-95°C действительно эффективна для дезинфекции (например, детского белья или вещей аллергиков), но большинство современных порошков и гелей активны уже при 40-60°C. Частое кипячение может повредить ткань и резиновые уплотнители машины.</p>
+</details>
+
+<details>
+<summary>Какая стиральная машина экономичнее: с прямым приводом или ременная?</summary>
+<p>Машины с <strong>прямым приводом</strong> (Direct Drive) обычно имеют меньше трущихся частей и более высокий КПД двигателя, что теоретически делает их чуть экономичнее. Однако основная разница в расходе зависит не от привода, а от класса энергоэффективности и алгоритмов управления нагревом.</p>
+</details>
+
+<details>
+<summary>Можно ли подключить стиральную машину к горячей воде?</summary>
+<p>Технически можно, если модель поддерживает такой режим (указано в инструкции). Это сэкономит электричество на нагреве, но может быть опасно для некоторых тканей (ферменты в порошке разрушаются при высокой температуре) и увеличит расход самой горячей воды, которая часто стоит дороже холодной.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/o/ob/obychnaya-stirka-50-gradusov.html" class="pb-related-card">
+                <span class="pb-related-title">Обычная стирка 50 градусов: режимы, ткани и нюансы</span>
+                <span class="pb-related-desc">Что такое обычная стирка 50 градусов? Разбираем режимы, подходящие ткани, расход электроэнергии и от</span>
+            </a><a href="/articles/k/ka/kak-vklyuchit-mashinku-indezit-starogo-obraztsa.html" class="pb-related-card">
+                <span class="pb-related-title">Как включить машинку Индезит старого образца: инструкция</span>
+                <span class="pb-related-desc">Подробная инструкция, как запустить стиральную машину Indesit старого типа. Разбор программ, режимов</span>
+            </a><a href="/articles/s/st/stiralnye-poroshki-iz-yaponii.html" class="pb-related-card">
+                <span class="pb-related-title">Стиральные порошки из Японии: рейтинг, состав и особенности</span>
+                <span class="pb-related-desc">Все о японских порошках для стирки: состав, эффективность, рейтинг брендов Lion и Kao. Как выбрать и</span>
+            </a><a href="/articles/k/ka/kak-zamenit-postirannuyu-kupyuru.html" class="pb-related-card">
+                <span class="pb-related-title">Как заменить постиранную купюру: инструкция ЦБ РФ</span>
+                <span class="pb-related-desc">Пошаговая инструкция: как обменять постиранную купюру в банке. Сроки возврата денег, правила ЦБ РФ и</span>
+            </a><a href="/articles/u/uk/uksus-pri-stirke-v-mashinke-avtomat-otzyvy.html" class="pb-related-card">
+                <span class="pb-related-title">Уксус при стирке в машинке автомат: отзывы, пропорции и вред</span>
+                <span class="pb-related-desc">Стоит ли лить уксус в стиральную машину? Реальные отзывы, влияние на ТЭН и резинки, правильные дозир</span>
+            </a><a href="/articles/s/st/stiralnaya-mashinka-atlant-oshibka-f4.html" class="pb-related-card">
+                <span class="pb-related-title">Ошибка F4 в стиральной машине Атлант: причины и ремонт</span>
+                <span class="pb-related-desc">Почему горит код F4 на стиральной машине Атлант? Подробная инструкция по диагностике ТЭНа, проводки </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🧺 Мастер Стирки</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/remont-stiralnykh-mashin/">🔧 Ремонт стиральных машин</a> · <a href="/category/kody-oshibok/">⚠️ Коды ошибок</a> · <a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a> · <a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a> · <a href="/category/bytovaya-khimiya/">🧴 Бытовая химия</a> · <a href="/category/udalenie-pyaten/">🧼 Удаление пятен</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Стирки. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

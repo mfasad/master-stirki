@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🧺</text></svg>">
+    <title>Диагностика стиральной машины Bosch Maxx 5: коды ошибок — Мастер Стирки</title>
+    <meta name="description" content="Полная инструкция по диагностике стиральных машин Bosch Maxx 5. Расшифровка кодов ошибок, тестовый режим и поиск неисправностей своими руками.">
+    <link rel="canonical" href="https://master-stirki.vercel.app/articles/d/di/diagnostika-stiralnoj-mashiny-bosch-maxx-5.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Диагностика стиральной машины Bosch Maxx 5: коды ошибок">
+    <meta property="og:description" content="Полная инструкция по диагностике стиральных машин Bosch Maxx 5. Расшифровка кодов ошибок, тестовый режим и поиск неисправностей своими руками.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777869443">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🧺</span>
+                <span class="pb-logo-text">Мастер Стирки</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/remont-stiralnykh-mashin/" class="pb-nav-active">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/remont-stiralnykh-mashin/" class="pb-dropdown-item">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/" class="pb-dropdown-item">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/" class="pb-dropdown-item">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/" class="pb-dropdown-item">👕 Уход за тканями</a>
+<a href="/category/bytovaya-khimiya/" class="pb-dropdown-item">🧴 Бытовая химия</a>
+<a href="/category/udalenie-pyaten/" class="pb-dropdown-item">🧼 Удаление пятен</a>
+<a href="/category/obzory-tekhniki/" class="pb-dropdown-item">🏠 Обзоры техники</a>
+<a href="/category/chistka-i-obsluzhivanie/" class="pb-dropdown-item">✨ Чистка и обслуживание</a>
+<a href="/category/aksessuary-dlya-stirki/" class="pb-dropdown-item">🎱 Аксессуары для стирки</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-stiralnykh-mashin/">Ремонт стиральных машин</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Диагностика стиральной машины Bosch Maxx 5: коды ошибок</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#визуальная-и-первичная-проверка-перед-запуском-тестов">Визуальная и первичная проверка перед запуском тестов</a></li><li><a href="#расшифровка-кодов-ошибок-на-дисплее">Расшифровка кодов ошибок на дисплее</a></li><li><a href="#вход-в-режим-сервисной-диагностики">Вход в режим сервисной диагностики</a></li><li><a href="#проверка-основных-узлов-и-агрегатов">Проверка основных узлов и агрегатов</a></li><li><a href="#типичные-неисправности-и-способы-их-устранения">Типичные неисправности и способы их устранения</a></li><li><a href="#сброс-ошибок-и-повторный-запуск">Сброс ошибок и повторный запуск</a></li><li><a href="#когда-необходим-вызов-специалиста">Когда необходим вызов специалиста</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/b/ba/bak-stiralnoj-mashiny-bosh.html">Бак стиральной машины Бош: устройство, чистка и ремонт</a></li><li><a href="/articles/v/vr/vremya-stirki-v-stiralnoj-mashine-khajer.html">Время стирки в стиральной машине Haier: нормы, режимы, ошибки</a></li><li><a href="/articles/s/st/stiralnaya-mashina-bosch-5-element.html">Стиральная машина Bosch 5 элементов: разбор и ремонт</a></li><li><a href="/articles/o/os/oshibka-3e-na-stiralnoj-mashine-samsung-prichiny-i-ustranenie.html">Ошибка 3E на стиральной машине Samsung: причины и ремонт</a></li><li><a href="/articles/v/v-/v-stiralnoj-mashinke-ne-otkryvaetsya-dver-posle-stirki-chto-delat.html">Не открывается дверь стиральной машины: причины и ремонт</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Диагностика стиральной машины Bosch Maxx 5: коды ошибок и неисправности</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#визуальная-и-первичная-проверка-перед-запуском-тестов">Визуальная и первичная проверка перед запуском тестов</a></li><li><a href="#расшифровка-кодов-ошибок-на-дисплее">Расшифровка кодов ошибок на дисплее</a></li><li><a href="#вход-в-режим-сервисной-диагностики">Вход в режим сервисной диагностики</a></li><li><a href="#проверка-основных-узлов-и-агрегатов">Проверка основных узлов и агрегатов</a></li><li><a href="#типичные-неисправности-и-способы-их-устранения">Типичные неисправности и способы их устранения</a></li><li><a href="#сброс-ошибок-и-повторный-запуск">Сброс ошибок и повторный запуск</a></li><li><a href="#когда-необходим-вызов-специалиста">Когда необходим вызов специалиста</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+<p>Стиральные машины серии <em>Bosch Maxx 5</em> зарекомендовали себя как надежные и долговечные устройства, способные служить владельцам более десяти лет. Однако даже самая качественная техника со временем изнашивается, и владельцу приходится сталкиваться с необходимостью выявить причину сбоя. Самостоятельная <strong>диагностика стиральной машины</strong> позволяет сэкономить время на вызов мастера и, возможно, деньги, если поломка незначительна.</p>
+<p>Современные модели оснащены интеллектуальной системой самодиагностики, которая фиксирует любые отклонения в работе узлов. Машина не просто останавливается, но и выводит на дисплей или индикаторы специальные коды. Понимание этих сигналов — первый шаг к успешному ремонту. В этой статье мы разберем, как правильно интерпретировать сигналы агрегата и провести первичную проверку основных систем.</p>
+<p>Прежде чем разбирать технику, необходимо исключить банальные факторы, такие как отсутствие напряжения в сети или пережатый сливной шланг. Часто проблема кроется не в поломке электроники, а в засоре фильтров или скачках давления в водопроводе. Грамотный подход к анализу ситуации поможет избежать лишних трат.</p>
+
+<h2 id="визуальная-и-первичная-проверка-перед-запуском-тестов">Визуальная и первичная проверка перед запуском тестов</h2>
+<p>Любая глубокая диагностика начинается с внешнего осмотра. Владельцу следует убедиться, что <strong>стиральная машина</strong> установлена ровно, а ножки плотно прилегают к полу. Любая вибрация может быть ошибочно принята электроникой за неисправность подшипникового узла. Проверьте целостность сетевого кабеля и плотность подключения шлангов.</p>
+<p>Особое внимание уделите системе подачи и слива воды. Засоренный <em>сливной фильтр</em> — самая частая причина остановки цикла стирки. Его необходимо выкрутить, предварительно подставив емкость для остатков воды, и очистить от мусора. Также проверьте напор воды в кране, так как при слабом давлении машина может не набрать объем, необходимый для запуска ТЭНа.</p>
+<blockquote>⚠️ Внимание: Перед проведением любых работ, связанных со снятием крышек или доступом к внутренним узлам, обязательно отключите устройство от электросети. Это правило безопасности является абсолютным и не подлежит обсуждению.</blockquote>
+<p>Если внешние параметры в норме, но машина ведет себя странно, имеет смысл прислушаться к звукам работающего мотора. Посторонний гул, скрип или стук могут указывать на износ подшипников барабана или попадание посторонних предметов в пространство между баком и барабаном.</p>
+
+<h2 id="расшифровка-кодов-ошибок-на-дисплее">Расшифровка кодов ошибок на дисплее</h2>
+<p>Серия <em>Maxx 5</em> оснащена цифровым дисплеем, который выдает конкретные буквенно-цифровые обозначения при возникновении проблем. Это значительно упрощает <strong>поиск неисправности</strong> по сравнению с моделями, где ошибки определяются миганием индикаторов. Коды делятся на группы, указывающие на проблемы с подачей воды, сливом, нагревом или двигателем.</p>
+<p>Наиболее распространенные ошибки связаны с набором воды (E17, E18) или ее сливом (E21, E23). Если вы видите код, связанный с водой, в первую очередь проверьте шланги и фильтры. Ошибки двигателя (E67, E68) часто требуют более сложной диагностики, включая проверку щеток и таходатчика.</p>
+<details class="pb-accordion"><summary>Редкие коды ошибок</summary><div class="pb-accordion-body"><p>Некоторые коды, такие как E36, могут появляться sporadically и указывать на проблемы с дверцей или замком. Если ошибка появляется редко, возможно, проблема в окислении контактов замка люка.</p></div></details>
+<p>Важно не игнорировать мигающие индикаторы, если дисплей не горит. В некоторых модификациях серия <em>Bosch Maxx</em> использует комбинации мигания для обозначения критических сбоев. Точную расшифровку всегда можно найти в технической документации, прилагаемой к конкретной модели.</p>
+
+<h2 id="вход-в-режим-сервисной-диагностики">Вход в режим сервисной диагностики</h2>
+<p>Для более глубокого анализа состояния узлов можно запустить встроенный тестовый режим. Это позволяет принудительно включить насос, ТЭН или мотор для проверки их работоспособности без запуска полной программы стирки. Чтобы войти в этот режим, повернуть селектор программ в определенное положение и зажать комбинацию кнопок.</p>
+<p>Стандартная процедура входа часто выглядит так: выключите машину, зажмите кнопку"Отжим" (или специальную кнопку диагностики), поверните ручку в положение"Слив" или"Полоскание", затем включите питание, не отпуская кнопку. На дисплее должны появиться символы, подтверждающие вход в сервисное меню.</p>
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Вход в сервисный режим</h4><label class="check-item"><input type="checkbox"><span>Выключить машину</span></label><label class="check-item"><input type="checkbox"><span>Зажать кнопку опции</span></label><label class="check-item"><input type="checkbox"><span>Повернуть селектор программ</span></label><label class="check-item"><input type="checkbox"><span>Включить питание, удерживая кнопку</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+<p>В этом режиме можно последовательно проверять клапаны подачи воды, работу нагревательного элемента и вращение барабана. Это идеальный способ локализовать узел, который не работает корректно в обычном режиме.</p>
+<blockquote>⚠️ Внимание: Нахождение в сервисном режиме требует постоянного контроля. Машина может начать сливать воду или вращать барабан без предупреждения, поэтому будьте готовы оперативно остановить процесс.</blockquote>
+
+<h2 id="проверка-основных-узлов-и-агрегатов">Проверка основных узлов и агрегатов</h2>
+<p>Диагностика <strong>стиральной машины Bosch</strong> невозможна без проверки ключевых элементов. ТЭН (нагревательный элемент) часто покрывается накипью, что приводит к его перегоранию или пробоям на корпус. Проверить его можно мультиметром, измерив сопротивление между контактами.</p>
+<p>Двигатель и его щетки — второй кандидат на проверку. Если машина гудит, но не крутит, или крутит рывками, возможно, графитовые щетки стерлись. В серии <em>Maxx 5</em> используются двигатели с коллектором, ресурс щеток которых составляет в среднем 5-7 лет активной эксплуатации.</p>
+<p>Также стоит обратить внимание на прессостат (датчик уровня воды). Если он загрязнен или его трубка засорилась, машина будет"думать", что воды нет, и не запустит нагрев, или, наоборот, перельет бак.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При проверке ТЭна осмотрите его визуально: если на поверхности видны вздутия или трещины, деталь требует немедленной замены, даже если мультиметр показывает сопротивление.</p></aside>
+
+<h2 id="типичные-неисправности-и-способы-их-устранения">Типичные неисправности и способы их устранения</h2>
+<p>Ниже приведена таблица, которая поможет систематизировать наиболее частые проблемы и методы их решения. Помните, что точная причина может отличаться в зависимости от условий эксплуатации и года выпуска вашей модели.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Симптом</th>
+<th>Возможная причина</th>
+<th>Метод устранения</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Машина не сливает воду</td>
+<td>Засор фильтра или насоса</td>
+<td>Очистка фильтра, проверка крыльчатки насоса</td>
+</tr>
+<tr>
+<td>Не греет воду</td>
+<td>Неисправен ТЭН или реле</td>
+<td>Замена ТЭНа, проверка контактов</td>
+</tr>
+<tr>
+<td>Сильно вибрирует</td>
+<td>Износ амортизаторов</td>
+<td>Замена амортизаторов, проверка противовесов</td>
+</tr>
+<tr>
+<td>Не блокируется люк</td>
+<td>Сломано УБЛ (замок)</td>
+<td>Замена устройства блокировки люка</td>
+</tr>
+<tr>
+<td>Ошибки двигателя</td>
+<td>Стерты щетки мотора</td>
+<td>Замена щеток двигателя</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Устранение этих неисправностей часто под силу домашнему мастеру с базовым набором инструментов. Однако, если проблема кроется в модуле управления, может потребоваться перепайка элементов или замена платы целиком.</p>
+
+<div class="pb-poll" id="poll-4536b2e3"><div class="pb-poll-question">📊 Какая у вас проблема с машиной Bosch?</div><div class="pb-poll-option" data-poll="4536b2e3" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Не сливает воду</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="4536b2e3" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Не греет воду</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="4536b2e3" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Не крутит барабан</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="4536b2e3" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Шумит при отжиме</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="4536b2e3" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Другое</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="сброс-ошибок-и-повторный-запуск">Сброс ошибок и повторный запуск</h2>
+<p>После того как <strong>неисправность</strong> устранена, необходимо сбросить ошибку из памяти контроллера. В некоторых моделях достаточно выключить и снова включить машину, в других требуется выполнить специальную процедуру. Часто помогает длительное удержание кнопки"Старт/Пауза" или комбинации кнопок.</p>
+<p>Если ошибка не сбрасывается, это может означать, что проблема не решена до конца, либо в памяти контроллера остался"жесткий" код аварии. В таком случае может потребоваться полный цикл тестовой стирки для подтверждения нормальной работы всех систем.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Успешный сброс ошибки не гарантирует, что поломка устранена. Если физическая причина (например, дырявый шланг) осталась, ошибка появится вновь через несколько циклов.</p></aside>
+<p>Рекомендуется после ремонта запустить короткую программу стирки при пустом барабане, чтобы убедиться в герметичности соединений и правильности работы датчиков. Это поможет избежать протечек в будущем.</p>
+
+<h2 id="когда-необходим-вызов-специалиста">Когда необходим вызов специалиста</h2>
+<p>Несмотря на возможность самостоятельного ремонта, существуют ситуации, когда вмешательство профессионала необходимо. Если диагностика показала неисправность основного модуля управления или требуется замена подшипникового узла с разборкой бака, лучше обратиться в сервис. <em>Сложный ремонт</em> требует специального инструмента и опыта.</p>
+<p>Также стоит вызвать мастера, если вы не уверены в своих силах или у вас нет необходимых инструментов. Неумелая разборка может привести к повреждению пластиковых креплений или электрических цепей, что удорожит ремонт.</p>
+<p>Профессиональная диагностика часто включает проверку не только электрической, но и механической части на специальных стендах, что невозможно сделать в домашних условиях. Это особенно актуально для сложных случаев, когда ошибка плавающая и появляется не каждый раз.</p>
+
+<details>
+<summary>Как сбросить ошибку E18 на Bosch Maxx 5?</summary>
+<p>Ошибка E18 указывает на проблемы со сливным шлангом. Сначала проверьте, не пережат ли шланг и не поднят ли его конец выше 1 метра. Если физически все нормально, попробуйте выключить машину из розетки на 15-20 минут для перезагрузки контроллера. Если ошибка возвращается сразу при запуске слива, вероятно, неисправен сливной насос.</p>
+</details>
+
+<details>
+<summary>Почему машина не набирает воду и показывает E17?</summary>
+<p>Код E17 сигнализирует о слишком долгом наборе воды. Проверьте, открыт ли кран подачи воды полностью., выкрутите и промойте сетчатый фильтр на входе шланга в машину — он часто забивается ржавчиной. Если напор хороший, а ошибка остается, мог выйти из строя впускной клапан.</p>
+</details>
+
+<details>
+<summary>Можно ли стирать, если горит ошибка?</summary>
+<p>Эксплуатировать технику с горящей ошибкой категорически не рекомендуется. Некоторые ошибки (например, связанные с нагревом или уровнем воды) могут привести к затоплению соседей или пожару. Другие (например, ошибки двигателя) могут вызвать окончательную поломку дорогостоящих узлов. Лучше устранить причину перед дальнейшим использованием.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/b/ba/bak-stiralnoj-mashiny-bosh.html" class="pb-related-card">
+                <span class="pb-related-title">Бак стиральной машины Бош: устройство, чистка и ремонт</span>
+                <span class="pb-related-desc">Все о баке стиральной машины Bosch: как почистить, разобрать, заменить подшипники. Инструкция по уст</span>
+            </a><a href="/articles/v/vr/vremya-stirki-v-stiralnoj-mashine-khajer.html" class="pb-related-card">
+                <span class="pb-related-title">Время стирки в стиральной машине Haier: нормы, режимы, ошибки</span>
+                <span class="pb-related-desc">Почему долго длится стирка в машине Haier? Разбор режимов, факторов влияния и причин увеличения врем</span>
+            </a><a href="/articles/s/st/stiralnaya-mashina-bosch-5-element.html" class="pb-related-card">
+                <span class="pb-related-title">Стиральная машина Bosch 5 элементов: разбор и ремонт</span>
+                <span class="pb-related-desc">Почему горят 5 элементов на стиральной машине Bosch? Диагностика, расшифровка кодов ошибок, проверка</span>
+            </a><a href="/articles/o/os/oshibka-3e-na-stiralnoj-mashine-samsung-prichiny-i-ustranenie.html" class="pb-related-card">
+                <span class="pb-related-title">Ошибка 3E на стиральной машине Samsung: причины и ремонт</span>
+                <span class="pb-related-desc">Подробный разбор ошибки 3E на стиралках Samsung. Диагностика двигателя, таходатчика и модуля. Инстру</span>
+            </a><a href="/articles/v/v-/v-stiralnoj-mashinke-ne-otkryvaetsya-dver-posle-stirki-chto-delat.html" class="pb-related-card">
+                <span class="pb-related-title">Не открывается дверь стиральной машины: причины и ремонт</span>
+                <span class="pb-related-desc">Дверь люка заблокирована после стирки? Узнайте, как открыть стиральную машину, если она не разблокир</span>
+            </a><a href="/articles/k/ka/kak-snyat-motor-so-stiralnoj-mashiny.html" class="pb-related-card">
+                <span class="pb-related-title">Как снять мотор со стиральной машины: пошаговая инструкция</span>
+                <span class="pb-related-desc">Детальная инструкция, как снять мотор со стиральной машины своими руками. Разбор типов двигателей, с</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🧺 Мастер Стирки</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/remont-stiralnykh-mashin/">🔧 Ремонт стиральных машин</a> · <a href="/category/kody-oshibok/">⚠️ Коды ошибок</a> · <a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a> · <a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a> · <a href="/category/bytovaya-khimiya/">🧴 Бытовая химия</a> · <a href="/category/udalenie-pyaten/">🧼 Удаление пятен</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Стирки. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

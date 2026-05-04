@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🧺</text></svg>">
+    <title>Сервисный тест стиральной машины Bosch Maxx 5: коды ошибок и диагностика — Мастер Стирки</title>
+    <meta name="description" content="Полная инструкция по запуску сервисного теста Bosch Maxx 5. Расшифровка кодов ошибок, проверка датчиков и пошаговая диагностика узлов.">
+    <link rel="canonical" href="https://master-stirki.vercel.app/articles/s/se/servisnyj-test-stiralnoj-mashiny-bosch-maxx-5.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Сервисный тест стиральной машины Bosch Maxx 5: коды ошибок и диагностика">
+    <meta property="og:description" content="Полная инструкция по запуску сервисного теста Bosch Maxx 5. Расшифровка кодов ошибок, проверка датчиков и пошаговая диагностика узлов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777869443">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🧺</span>
+                <span class="pb-logo-text">Мастер Стирки</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/remont-stiralnykh-mashin/" class="pb-nav-active">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/remont-stiralnykh-mashin/" class="pb-dropdown-item">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/" class="pb-dropdown-item">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/" class="pb-dropdown-item">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/" class="pb-dropdown-item">👕 Уход за тканями</a>
+<a href="/category/bytovaya-khimiya/" class="pb-dropdown-item">🧴 Бытовая химия</a>
+<a href="/category/udalenie-pyaten/" class="pb-dropdown-item">🧼 Удаление пятен</a>
+<a href="/category/obzory-tekhniki/" class="pb-dropdown-item">🏠 Обзоры техники</a>
+<a href="/category/chistka-i-obsluzhivanie/" class="pb-dropdown-item">✨ Чистка и обслуживание</a>
+<a href="/category/aksessuary-dlya-stirki/" class="pb-dropdown-item">🎱 Аксессуары для стирки</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-stiralnykh-mashin/">Ремонт стиральных машин</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Сервисный тест стиральной машины Bosch Maxx 5: коды ошибок и диагностика</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#подготовка-оборудования-к-диагностике">Подготовка оборудования к диагностике</a></li><li><a href="#как-войти-в-сервисный-режим-bosch-maxx-5">Как войти в сервисный режим Bosch Maxx 5</a></li><li><a href="#пошаговая-проверка-основных-узлов">Пошаговая проверка основных узлов</a></li><li><a href="#расшифровка-кодов-ошибок-и-мигания-индикаторов">Расшифровка кодов ошибок и мигания индикаторов</a></li><li><a href="#диагностика-датчика-уровня-воды-и-системы-aquastop">Диагностика датчика уровня воды и системы Aquastop</a></li><li><a href="#анализ-работы-двигателя-и-таходатчика">Анализ работы двигателя и таходатчика</a></li><li><a href="#сброс-ошибок-и-выход-из-режима-тестирования">Сброс ошибок и выход из режима тестирования</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/st/stiralnaya-mashina-bosch-serie-6-ne-otkryvaetsya.html">Bosch Serie 6 не открывается: причины и решение</a></li><li><a href="/articles/k/ka/kak-ubrat-transportirovochnye-bolty-u-stiralnoj-mashiny-ldzhi.html">Как убрать транспортировочные болты LG: пошаговая инструкция</a></li><li><a href="/articles/m/ma/mashinka-stiralnaya-lg-6-kg-ne-otzhimaet-chto-nado-sdelat.html">LG стиральная машина 6 кг не отжимает: причины и ремонт</a></li><li><a href="/articles/t/te/ten-dlya-stiralnoj-mashiny-atlant-50u107.html">Тэн для стиральной машины Атлант 50У107: замена и выбор</a></li><li><a href="/articles/p/pl/plokho-otzhimaet-stiralnaya-mashina-samsung.html">Плохо отжимает стиральная машина Самсунг: причины и ремонт</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Сервисный тест стиральной машины Bosch Maxx 5: диагностика и коды</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подготовка-оборудования-к-диагностике">Подготовка оборудования к диагностике</a></li><li><a href="#как-войти-в-сервисный-режим-bosch-maxx-5">Как войти в сервисный режим Bosch Maxx 5</a></li><li><a href="#пошаговая-проверка-основных-узлов">Пошаговая проверка основных узлов</a></li><li><a href="#расшифровка-кодов-ошибок-и-мигания-индикаторов">Расшифровка кодов ошибок и мигания индикаторов</a></li><li><a href="#диагностика-датчика-уровня-воды-и-системы-aquastop">Диагностика датчика уровня воды и системы Aquastop</a></li><li><a href="#анализ-работы-двигателя-и-таходатчика">Анализ работы двигателя и таходатчика</a></li><li><a href="#сброс-ошибок-и-выход-из-режима-тестирования">Сброс ошибок и выход из режима тестирования</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+<p>Диагностика неисправностей в современных бытовых приборах требует точного подхода, особенно когда речь идет о надежной немецкой технике серии <em>Bosch Maxx 5</em>. Запуск встроенного сервисного режима позволяет инженеру или опытному пользователю проверить исправность ключевых узлов без необходимости разбора корпуса в слепую. Это экономит время и помогает точно локализовать проблему, будь то сбой электроники или механическая поломка.</p>
+<p>Многие владельцы сталкиваются с ситуацией, когда машина перестает выполнять цикл стирки, но не выдает понятного кода ошибки на дисплее. В таких случаях <strong>сервисный тест</strong> становится единственным способом заставить «умную» машину сообщить о своем состоянии. Система самодиагностики последовательно проверяет датчики уровня воды, температуру, работу мотора и состояние замка люка.</p>
+<p>Важно понимать, что вмешательство в работу электронного модуля требует осторожности. Хотя режим тестирования штатный, неправильная интерпретация показаний может привести к ложным выводам. Ниже мы подробно разберем, как войти в этот режим, какие параметры проверять и как расшифровать сигналы индикаторов, которые подает ваша <em>стиральная машина Bosch</em>.</p>
+
+<h2 id="подготовка-оборудования-к-диагностике">Подготовка оборудования к диагностике</h2>
+<p>Перед началом любых манипуляций с электроникой необходимо обеспечить безопасные условия работы. В первую очередь убедитесь, что <strong>стиральная машина</strong> подключена к исправной электросети с заземлением. Скачки напряжения могут повредить чувствительный электронный модуль управления во время перехода в диагностический режим.</p>
+<p>Освободите барабан от белья и проверьте сливной фильтр на наличие посторонних предметов. Даже небольшой носок или монета могут заблокировать вращение при тесте двигателя, что приведет к ошибочному диагнозу о неисправности мотора. Также рекомендуется отключить подачу воды, если тест не требует ее наличия на начальном этапе.</p>
+<p>Вам понадобится секундомер или телефон с таймером, так как некоторые этапы проверки длятся строго определенное время. Записывайте все комбинации мигающих индикаторов, чтобы позже сверить их с таблицей кодов. Это поможет избежать путаницы, если потребуется повторный запуск процедуры.</p>
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Готовность к тесту</h4><label class="check-item"><input type="checkbox"><span>Отключить машину от сети на 1 минуту</span></label><label class="check-item"><input type="checkbox"><span>Очистить барабан от вещей</span></label><label class="check-item"><input type="checkbox"><span>Проверить сливной фильтр</span></label><label class="check-item"><input type="checkbox"><span>Подготовить блокнот для кодов</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+<p>Не игнорируйте визуальный осмотр проводов и шлейфов, если вы уже снимали верхнюю крышку. Окисленные контакты могут давать прерывистый сигнал, который система воспринимает как поломку датчика. Чистота контактов — залог корректной работы <strong>системы диагностики</strong>.</p>
+
+<h2 id="как-войти-в-сервисный-режим-bosch-maxx-5">Как войти в сервисный режим Bosch Maxx 5</h2>
+<p>Процедура входа в режим тестирования на моделях серии <em>Maxx 5</em> (часто это модели с индексом WAE, WOR или WAK) имеет свои нюансы, отличающие ее от более новых серий с дисплеями. Обычно процесс начинается с полного выключения машины поворотом регулятора программ в положение «Выкл».</p>
+<p>Затем необходимо зажать определенную комбинацию кнопок. Чаще всего это кнопка «Спуск» (или кнопка с изображением воронки/капли) вместе с поворотом регулятора программ против часовой стрелки на один шаг. Удерживая кнопку, переводите переключатель. Точная последовательность может варьироваться в зависимости от года выпуска модуля управления.</p>
+<blockquote>⚠️ Внимание: Не поворачивайте регулятор программ слишком быстро. Электронный модуль должен считать положение переключателя. Резкие движения могут привести к пропуску шага и необходимости начинать процедуру заново.</blockquote>
+<p>Если вход выполнен успешно, на панели загорятся все индикаторы, а затем машина перейдет в режим ожидания команд. В этот момент <strong>электронный блок</strong> готов принимать для проверки отдельных узлов. На некоторых моделях может потребоваться повторное включение кнопкой «Старт/Пауза» после установки переключателя.</p>
+<details class="pb-accordion"><summary>Что делать, если вход не удался?</summary><div class="pb-accordion-body"><p>Если машина не реагирует на комбинацию кнопок, попробуйте полностью обесточить ее, вытащив вилку из розетки на 5-10 минут. Затем повторите процедуру входа. Иногда помогает одновременное зажатие кнопки «Спуск» и кнопки выбора температуры при повороте регулятора. Если и это не помогает, возможно, неисправна сама панель управления или кнопка залипла.</p></div></details>
+
+<h2 id="пошаговая-проверка-основных-узлов">Пошаговая проверка основных узлов</h2>
+<p>После успешного входа в режим вы можете последовательно проверять функциональность агрегатов. Первым обычно тестируется замок люка (УБЛ). При активации этого теста вы должны услышать характерный щелчок блокировки, а индикаторы могут изменить свое состояние, сигнализируя о замкнутом контуре.</p>
+<p>Далее следует проверка насоса. Маина попытается запустить слив воды. Если в баке сухо, насос будет работать вхолостую несколько секунд. Важно прислушаться к звуку работы: посторонний шум или гудение укажут на износ крыльчатки или попадание мусора в помпу. Это критический этап для <strong>сливной системы</strong>.</p>
+<ul>
+ <li>🔒 Проверка блокировки люка: слышен щелчок, индикаторы мигают в определенном ритме.</li>
+ <li>💧 Тест насоса: машина гудит, пытаясь откачать воду, проверяется ток потребления.</li>
+ <li>🌡️ Проверка ТЭНа: подается напряжение на нагреватель, контролируется рост температуры (если есть вода).</li>
+</ul>
+<p>Проверка двигателя осуществляется путем подачи импульсов на разные скорости вращения. Барабан должен начать вращаться сначала в одну, затем в другую сторону. Если мотор гудит, но не крутится, или вращение рывками, проблема может быть в щетках или таходатчике. <em>Асинхронный двигатель</em> в этих моделях довольно надежен, но требует периодической замены графитовых щеток.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При тесте двигателя положите руку на корпус машины. Чрезмерная вибрация может указывать на разбалансировку барабана или износ подшипников, даже если мотор работает исправно.</p></aside>
+
+<h2 id="расшифровка-кодов-ошибок-и-мигания-индикаторов">Расшифровка кодов ошибок и мигания индикаторов</h2>
+<p>В режиме диагностики <em>Bosch Maxx 5</em> не всегда выводит буквенно-цифровой код на экран (так как экрана может не быть). Вместо этого используется система мигания индикаторов. Количество миганий или конкретная комбинация горящих лампочек соответствует определенному типу неисправности.</p>
+<p>Например, мигание индикатора «Слив» может указывать на проблемы с уровнем воды или работой насоса. Если одновременно горят индикаторы стирки и полоскания, это часто сигнализирует о проблеме с нагревом или датчиком температуры. Понимание этой азбуки Морзе позволяет быстро определить, какой <strong>датчик</strong> вышел из строя.</p>
+<div class="pb-table-wrap"><table>
+ <thead>
+ <tr>
+ <th>Симптом (Индикаторы)</th>
+ <th>Вероятная причина</th>
+ <th>Проверяемый узел</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Мигает"Слив"</td>
+ <td>Проблема с откачкой воды</td>
+ <td>Насос, фильтр, патрубки</td>
+ </tr>
+ <tr>
+ <td>Горят"Стирка" +"Полоскание"</td>
+ <td>Ошибка нагрева</td>
+ <td>ТЭН, термостат, проводка</td>
+ </tr>
+ <tr>
+ <td>Мигает"Замок"</td>
+ <td>Неисправность УБЛ</td>
+ <td>Замок люка, проводка</td>
+ </tr>
+ <tr>
+ <td>Все индикаторы мигают</td>
+ <td>Сбой электроники</td>
+ <td>Модуль управления</td>
+ </tr>
+ </tbody>
+</table></div>
+<p>Стоит отметить, что коды могут отличаться в зависимости от конкретной модификации прошивки. Поэтому всегда сверяйтесь с технической документацией для конкретной модели, указанной на шильдике. Ошибочная интерпретация может привести к замене исправных деталей.</p>
+
+<div class="pb-poll" id="poll-c3db3809"><div class="pb-poll-question">📊 Сталкивались ли вы с кодами ошибок Bosch?</div><div class="pb-poll-option" data-poll="c3db3809" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, часто</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c3db3809" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Было пару раз</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c3db3809" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда не видел</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c3db3809" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Машина молча ломается</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="диагностика-датчика-уровня-воды-и-системы-aquastop">Диагностика датчика уровня воды и системы Aquastop</h2>
+<p>Одной из самых частых причин некорректной работы стиральных машин <em>Bosch</em> является сбой в системе контроля уровня воды. Датчик уровня (прессостат) передает сигнал на модуль о количестве воды в баке. Если он «врет», машина может не набирать воду или, наоборот, переливать ее через край.</p>
+<p>В сервисном режиме можно проверить реакцию модуля на изменение давления в трубке прессостата. Для этого инженеры часто дуют в трубку, идущую к датчику, слушая щелчки контактов. В режиме теста эти щелчки должны сопровождаться изменением состояния индикаторов на панели управления.</p>
+<blockquote>⚠️ Внимание: Система <strong>Aquastop</strong> также может блокировать запуск. Если шланг подачи воды перекрыт или давление в магистрали недостаточное, машина может не начать тест забора воды, имитируя поломку впускного клапана.</blockquote>
+<p>Проверьте впускные клапаны. При активации теста забора воды должен быть слышен характерный звук открытия клапана и шум текущей воды. Если клапан не открывается, проверьте наличие напряжения на его контактах. Отсутствие напряжения укажет на проблему с модулем, наличие — на сгоревшую катушку клапана.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Неисправность прессостата часто путают с поломкой модуля управления. Всегда проверяйте целостность трубки и отсутствие воды в ней перед заменой дорогостоящей электроники.</p></aside>
+
+<h2 id="анализ-работы-двигателя-и-таходатчика">Анализ работы двигателя и таходатчика</h2>
+<p>Двигатель в машинах <em>Bosch Maxx 5</em> обычно оснащен таходатчиком, который контролирует скорость вращения барабана. Если модуль управления не получает сигнал от таходатчика, он блокирует отжим и высокие скорости стирки, выдавая соответствующую ошибку.</p>
+<p>В ходе сервисного теста двигатель прогоняется на разных оборотах. Обратите внимание на появление искрения под щетками (если есть смотровое окно) или запаха гари. Сильное искрение говорит о износе коллектора или самих щеток. Замена щеток — стандартная процедура обслуживания для машин старше 5-7 лет.</p>
+<ul>
+ <li>⚙️ Рывки при вращении: износ подшипников или ослабление шкива.</li>
+ <li>🔊 Свист или вой: проблема с подшипниками барабана.</li>
+ <li>⚡ Отсутствие реакции: обрыв в цепи двигателя или неисправность модуля.</li>
+</ul>
+<p>Также стоит проверить крепление двигателя. Ослабленные болты могут вызывать сильную вибрацию, которую система диагностики может интерпретировать как дисбаланс белья. В некоторых случаях это приводит к остановке программы и попытке распределить белье, хотя барабан пуст.</p>
+
+<h2 id="сброс-ошибок-и-выход-из-режима-тестирования">Сброс ошибок и выход из режима тестирования</h2>
+<p>После проведения всех необходимых проверок и устранения неисправностей, машину необходимо вернуть в штатный режим работы. Для этого обычно достаточно выключить машину регулятором в положение «Выкл» и снова включить в нормальный режим стирки. Однако, некоторые ошибки могут сохраняться в памяти модуля.</p>
+<p>Для полного сброса ошибок (<strong>Reset</strong>) на некоторых моделях требуется выполнить специальную процедуру: выключить машину, зажать кнопку (часто «Спуск» или «Температура») и повернуть регулятор на один шаг, затем отпустить кнопку и повернуть еще на шаг. Точный алгоритм зависит от версии ПО.</p>
+<p>Если после сброса ошибка появляется вновь при первом же запуске, значит, неисправность носит аппаратный характер и требует замены детали. Программный сброс не сможет устранить физический обрыв цепи или сгоревший ТЭН. Повторяющиеся коды — верный признак необходимости ремонта.</p>
+<details class="pb-accordion"><summary>Можно ли сбросить ошибку без сервисного режима?</summary><div class="pb-accordion-body"><p>На некоторых моделях Bosch помогает простое выключение и включение машины с зажатой кнопкой «Спуск» в течение 5-10 секунд. Однако это работает не для всех типов ошибок и не на всех версиях прошивок. Сервисный режим дает более полный доступ к логам ошибок.</p></div></details>
+<p>Не забывайте, что регулярное обслуживание и своевременная реакция на первые признаки неисправности продлевают жизнь вашей <em>стиральной машине Bosch</em>. Сервисный тест — мощный инструмент, но использовать его нужно с пониманием процессов, происходящих внутри агрегата.</p>
+
+<details>
+<summary>Как точно определить модель для поиска мануала?</summary>
+<p>Посмотрите на торец дверцы люка или на заднюю стенку машины. Там должна быть наклейка с маркировкой. Ищите строку, начинающуюся с буквы E или W (например, WAE2446...). Именно этот код (E-Nr) нужен для поиска точной технической документации.</p>
+</details>
+<details>
+<summary>Опасно ли держать машину в сервисном режиме долго?</summary>
+<p>Длительное пребывание в режиме теста, особенно при включенных нагревательных элементах без воды или при работе мотора на высоких оборотах без нагрузки, может привести к перегреву узлов. Проводите тесты кратковременно, только для проверки функционала.</p>
+</details>
+<details>
+<summary>Что делать, если после теста машина не стирает?</summary>
+<p>Убедитесь, что вы полностью вышли из сервисного режима. Попробуйте запустить короткую программу «Слив/Отжим». Если не помогает — обесточьте машину на 15-20 минут для перезагрузки модуля. Если проблема сохраняется, возможно, в процессе диагностики был выявлен критический дефект.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/st/stiralnaya-mashina-bosch-serie-6-ne-otkryvaetsya.html" class="pb-related-card">
+                <span class="pb-related-title">Bosch Serie 6 не открывается: причины и решение</span>
+                <span class="pb-related-desc">Стиральная машина Bosch Serie 6 не открывается? Разбираем все коды ошибок, методы аварийного открыти</span>
+            </a><a href="/articles/k/ka/kak-ubrat-transportirovochnye-bolty-u-stiralnoj-mashiny-ldzhi.html" class="pb-related-card">
+                <span class="pb-related-title">Как убрать транспортировочные болты LG: пошаговая инструкция</span>
+                <span class="pb-related-desc">Узнайте, как правильно снять транспортировочные болты у стиральной машины LG. Подробный гид, последс</span>
+            </a><a href="/articles/m/ma/mashinka-stiralnaya-lg-6-kg-ne-otzhimaet-chto-nado-sdelat.html" class="pb-related-card">
+                <span class="pb-related-title">LG стиральная машина 6 кг не отжимает: причины и ремонт</span>
+                <span class="pb-related-desc">Стиральная машина LG 6 кг не отжимает? Разбираем основные причины, коды ошибок и способы устранения </span>
+            </a><a href="/articles/t/te/ten-dlya-stiralnoj-mashiny-atlant-50u107.html" class="pb-related-card">
+                <span class="pb-related-title">Тэн для стиральной машины Атлант 50У107: замена и выбор</span>
+                <span class="pb-related-desc">Как подобрать и заменить тэн для стиральной машины Атлант 50У107. Инструкция по диагностике, выбору </span>
+            </a><a href="/articles/p/pl/plokho-otzhimaet-stiralnaya-mashina-samsung.html" class="pb-related-card">
+                <span class="pb-related-title">Плохо отжимает стиральная машина Самсунг: причины и ремонт</span>
+                <span class="pb-related-desc">Стиральная машина Самсунг плохо отжимает белье? Узнайте основные причины неисправности, коды ошибок </span>
+            </a><a href="/articles/p/po/podtekaet-mashinka-avtomat-snizu.html" class="pb-related-card">
+                <span class="pb-related-title">Подтекает стиральная машина снизу: причины, поиск и устранение</span>
+                <span class="pb-related-desc">Почему течет стиральная машина снизу? Полный гид по поиску протечек: манжета, шланги, патрубки. Инст</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🧺 Мастер Стирки</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/remont-stiralnykh-mashin/">🔧 Ремонт стиральных машин</a> · <a href="/category/kody-oshibok/">⚠️ Коды ошибок</a> · <a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a> · <a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a> · <a href="/category/bytovaya-khimiya/">🧴 Бытовая химия</a> · <a href="/category/udalenie-pyaten/">🧼 Удаление пятен</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Стирки. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

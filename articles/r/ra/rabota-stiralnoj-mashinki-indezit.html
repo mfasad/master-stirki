@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🧺</text></svg>">
+    <title>Принцип работы стиральной машинки Индезит: устройство и коды ошибок — Мастер Стирки</title>
+    <meta name="description" content="Как работает стиральная машина Indesit? Подробный разбор устройства, циклов стирки, датчиков и кодов ошибок. Диагностика неисправностей своими руками.">
+    <link rel="canonical" href="https://master-stirki.vercel.app/articles/r/ra/rabota-stiralnoj-mashinki-indezit.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Принцип работы стиральной машинки Индезит: устройство и коды ошибок">
+    <meta property="og:description" content="Как работает стиральная машина Indesit? Подробный разбор устройства, циклов стирки, датчиков и кодов ошибок. Диагностика неисправностей своими руками.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777869443">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🧺</span>
+                <span class="pb-logo-text">Мастер Стирки</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/remont-stiralnykh-mashin/" class="pb-nav-active">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/remont-stiralnykh-mashin/" class="pb-dropdown-item">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/" class="pb-dropdown-item">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/" class="pb-dropdown-item">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/" class="pb-dropdown-item">👕 Уход за тканями</a>
+<a href="/category/bytovaya-khimiya/" class="pb-dropdown-item">🧴 Бытовая химия</a>
+<a href="/category/udalenie-pyaten/" class="pb-dropdown-item">🧼 Удаление пятен</a>
+<a href="/category/obzory-tekhniki/" class="pb-dropdown-item">🏠 Обзоры техники</a>
+<a href="/category/chistka-i-obsluzhivanie/" class="pb-dropdown-item">✨ Чистка и обслуживание</a>
+<a href="/category/aksessuary-dlya-stirki/" class="pb-dropdown-item">🎱 Аксессуары для стирки</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-stiralnykh-mashin/">Ремонт стиральных машин</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Принцип работы стиральной машинки Индезит: устройство и коды ошибок</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#архитектура-и-ключевые-узлы-агрегата">Архитектура и ключевые узлы агрегата</a></li><li><a href="#алгоритм-работы-электронного-модуля-управления">Алгоритм работы электронного модуля управления</a></li><li><a href="#детальный-разбор-цикла-стирки-от-забора-воды-до-отжима">Детальный разбор цикла стирки: от забора воды до отжима</a></li><li><a href="#диагностика-через-коды-ошибок-и-индикацию">Диагностика через коды ошибок и индикацию</a></li><li><a href="#типичные-неисправности-и-их-связь-с-устройством">Типичные неисправности и их связь с устройством</a></li><li><a href="#правила-эксплуатации-для-продления-срока-службы">Правила эксплуатации для продления срока службы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/i/in/instruktsiya-stiralnaya-mashina-electrolux-perfectcare-700.html">Инструкция Electrolux PerfectCare 700: управление, коды, уход</a></li><li><a href="/articles/k/ko/kod-oshibki-se-na-stiralnoj-mashine-samsung.html">Код ошибки SE на стиральной машине Samsung: причины и устранение</a></li><li><a href="/articles/k/ka/kak-odet-remen-na-stiralnuyu-mashinu-samsung.html">Как заменить ремень на стиральной машине Samsung: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-proverit-modul-upravleniya-stiralnoj-mashiny.html">Как проверить модуль управления стиральной машины: диагностика</a></li><li><a href="/articles/s/st/stiralnaya-mashina-atlant-pishet-zakrojte-dver.html">Стиральная машина Атлант пишет «Закройте дверь»: причины и ремонт</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как работает стиральная машина Indesit: устройство, циклы и диагностика</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#архитектура-и-ключевые-узлы-агрегата">Архитектура и ключевые узлы агрегата</a></li><li><a href="#алгоритм-работы-электронного-модуля-управления">Алгоритм работы электронного модуля управления</a></li><li><a href="#детальный-разбор-цикла-стирки-от-забора-воды-до-отжима">Детальный разбор цикла стирки: от забора воды до отжима</a></li><li><a href="#диагностика-через-коды-ошибок-и-индикацию">Диагностика через коды ошибок и индикацию</a></li><li><a href="#типичные-неисправности-и-их-связь-с-устройством">Типичные неисправности и их связь с устройством</a></li><li><a href="#правила-эксплуатации-для-продления-срока-службы">Правила эксплуатации для продления срока службы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Понимание того, как работает стиральная машинка Индезит, является ключевым навыком для любого владельца этой техники. Знание принципов работы основных узлов позволяет не только бережно эксплуатировать устройство, но и оперативно выявлять причины неисправностей, экономя время и деньги на вызове мастера. Современные агрегаты этой марки оснащены сложной электроникой, которая координизирует действия механических частей с точностью до секунды.</p>
+
+<p>Процесс стирки — это не просто вращение барабана, а строго регламентированный алгоритм, завязанный на показаниях множества датчиков. <strong>Модуль управления</strong> считывает информацию о температуре воды, уровне ее заполнения и скорости вращения двигателя, принимая решения о переключении режимов. Если вы когда-нибудь задумывались, почему машина иногда «думает» перед отжимом или меняет время на табло, ответ кроется именно в логике работы контроллера.</p>
+
+<p>В этой статье мы детально разберем внутреннее устройство, роль каждого элемента в цикле стирки и то, как именно электроника взаимодействует с механикой. Вы узнаете, что происходит внутри корпуса в разные моменты времени, и научитесь интерпретировать сигналы, которые подает вам техника. Это знание превратит вас из простого пользователя в грамотного оператора, способного продлить жизнь своему помощнику.</p>
+
+<h2 id="архитектура-и-ключевые-узлы-агрегата">Архитектура и ключевые узлы агрегата</h2>
+
+<p>Сердцем любой стиральной машины является <strong>электродвигатель</strong>, который приводит в движение барабан. В моделях Indesit чаще всего используются коллекторные двигатели, хотя в премиальных сериях встречаются более тихие инверторные варианты. Именно двигатель через систему ремней или напрямую (в моделях с прямым приводом) передает крутящий момент на шкив бака, заставляя белье вращаться с разной скоростью в зависимости от этапа программы.</p>
+
+<p>За нагрев воды отвечает <strong>ТЭН</strong> (трубчатый электронагреватель), расположенный в нижней части бака. Это критически важный элемент, эффективность которого напрямую влияет на качество стирки и удаление пятен. Электроника постоянно мониторит сопротивление ТЭНа и температуру среды, отключая нагрев при достижении заданных значений или при аварийных ситуациях, таких как отсутствие воды.</p>
+
+<ul>
+<li>💧 <strong>Заливной клапан</strong> — электромагнитный механизм, открывающий подачу воды по команде процессора.</li>
+<li>🌡️ <strong>Датчик температуры (NTC)</strong> — терморезистор, передающий данные о нагреве воды на плату управления.</li>
+<li>🔄 <strong>Прессостат</strong> — датчик уровня воды, определяющий, сколько жидкости набрано в бак.</li>
+<li>🚪 <strong>Блокировка люка (УБЛ)</strong> — устройство, предотвращающее открытие двери во время работы.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Никогда не пытайтесь открыть дверцу люка силой или ковырять язычок замка отверткой сразу после остановки. Механическая блокировка может держаться до 2-3 минут после завершения цикла, пока биметаллическая пластина внутри УБЛ полностью не остынет.</p>
+</blockquote>
+
+<p>Важным элементом конструкции также является <em>противовес</em>, который гасит вибрации при отжиме. В машинах Индезит они могут быть бетонными или композитными. Их правильная фиксация (критически важна) для стабности работы. Если вы слышите стук при наборе скорости, возможно, ослабло крепление противовеса или износились амортизаторы, удерживающие бак в корпусе.</p>
+
+<details class="pb-accordion"><summary>Секрет балансировки</summary><div class="pb-accordion-body"><p>Внутри бака часто находятся пластиковые кольца с грузиками или специальные выступы, которые помогают распределять белье равномерно. Это пассивная система балансировки, которая работает всегда, в отличие от электронной, подстраивающей скорость отжима.</p></div></details>
+
+<h2 id="алгоритм-работы-электронного-модуля-управления">Алгоритм работы электронного модуля управления</h2>
+
+<p>«Мозгом» стиральной машины является электронный модуль, который управляет всеми процессами. После включения питания и выбора программы процессор запускает самотестирование (<strong>POST</strong>). Он проверяет целостность цепей, состояние датчиков и исполнительных механизмов. Если все системы в норме, подается сигнал на открытие клапана подачи воды.</p>
+
+<p>В процессе стирки модуль работает в циклическом режиме. Он постоянно опрашивает <strong>прессостат</strong>: если воды мало, клапан открывается снова. Как только уровень достигнут, подается команда на нагрев. Параллельно с этим процессор анализирует показания <em>таходатчика</em> на двигателе, регулируя количество оборотов для замачивания, основной стирки или полоскания.</p>
+
+<div class="pb-poll" id="poll-e3d8e21b"><div class="pb-poll-question">📊 Какая проблема со стиральной машиной у вас была чаще всего?</div><div class="pb-poll-option" data-poll="e3d8e21b" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Не греет воду</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e3d8e21b" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Не сливает воду</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e3d8e21b" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Не включается</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e3d8e21b" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Сильно шумит</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e3d8e21b" data-idx="4" onclick="pbPollVote(this)"><span class="pb-poll-label">Проблем не было</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Особое внимание стоит уделить системе защиты от протечек. В некоторых моделях Индезит установлен поплавок в поддоне, но чаще используется косвенный контроль. Если модуль «видит», что вода не прибывает при открытом клапане, или уровень падает без работы насоса, он блокирует программу и выдает ошибку. Логика работы построена на постоянном сравнении ожидаемого результата с фактическими показаниями датчиков.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Функция</th>
+<th>Сигнал модулю</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Прессостат</td>
+<td>Контроль уровня воды</td>
+<td>Изменение частоты/сопротивления</td>
+</tr>
+<tr>
+<td>ТЭН + NTC</td>
+<td>Нагрев воды</td>
+<td>Изменение сопротивления термистора</td>
+</tr>
+<tr>
+<td>Таходатчик</td>
+<td>Контроль оборотов</td>
+<td>Импульсы переменного тока</td>
+</tr>
+<tr>
+<td>УБЛ</td>
+<td>Блокировка люка</td>
+<td>Замыкание контактов цепи</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="детальный-разбор-цикла-стирки-от-забора-воды-до-отжима">Детальный разбор цикла стирки: от забора воды до отжима</h2>
+
+<p>Цикл стирки начинается с этапа забора воды. Модуль открывает один из отсеков дозатора (основной, для кондиционера или предварительной стирки) в зависимости от выбранной программы. Поток воды под давлением вымывает порошок и подается в бак. В этот момент <strong>ТЭН</strong> еще не активен, чтобы избежать перегорания спиралей на воздухе.</p>
+
+<p>После набора необходимого объема начинается фаза нагрева. Двигатель может совершать покачивающие движения (<em>раскачку</em>), чтобы равномерно распределить белье и предотвратить его оседание на дне бака, что могло бы привести к неравномерному прогреву. Это особенно важно для деликатных тканей, где механическое воздействие минимизировано.</p>
+
+<p>Когда вода нагревается до заданной температуры, начинается основной цикл стирки. Барабан вращается с определенной периодичностью: например, 10 секунд вращения в одну сторону, пауза, 10 секунд в другую. Такая схема необходима для эффективного вымывания загрязнений. В моделях с функцией <strong>Steam</strong> или «Пузырьковая стирка» в этот момент может активироваться специальный режим аэрации или подачи пара.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед запуском сложной программы</h4><label class="check-item"><input type="checkbox"><span>Карманы пусты</span></label><label class="check-item"><input type="checkbox"><span>Мешочки застегнуты</span></label><label class="check-item"><input type="checkbox"><span>Белье распределено равномерно</span></label><label class="check-item"><input type="checkbox"><span>Дозатор закрыт до щелчка</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Завершающим этапом является отжим. Здесь скорость вращения барабана постепенно нарастает. Электроника следит за вибрацией: если дисбаланс слишком велик, машина сбросит обороты, добавит воды для полоскания и попытается снова распределить белье. Этот процесс может повторяться несколько раз, что часто пугает пользователей, но является штатной работой системы защиты.</p>
+
+<h2 id="диагностика-через-коды-ошибок-и-индикацию">Диагностика через коды ошибок и индикацию</h2>
+
+<p>Стиральные машины Indesit оснащены развитой системой самодиагностики. При возникновении неисправности модуль управления останавливает программу и сигнализирует об этом. В моделях без дисплея используется комбинация мигания индикаторов, а в моделях с экраном — буквенно-цифровой код. Понимание этих сигналов — первый шаг к ремонту.</p>
+
+<p>Наиболее распространенные ошибки связаны с набором и сливом воды. Например, код, указывающий на долгий набор воды, может означать слабый напор в водопроводе, засорение фильтра-сеточки или неисправность самого клапана. Ошибки, связанные с двигателем, часто говорят о проблемах с <strong>щетками</strong>, таходатчиком или модулем управления.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если машина выдает ошибку, не пытайтесь сразу перезапускать стирку многократно. Это может привести к усугублению поломки, например, к сгоранию ТЭНа при работе без воды или выходу из строя модуля управления.</p>
+</blockquote>
+
+<p>Для точной диагностики часто требуется перевести машину в сервисный режим. Это позволяет проверить работу каждого узла по отдельности: включить насос, запустить двигатель на высоких оборотах, открыть клапаны. Однако делать это следует осторожно, так как в тестовом режиме многие защиты могут быть отключены.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Запишите последовательность мигания индикаторов на видео. Иногда коды ошибок (особенно сложные, из 5-6 миганий) сложно запомнить или правильно интерпретировать с первого раза.</p></aside>
+
+<h2 id="типичные-неисправности-и-их-связь-с-устройством">Типичные неисправности и их связь с устройством</h2>
+
+<p>Знание устройства помогает понять причину поломки. Например, если машина не греет воду, но стирка идет, проблема может быть не только в сгоревшем <strong>ТЭНе</strong>. Часто виновато накипь, которая покрывает нагревательный элемент толстым слоем, изолируя его от воды. В этом случае термостат не видит повышения температуры, ТЭН работает постоянно и перегорает.</p>
+
+<p>Проблемы со сливом обычно связаны с насосом. В отличие от других узлов, помпа имеет открытую крыльчатку, куда легко попадают мелкие предметы: монеты, косточки от бюстгальтеров, пуговицы. Механическая блокировка крыльчатки приводит к гудению насоса и его последующему сгоранию. Регулярная чистка фильтра сливного насоса — обязательная процедура обслуживания.</p>
+
+<ul>
+<li>🔌 <strong>Проблемы с электроникой</strong>: часто вызваны скачками напряжения или попаданием влаги на плату.</li>
+<li>🔊 <strong>Шум при стирке</strong>: может указывать на износ подшипников бака или попадание постороннего предмета между баком и барабаном.</li>
+<li>💨 <strong>Запах гари</strong>: часто свидетельствует о подгорании контактов на модуле или износе щеток двигателя.</li>
+</ul>
+
+<p>Отдельного внимания заслуживает износ щеток двигателя. Графитовые щетки со временем стираются, контакт с коллектором ухудшается, двигатель начинает искрить и терять мощность. Машина может перестать крутить барабан на высоких оборотах, что делает невозможным качественный отжим. Замена щеток — стандартная процедура, доступная даже новичкам.</p>
+
+<h2 id="правила-эксплуатации-для-продления-срока-службы">Правила эксплуатации для продления срока службы</h2>
+
+<p>Чтобы <em>стиральная машина Indesit</em> служила долго, важно соблюдать правила загрузки. Перегруз барабана ведет к преждевременному износу подшипников и ремня, а также к некачественной стирке. Недогруз также вреден, так как может вызвать дисбаланс при отжиме. Оптимально заполнять барабан на 2/3 или 3/4 от объема сухого белья.</p>
+
+<p>Использование качественных моющих средств и регулярное использование смягчителей воды помогает бороться с накипью. <mark>Накипь является главной причиной выхода из строя ТЭНов и клапанов в 80% случаев поломки.</mark> Профилактическая чистка машины специальными средствами или лимонной кислотой (в умеренных дозах) значительно продлевает жизнь нагревательному элементу.</p>
+
+<p>Не забывайте про вентиляцию. После каждой стирки оставляйте люк и лоток для порошка приоткрытыми. Это позволяет внутренней влажности испариться, предотвращая появление плесени, неприятного запаха и коррозии металлических деталей. Сырость внутри корпуса — враг электроники и резиновых уплотнителей.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярное обслуживание (чистка фильтров, проверка шлангов, профилактика накипи) обходится в 10 раз дешевле, чем замена основных узлов вроде двигателя или бака.</p></aside>
+
+<details>
+<summary>Почему стиральная машина долго набирает воду?</summary>
+<p>Чаще всего причина кроется в засорении фильтрующей сеточки, расположенной в месте подключения заливного шланга к машине. Также причиной может быть низкое давление в водопроводе или неисправность самого впускного клапана, который не открывается полностью.</p>
+</details>
+
+<details>
+<summary>Что делать, если машина не отжимает белье?</summary>
+<p>Необходимо проверить, не активирована ли функция «Без отжима». Если функция отключена, проверьте сливной фильтр на предмет засора. Если вода не уходит, машина не начнет отжим. Также причина может быть в неисправности таходатчика или износе щеток двигателя.</p>
+</details>
+
+<details>
+<summary>Как часто нужно чистить сливной фильтр?</summary>
+<p>Рекомендуется проверять и чистить сливной фильтр не реже одного раза в 3-4 месяца. Если в карманах часто остаются мелочи или ворса очень много, проверку стоит проводить ежемесячно. Это предотвратит поломку насоса и проблемы со сливом.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/i/in/instruktsiya-stiralnaya-mashina-electrolux-perfectcare-700.html" class="pb-related-card">
+                <span class="pb-related-title">Инструкция Electrolux PerfectCare 700: управление, коды, уход</span>
+                <span class="pb-related-desc">Подробная инструкция к стиральной машине Electrolux PerfectCare 700. Описание программ, расшифровка </span>
+            </a><a href="/articles/k/ko/kod-oshibki-se-na-stiralnoj-mashine-samsung.html" class="pb-related-card">
+                <span class="pb-related-title">Код ошибки SE на стиральной машине Samsung: причины и устранение</span>
+                <span class="pb-related-desc">Подробный разбор ошибки SE на стиралках Samsung. Диагностика датчика уровня воды, проверка проводки </span>
+            </a><a href="/articles/k/ka/kak-odet-remen-na-stiralnuyu-mashinu-samsung.html" class="pb-related-card">
+                <span class="pb-related-title">Как заменить ремень на стиральной машине Samsung: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробный гид по замене ремня стиральной машины Samsung. Разборка, установка нового ремня, проверка </span>
+            </a><a href="/articles/k/ka/kak-proverit-modul-upravleniya-stiralnoj-mashiny.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить модуль управления стиральной машины: диагностика</span>
+                <span class="pb-related-desc">Подробная инструкция: как проверить модуль управления стиральной машины. Тестирование платы, поиск н</span>
+            </a><a href="/articles/s/st/stiralnaya-mashina-atlant-pishet-zakrojte-dver.html" class="pb-related-card">
+                <span class="pb-related-title">Стиральная машина Атлант пишет «Закройте дверь»: причины и ремонт</span>
+                <span class="pb-related-desc">Машина Атлант пишет «закройте дверь»? Разбираем неисправности замка, проводки и модуля управления. И</span>
+            </a><a href="/articles/c/ch/chto-delat-esli-ne-slivaetsya-voda-iz-stiralnoj-mashiny-lg.html" class="pb-related-card">
+                <span class="pb-related-title">Не сливается вода из стиральной машины LG: причины и ремонт</span>
+                <span class="pb-related-desc">Почему не сливается вода в стиральной машине LG? Полный гид по ошибкам, чистке фильтров и замене нас</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🧺 Мастер Стирки</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/remont-stiralnykh-mashin/">🔧 Ремонт стиральных машин</a> · <a href="/category/kody-oshibok/">⚠️ Коды ошибок</a> · <a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a> · <a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a> · <a href="/category/bytovaya-khimiya/">🧴 Бытовая химия</a> · <a href="/category/udalenie-pyaten/">🧼 Удаление пятен</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Стирки. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

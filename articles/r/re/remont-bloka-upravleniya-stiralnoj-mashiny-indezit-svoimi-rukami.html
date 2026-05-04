@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🧺</text></svg>">
+    <title>Ремонт модуля управления Indesit своими руками: диагностика и замена — Мастер Стирки</title>
+    <meta name="description" content="Пошаговая инструкция по ремонту блока управления стиральной машины Индезит. Диагностика платы, замена деталей и сброс ошибок без вызова мастера.">
+    <link rel="canonical" href="https://master-stirki.vercel.app/articles/r/re/remont-bloka-upravleniya-stiralnoj-mashiny-indezit-svoimi-rukami.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ремонт модуля управления Indesit своими руками: диагностика и замена">
+    <meta property="og:description" content="Пошаговая инструкция по ремонту блока управления стиральной машины Индезит. Диагностика платы, замена деталей и сброс ошибок без вызова мастера.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777869443">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🧺</span>
+                <span class="pb-logo-text">Мастер Стирки</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/remont-stiralnykh-mashin/" class="pb-nav-active">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/remont-stiralnykh-mashin/" class="pb-dropdown-item">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/" class="pb-dropdown-item">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/" class="pb-dropdown-item">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/" class="pb-dropdown-item">👕 Уход за тканями</a>
+<a href="/category/bytovaya-khimiya/" class="pb-dropdown-item">🧴 Бытовая химия</a>
+<a href="/category/udalenie-pyaten/" class="pb-dropdown-item">🧼 Удаление пятен</a>
+<a href="/category/obzory-tekhniki/" class="pb-dropdown-item">🏠 Обзоры техники</a>
+<a href="/category/chistka-i-obsluzhivanie/" class="pb-dropdown-item">✨ Чистка и обслуживание</a>
+<a href="/category/aksessuary-dlya-stirki/" class="pb-dropdown-item">🎱 Аксессуары для стирки</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-stiralnykh-mashin/">Ремонт стиральных машин</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Ремонт модуля управления Indesit своими руками: диагностика и замена</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#основные-признаки-неисправности-электронного-модуля">Основные признаки неисправности электронного модуля</a></li><li><a href="#демонтаж-и-извлечение-платы-управления">Демонтаж и извлечение платы управления</a></li><li><a href="#визуальная-диагностика-и-поиск-дефектов">Визуальная диагностика и поиск дефектов</a></li><li><a href="#типичные-неисправности-и-методы-их-устранения">Типичные неисправности и методы их устранения</a></li><li><a href="#замена-элементов-и-пайка-платы">Замена элементов и пайка платы</a></li><li><a href="#сборка-тестирование-и-сброс-ошибок">Сборка, тестирование и сброс ошибок</a></li><li><a href="#профилактика-и-уход-за-электроникой">Профилактика и уход за электроникой</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/a/ae/aeg-electrolux-stiralnaya-mashina-instruktsiya.html">AEG Electrolux стиральная машина: инструкция и коды ошибок</a></li><li><a href="/articles/s/st/stiralka-samsung-oshibka-h2.html">Ошибка H2 на стиралке Самсунг: причины и устранение</a></li><li><a href="/articles/s/st/staraya-stiralnaya-mashina-samsung.html">Старая стиральная машина Samsung: ремонт, коды ошибок, утилизация</a></li><li><a href="/articles/s/st/stiralnaya-mashina-kandi-ne-slivaet-vodu-i-ne-otzhimaet-chto-delat.html">Candy не сливает воду: причины и ремонт своими руками</a></li><li><a href="/articles/m/mo/mozhno-li-menyat-rezhim-stirki-vo-vremya-raboty-mashinki.html">Можно ли менять режим стирки во время работы: риски и последствия</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Ремонт блока управления стиральной машины Indesit своими руками</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основные-признаки-неисправности-электронного-модуля">Основные признаки неисправности электронного модуля</a></li><li><a href="#демонтаж-и-извлечение-платы-управления">Демонтаж и извлечение платы управления</a></li><li><a href="#визуальная-диагностика-и-поиск-дефектов">Визуальная диагностика и поиск дефектов</a></li><li><a href="#типичные-неисправности-и-методы-их-устранения">Типичные неисправности и методы их устранения</a></li><li><a href="#замена-элементов-и-пайка-платы">Замена элементов и пайка платы</a></li><li><a href="#сборка-тестирование-и-сброс-ошибок">Сборка, тестирование и сброс ошибок</a></li><li><a href="#профилактика-и-уход-за-электроникой">Профилактика и уход за электроникой</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+<p>Современные стиральные машины <em>Indesit</em> — это сложные электронно-механические устройства, где центральным элементом выступает электронный модуль управления. Именно этот блок принимает сигналы от датчиков и отдает команды исполнительным механизмам: насосу, ТЭНу и мотору. Когда машина перестает реагировать на кнопки, зависает на середине цикла или выдает непонятные коды ошибок, в 80% случаев проблема кроется именно в электронике.</p>
+<p>Многие владельцы сразу вызывают мастера, но часто <strong>ремонт блока управления</strong> можно выполнить самостоятельно, если иметь базовые навыки работы с паяльником и мультиметром. Электроника Indesit достаточно стандартизирована, и типичные неисправности, такие как сгоревшие дорожки или вздувшиеся конденсаторы, диагностируются визуально. Однако важно понимать, что бездумная замена деталей может привести к окончательному выходу агрегата из строя.</p>
+<p>В этой статье мы разберем, как безопасно извлечь плату, провести первичную диагностику и устранить распространенные поломки. Вы узнаете, какие инструменты потребуются для работы и на что обратить особое внимание при сборке. Правильный подход позволит сэкономить значительную сумму и продлить жизнь вашей технике.</p>
+
+<h2 id="основные-признаки-неисправности-электронного-модуля">Основные признаки неисправности электронного модуля</h2>
+<p>Прежде чем разбирать стиральную машину, необходимо убедиться, что проблема именно в электронике, а не в механике или проводке. <strong>Электронный модуль</strong> — это "мозг" устройства, и его сбои проявляются специфически. Часто пользователи путают поломку платы с неисправностью двигателя или блокировкой люка, что ведет к покупке ненужных запчастей.</p>
+<p>Типичные симптомы, указывающие на необходимость ремонта: машина включается, но не начинает стирку; горят все индикаторы одновременно; цикл стирки прерывается хаотично; не сливается вода или не греется ТЭН, хотя сами узлы исправны. В моделях с дисплеем могут появляться коды ошибок, начинающиеся на F (например, F05, F08), которые указывают на рассинхронизацию данных.</p>
+<ul>
+<li>🔌 Машина не включается, хотя напряжение в розетке есть и фильтр исправен.</li>
+<li>🔄 Барабан вращается рывками или только в одну сторону.</li>
+<li>💧 Насос гудит, но вода не откачивается (ошибка реле).</li>
+<li>🔥 Отключаются защитные автоматы в квартире при запуске стирки.</li>
+</ul>
+<p>Если вы наблюдаете хотя бы два из перечисленных симптомов, вероятность выхода из строя <strong>платы управления</strong> составляет более 90%. В некоторых случаях проблема может быть в окислившихся контактах или обрыве шлейфа, поэтому полная диагностика обязательна.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Перед любыми манипуляциями обязательно отключите стиральную машину от электросети! Работа с током смертельно опасна, а конденсаторы на плате могут сохранять заряд несколько минут.</p>
+</blockquote>
+
+<h2 id="демонтаж-и-извлечение-платы-управления">Демонтаж и извлечение платы управления</h2>
+<p>Для доступа к модулю в стиральных машинах <em>Indesit</em> чаще всего требуется снять верхнюю крышку корпуса. В некоторых моделях блок расположен в верхней части, в других — скрыт за передней панелью. Процесс демонтажа требует аккуратности, так как пластиковые защелки могут быть хрупкими.</p>
+<p>Сначала открутите два винта сзади, удерживающие верхнюю крышку, и сдвиньте её назад. Блок управления обычно находится в правом верхнем углу. Чтобы извлечь его, необходимо отщелкнуть пластиковые фиксаторы или выкрутить саморезы, удерживающие кожух. Затем осторожно отсоедините все разъемы с проводами, предварительно сфотографировав их расположение.</p>
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист демонтажа</h4><label class="check-item"><input type="checkbox"><span>Отключить питание и воду</span></label><label class="check-item"><input type="checkbox"><span>Снять верхнюю крышку</span></label><label class="check-item"><input type="checkbox"><span>Сфотографировать подключение проводов</span></label><label class="check-item"><input type="checkbox"><span>Отщелкнуть фиксаторы модуля</span></label><label class="check-item"><input type="checkbox"><span>Извлечь плату из корпуса</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+<p>После извлечения модуля из корпуса, снимите пластиковую крышку самого блока. Она обычно держится на защелках по периметру. Будьте осторожны, не повредите пластиковые штырьки, иначе герметичность будет нарушена. Теперь плата полностью доступна для визуального осмотра и прозвонки.</p>
+
+<h2 id="визуальная-диагностика-и-поиск-дефектов">Визуальная диагностика и поиск дефектов</h2>
+<p>Первый этап ремонта — тщательный визуальный осмотр печатной платы. В 70% случаев неисправность видна невооруженным глазом. Ищите следы гари, почернения, вздутия конденсаторов или микротрещины на дорожках. Особое внимание уделите местам пайки мощных элементов.</p>
+<p>Частая проблема машин <em>Indesit</em> — это окисление контактов или "отвал" контактов у мощных резисторов и транзисторов из-за вибрации при отжиме. Также часто выгорают дорожки, ведущие к ТЭНу или насосу, если произошло короткое замыкание в этих узлах. Используйте лупу для осмотра мелких деталей.</p>
+<p>Обратите внимание на состояние <strong>варистора</strong> и предохранителя. Если варистор почернел или раскрошился, значит, был скачок напряжения, и он взял удар на себя. В этом случае часто пробивает и силовой транзистор. Замена только предохранителя без устранения причины приведет к повторному сгоранию.</p>
+
+<details class="pb-accordion"><summary>Как проверить варистор мультиметром?</summary><div class="pb-accordion-body"><p>Переключите мультиметр в режим измерения сопротивления. Сопротивление исправного варистора должно быть бесконечно большим. Если прибор показывает низкое сопротивление или короткое замыкание — элемент неисправен и требует замены.</p></div></details>
+
+<h2 id="типичные-неисправности-и-методы-их-устранения">Типичные неисправности и методы их устранения</h2>
+<p>Самой распространенной проблемой является выход из строя <strong>симистора</strong> управления двигателем или ТЭНом. Симистор — это полупроводниковый ключ, который коммутирует высокое напряжение. При пробое машина может постоянно греть воду или крутить барабан, не останавливаясь. Замена требует навыков пайки и использования флюса.</p>
+<p>Второй частый дефект — вздутие электролитических конденсаторов в блоке питания платы. Это приводит к нестабильной работе процессора: машина может самопроизвольно перезагружаться, сбрасывать программу или глючить индикация. Вздутые конденсаторы легко узнать по выпуклой верхней крышке.</p>
+<p>Третья проблема — нарушение контактов в разъемах или трещины в пайке тяжелых элементов. Из-за постоянной вибрации при отжиме ножки транзисторов и реле могут отходить от платы. В этом случае достаточно аккуратно прогреть контакты паяльником и добавить припой.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Симптом неисправности</th>
+<th>Метод ремонта</th>
+<th>Сложность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Симистор двигателя</td>
+<td>Барабан не крутится или крутит постоянно</td>
+<td>Замена элемента</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>Конденсаторы БП</td>
+<td>Сбои программы, мигание индикаторов</td>
+<td>Замена конденсаторов</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>Реле насоса</td>
+<td>Не сливает воду, нет щелчка</td>
+<td>Прозвонка и замена</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>Дорожки питания</td>
+<td>Полное отсутствие реакции</td>
+<td>Восстановление дорожек</td>
+<td>Высокая</td>
+</tr>
+</tbody>
+</table></div>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте только качественный припой с канифолью внутри и флюс-гель. Кислотные флюсы для пайки электроники запрещены, так как они вызывают коррозию контактов со временем.</p></aside>
+
+<h2 id="замена-элементов-и-пайка-платы">Замена элементов и пайка платы</h2>
+<p>Для замены сгоревших компонентов вам понадобится паяльник мощностью 40-60 Вт, оловоотсос или медная оплетка, а также новый радиоэлемент с аналогичными характеристиками. Важно не перегреть плату, держа жало паяльника на контакте не более 3-5 секунд. Если передержать, можно отслоить дорожку или повредить соседние элементы.</p>
+<p>При выпаивании симисторов или микросхем используйте оловоотсос для удаления припоя из отверстий. После установки новой детали проверьте качество пайки: припой должен равномерно обтекать ножку, образуя блестящий конус. Матовая и рыхлая поверхность свидетельствует о плохом контакте.</p>
+<p>Если сгорела дорожка, её необходимо восстановить. Аккуратно зачистите концы оборванной дорожки скальпелем и соедините их тонким медным проводком, припаяв его к плате. После восстановления изолируйте место ремонта лаком или термоусадкой.</p>
+
+<div class="pb-poll" id="poll-19238cb5"><div class="pb-poll-question">📊 Сталкивались ли вы с ремонтом электроники своими руками?</div><div class="pb-poll-option" data-poll="19238cb5" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, успешно ремонтировал</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="19238cb5" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Пытался, но не получилось</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="19238cb5" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Боюсь браться, сложно</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="19238cb5" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда не интересовался</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="сборка-тестирование-и-сброс-ошибок">Сборка, тестирование и сброс ошибок</h2>
+<p>После ремонта соберите модуль в обратной последовательности, убедившись, что все разъемы вставлены до щелчка. Установите плату на место и подключите стиральную машину к сети. При первом включении не запускайте сразу полный цикл стирки с бельем.</p>
+<p>Проведите тестовый запуск в режиме быстрой стирки. Проверьте работу всех узлов: набор воды, нагрев (аккуратно потрогайте стекло люка через 10 минут), вращение барабана в обе стороны и слив. Если машина отработала цикл без ошибок и посторонних звуков, ремонт можно считать успешным.</p>
+<p>В некоторых моделях <em>Indesit</em> после замены платы может потребоваться сброс ошибок или калибровка. Для этого часто используется комбинация кнопок или специальный сервисный режим. Если машина работает штатно, но горит индикатор ошибки, попробуйте выполнить сброс.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Если после замены симистора машина снова вышла из строя, не включайте её повторно. Вероятно, проблема не в плате, а в самом двигателе (межвитковое замыкание) или щетках, которые посыпали графитовую пыль на контакты.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Успешный ремонт блока управления зависит от точной диагностики: замена исправной детали не решит проблему, если не устранена первопричина (например, короткое замыкание в двигателе).</p></aside>
+
+<h2 id="профилактика-и-уход-за-электроникой">Профилактика и уход за электроникой</h2>
+<p>Чтобы продлить жизнь электронному модулю, обеспечьте стабильное напряжение в сети. Скачки электричества — главный враг чувствительной электроники. Рекомендуется использовать сетевой фильтр или стабилизатор напряжения, особенно в домах старой постройки.</p>
+<p>Также важно защищать машину от влаги. Брызги воды, попавшие на контакты разъема или внутрь корпуса, вызывают окисление и короткие замыкания. Следите за герметичностью соединений шлангов и отсутствием протечек под машиной.</p>
+<p>Регулярно очищайте машину от накипи и грязи, так как засоры могут приводить к перегрузке насоса и ТЭНа, что создает дополнительную нагрузку на <strong>электронный модуль</strong>. Чистка фильтров и профилактическая стирка с лимонной кислотой помогут избежать многих проблем.</p>
+
+<details class="pb-accordion"><summary>Нужно ли смазывать контакты спреем?</summary><div class="pb-accordion-body"><p>Использовать токопроводящие смазки на контактах платы нельзя! Для защиты от окисления контактов разъемов можно использовать специальные диэлектрические спреи, но только на отключенной от питания технике.</p></div></details>
+
+<details>
+<summary>Можно ли ремонтировать блок управления без паяльника?</summary>
+<p>Качественно восстановить сгоревшую дорожку или заменить пробитый симистор без паяльника невозможно. Методы "прогрева" или "проклейки" дают временный эффект и могут привести к пожару. Только пайка обеспечивает надежный электрический контакт.</p>
+</details>
+
+<details>
+<summary>Сколько стоит новый блок управления на Indesit?</summary>
+<p>Оригинальный модуль стоит от 3000 до 6000 рублей в зависимости от модели. Универсальные платы (например, Welling) стоят дешевле, около 1500-2000 рублей, но требуют перепайки разъемов под вашу машину.</p>
+</details>
+
+<details>
+<summary>Почему сгорает блок управления после замены?</summary>
+<p>Чаще всего причина кроется в неисправности исполнительных механизмов: пробитый ТЭН, заклинивший насос или замыкание в обмотке двигателя. Пока не устранена неисправность в "железе", новая плата будет сгорать.</p>
+</details>
+
+<details>
+<summary>Как проверить симистор мультиметром?</summary>
+<p>В режиме прозвонки диодов исправный симистор не должен звониться ни в одну сторону между основными выводами. Управляющий вывод может иметь небольшое сопротивление в одну сторону. Точный тест возможен только в специальной схеме или методом замены.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/a/ae/aeg-electrolux-stiralnaya-mashina-instruktsiya.html" class="pb-related-card">
+                <span class="pb-related-title">AEG Electrolux стиральная машина: инструкция и коды ошибок</span>
+                <span class="pb-related-desc">Подробная инструкция для стиральных машин AEG Electrolux. Настройка программ, расшифровка кодов ошиб</span>
+            </a><a href="/articles/s/st/stiralka-samsung-oshibka-h2.html" class="pb-related-card">
+                <span class="pb-related-title">Ошибка H2 на стиралке Самсунг: причины и устранение</span>
+                <span class="pb-related-desc">Подробный разбор кода H2 на стиральной машине Samsung. Диагностика нагревателя, проверка проводки, з</span>
+            </a><a href="/articles/s/st/staraya-stiralnaya-mashina-samsung.html" class="pb-related-card">
+                <span class="pb-related-title">Старая стиральная машина Samsung: ремонт, коды ошибок, утилизация</span>
+                <span class="pb-related-desc">Что делать, если сломалась старая стиральная машина Samsung? Разбор частых неисправностей, кодов оши</span>
+            </a><a href="/articles/s/st/stiralnaya-mashina-kandi-ne-slivaet-vodu-i-ne-otzhimaet-chto-delat.html" class="pb-related-card">
+                <span class="pb-related-title">Candy не сливает воду: причины и ремонт своими руками</span>
+                <span class="pb-related-desc">Стиральная машина Канди не сливает воду и не отжимает? Разбор причин, коды ошибок, проверка насоса и</span>
+            </a><a href="/articles/m/mo/mozhno-li-menyat-rezhim-stirki-vo-vremya-raboty-mashinki.html" class="pb-related-card">
+                <span class="pb-related-title">Можно ли менять режим стирки во время работы: риски и последствия</span>
+                <span class="pb-related-desc">Узнайте, можно ли менять режим стирки во время работы машинки. Разбор рисков для двигателя, нагреват</span>
+            </a><a href="/articles/s/st/stiralnaya-mashina-indezit-sboj-programmy-chto-delat.html" class="pb-related-card">
+                <span class="pb-related-title">Стиральная машина Индезит: сбой программы — что делать и как исправить</span>
+                <span class="pb-related-desc">Почему стиральная машина Indesit сбивает программу? Полный гид по диагностике, кодам ошибок, проверк</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🧺 Мастер Стирки</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/remont-stiralnykh-mashin/">🔧 Ремонт стиральных машин</a> · <a href="/category/kody-oshibok/">⚠️ Коды ошибок</a> · <a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a> · <a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a> · <a href="/category/bytovaya-khimiya/">🧴 Бытовая химия</a> · <a href="/category/udalenie-pyaten/">🧼 Удаление пятен</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Стирки. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

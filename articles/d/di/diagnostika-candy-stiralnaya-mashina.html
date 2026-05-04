@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🧺</text></svg>">
+    <title>Диагностика Candy: коды ошибок и тесты режимов — Мастер Стирки</title>
+    <meta name="description" content="Полная инструкция по самодиагностике стиральных машин Candy. Расшифровка кодов ошибок, вход в сервисный режим, проверка датчиков и насоса.">
+    <link rel="canonical" href="https://master-stirki.vercel.app/articles/d/di/diagnostika-candy-stiralnaya-mashina.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Диагностика Candy: коды ошибок и тесты режимов">
+    <meta property="og:description" content="Полная инструкция по самодиагностике стиральных машин Candy. Расшифровка кодов ошибок, вход в сервисный режим, проверка датчиков и насоса.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777869443">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🧺</span>
+                <span class="pb-logo-text">Мастер Стирки</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/remont-stiralnykh-mashin/" class="pb-nav-active">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/remont-stiralnykh-mashin/" class="pb-dropdown-item">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/" class="pb-dropdown-item">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/" class="pb-dropdown-item">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/" class="pb-dropdown-item">👕 Уход за тканями</a>
+<a href="/category/bytovaya-khimiya/" class="pb-dropdown-item">🧴 Бытовая химия</a>
+<a href="/category/udalenie-pyaten/" class="pb-dropdown-item">🧼 Удаление пятен</a>
+<a href="/category/obzory-tekhniki/" class="pb-dropdown-item">🏠 Обзоры техники</a>
+<a href="/category/chistka-i-obsluzhivanie/" class="pb-dropdown-item">✨ Чистка и обслуживание</a>
+<a href="/category/aksessuary-dlya-stirki/" class="pb-dropdown-item">🎱 Аксессуары для стирки</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-stiralnykh-mashin/">Ремонт стиральных машин</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Диагностика Candy: коды ошибок и тесты режимов</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принципы-работы-системы-самодиагностики-candy">Принципы работы системы самодиагностики Candy</a></li><li><a href="#расшифровка-кодовых-комбинаций-и-мигания-индикаторов">Расшифровка кодовых комбинаций и мигания индикаторов</a></li><li><a href="#вход-в-сервисный-режим-и-проверка-датчиков">Вход в сервисный режим и проверка датчиков</a></li><li><a href="#диагностика-системы-набора-и-слива-воды">Диагностика системы набора и слива воды</a></li><li><a href="#проверка-электродвигателя-и-блокировки-люка">Проверка электродвигателя и блокировки люка</a></li><li><a href="#анализ-состояния-нагревательного-элемента-тэн">Анализ состояния нагревательного элемента (ТЭН)</a></li><li><a href="#частые-вопросы-и-ответы-faq">Частые вопросы и ответы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/st/stiralnaya-mashina-bosch-ne-slivaet-vodu-i-gudit.html">Стиральная машина Bosch не сливает воду и гудит: причины и ремонт</a></li><li><a href="/articles/z/zn/znak-sliva-na-stiralnoj-mashine.html">Знак слива на стиральной машине: расшифровка и ремонт</a></li><li><a href="/articles/k/ka/kak-snyat-amortizatory-stiralnoj-mashiny-indezit.html">Как снять амортизаторы стиральной машины Indesit: пошаговая инструкция</a></li><li><a href="/articles/u/u-/u-stiralnoj-mashiny-ne-otkryvaetsya-dver-posle-stirki-kak-otkryt.html">Не открывается дверь стиральной машины: как открыть и причины</a></li><li><a href="/articles/t/te/techet-stiralka-gde-poroshok.html">Течет стиралка где порошок: причины, поиск и ремонт своими руками</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Самодиагностика стиральной машины Candy: коды ошибок и тесты</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принципы-работы-системы-самодиагностики-candy">Принципы работы системы самодиагностики Candy</a></li><li><a href="#расшифровка-кодовых-комбинаций-и-мигания-индикаторов">Расшифровка кодовых комбинаций и мигания индикаторов</a></li><li><a href="#вход-в-сервисный-режим-и-проверка-датчиков">Вход в сервисный режим и проверка датчиков</a></li><li><a href="#диагностика-системы-набора-и-слива-воды">Диагностика системы набора и слива воды</a></li><li><a href="#проверка-электродвигателя-и-блокировки-люка">Проверка электродвигателя и блокировки люка</a></li><li><a href="#анализ-состояния-нагревательного-элемента-тэн">Анализ состояния нагревательного элемента (ТЭН)</a></li><li><a href="#частые-вопросы-и-ответы-faq">Частые вопросы и ответы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Внезапная остановка цикла стирки, мигающие индикаторы или появление загадочных символов на дисплее <em>Candy</em> часто вызывают панику у владельца. Однако современные итальянские агрегаты оснащены продвинутой системой <strong>самодиагностики</strong>, которая призвана не напугать, а помочь точно определить причину сбоя. Понимание принципов работы этой системы позволяет отделить мелкую неисправность, которую можно устранить самостоятельно, от серьезной поломки, требующей вызова мастера.</p>
+
+<p>Первичная диагностика начинается задолго до разборки корпуса, ведь электроника <strong>стиральной машины</strong> непрерывно сканирует состояние узлов в реальном времени. Если блок управления фиксирует отклонение параметров от нормы, он немедленно блокирует выполнение программы и выводит соответствующий сигнал. Игнорирование этих сигналов может привести к более дорогостоящему ремонту, тогда как своевременная реакция часто спасает технику от критических повреждений.</p>
+
+<p>В этой статье мы детально разберем алгоритмы поиска неисправностей, способы входа в скрытые сервисные меню и методы ручной проверки ключевых элементов конструкции. Грамотный подход к диагностике <em>Candy</em> сэкономит ваше время и деньги, позволив точно сформулировать проблему при обращении в сервис или успешно провести восстановительные работы своими силами.</p>
+
+<h2 id="принципы-работы-системы-самодиагностики-candy">Принципы работы системы самодиагностики Candy</h2>
+
+<p>Электронный модуль управления <strong>Candy</strong> функционирует по строгому алгоритму, опрашивая датчики на каждом этапе стирки. Система проверяет скорость вращения двигателя, уровень воды, температуру нагрева и герметичность бака. При обнаружении аномалии, например, отсутствия вращения барабана при поданном напряжении, контроллер фиксирует <strong>код ошибки</strong> и останавливает процесс.</p>
+
+<p>Важно понимать, что индикация неисправности может отличаться в зависимости от модели и года выпуска устройства. На машинах с цифровым дисплеем (серии <em>O’Wash</em>, <em>Aqua</em>) ошибка отображается буквенно-цифровым кодом, тогда как в моделях с LED-индикаторами используется мигание лампочек в определенной последовательности. <mark>Код ошибки указывает на узел, где обнаружена проблема, но не всегда означает выход из строя именно этой детали — часто причина кроется в нарушении связи или внешних факторах.</mark></p>
+
+<p>Система защиты также реагирует на скачки напряжения в сети. Если питание нестабильно, модуль управления может уйти в режим ожидания или выдать ошибку, связанную с двигателем или нагревателем. Именно поэтому перед началом глубокой диагностики рекомендуется убедиться в стабильности электроснабжения.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если машина издает запах гари или наблюдается искрение, немедленно отключите устройство от сети. Продолжение эксплуатации в таком состоянии категорически запрещено и может привести к возгоранию.</p>
+</blockquote>
+
+<p>Для точного определения характера неисправности специалисты используют последовательную проверку узлов. Ниже приведена таблица наиболее распространенных кодов, которые можно встретить на дисплеях различных серий <em>Candy</em>.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Код ошибки</th>
+<th>Описание проблемы</th>
+<th>Вероятная причина</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E01 / E02</td>
+<td>Проблема с блокировкой люка</td>
+<td>Неисправность УБЛ или проводки</td>
+</tr>
+<tr>
+<td>E03</td>
+<td>Ошибка слива воды</td>
+<td>Засор фильтра или насоса</td>
+</tr>
+<tr>
+<td>E04</td>
+<td>Нарушение герметичности</td>
+<td>Протечка или пена в баке</td>
+</tr>
+<tr>
+<td>E05 / E06</td>
+<td>Проблема с набором воды</td>
+<td>Низкое давление или клапан</td>
+</tr>
+<tr>
+<td>E09</td>
+<td>Ошибка двигателя</td>
+<td>Износ щеток или обрыв цепи</td>
+</tr>
+</tbody>
+</table></div>
+
+<div class="pb-poll" id="poll-c7cd66a1"><div class="pb-poll-question">📊 С каким типом индикации у вас машина Candy?</div><div class="pb-poll-option" data-poll="c7cd66a1" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Цифровой дисплей (коды Exx)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c7cd66a1" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Мигающие лампочки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c7cd66a1" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Смарт-управление через Wi-Fi</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c7cd66a1" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Затрудняюсь ответить</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="расшифровка-кодовых-комбинаций-и-мигания-индикаторов">Расшифровка кодовых комбинаций и мигания индикаторов</h2>
+
+<p>На моделях без дисплея диагностика <strong>Candy</strong> осуществляется путем подсчета миганий индикаторов. Обычно основной индикатор (часто "Замок" или "Стирка") мигает сериями. Количество вспылок в серии соответствует номеру ошибки. Например, три вспышки, пауза и снова три вспышки указывают на ошибку <code>E03</code>. Необходимо внимательно следить за ритмом, чтобы не сбиться со счета.</p>
+
+<p>В машинах с дисплеем ситуация проще: код высвечивается непосредственно на экране. Однако некоторые модели требуют активации функции отображения ошибок. Для этого часто используется комбинация кнопок, зависящая от конкретной серии <em>Candy</em>. Например, одновременное нажатие кнопок "Температура" и "Отжим" в течение 5 секунд может перевести агрегат в режим тестирования.</p>
+
+<p>Частой ошибкой при диагностике является игнорирование контекста появления кода. Если ошибка <strong>E03</strong> (слив) возникла сразу после начала цикла, проблема, скорее всего, в насосе или засоре. Если же она появилась в конце стирки, возможно, вода просто не успела уйти из-за низкого давления в канализации. Анализ момента возникновения сбоя — ключевой этап <strong>поиска неисправности</strong>.</p>
+
+<details class="pb-accordion"><summary>Секреты сброса ошибок</summary><div class="pb-accordion-body"><p>Некоторые ошибки в машинах Candy являются самосбрасываемыми. Если вы устраните причину (например, почистите фильтр), ошибка может исчезнуть после перезагрузки машины. Для принудительного сброса часто помогает длительное (более 10 секунд) удержание кнопки "Старт/Пауза" при выключенной машине, после чего устройство включается в обычном режиме.</p></div></details>
+
+<h2 id="вход-в-сервисный-режим-и-проверка-датчиков">Вход в сервисный режим и проверка датчиков</h2>
+
+<p>Для профессиональной диагностики инженеры используют сервисный режим, который позволяет проверять узлы по отдельности. Вход в этот режим на машинах <em>Candy</em> обычно осуществляется поворотом селектора программ в определенное положение и одновременным зажатием комбинации кнопок. Точная комбинация зависит от модели, но часто это кнопки "Дополнительное полоскание" и "Отжим".</p>
+
+<p>Попав в сервисное меню, вы можете вручную запустить <strong>набор воды</strong>, проверить работу <strong>ТЭНа</strong> (нагревателя), активировать сливной насос или запустить двигатель на разных скоростях. Это позволяет изолировать проблему: если насос гудит в сервисном режиме, но не качает воду при стирке, проблема может быть в модуле управления или проводке, а не в самом насосе.</p>
+
+<p>При проверке датчиков обратите внимание на их показания. Датчик уровня воды (прессостат) должен реагировать на изменение давления в трубке. Датчик температуры должен показывать рост градусов при включенном нагреве. Если показания статичны или некорректны, элемент требует замены.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Алгоритм проверки датчиков</h4><label class="check-item"><input type="checkbox"><span>Отключить питание машины</span></label><label class="check-item"><input type="checkbox"><span>Снять верхнюю крышку корпуса</span></label><label class="check-item"><input type="checkbox"><span>Визуально осмотреть провода на обрыв</span></label><label class="check-item"><input type="checkbox"><span>Прозвонить датчик мультиметром</span></label><label class="check-item"><input type="checkbox"><span>Сравнить показания с нормой</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<blockquote>
+<p>⚠️ Внимание: В сервисном режиме некоторые функции (например, нагрев) могут работать непрерывно без стандартных лимитов времени. Не оставляйте машину в этом режиме без присмотра, чтобы избежать перегрева или перелива воды.</p>
+</blockquote>
+
+<h2 id="диагностика-системы-набора-и-слива-воды">Диагностика системы набора и слива воды</h2>
+
+<p>Проблемы с водой составляют более 40% всех обращений в сервис. Если машина не набирает воду или не сливает её, в первую очередь проверяется механическая часть. Засоренный <strong>сливной фильтр</strong> — самая банальная, но частая причина ошибок слива. Он находится в нижней части машины за декоративной панелью.</p>
+
+<p>Для диагностики системы набора необходимо проверить давление в водопроводе. Если напор слабый, клапан может не открываться полностью, и машина уйдет в ошибку по тайм-ауту наполнения. Также стоит проверить сетчатый фильтр на входе шланга — он часто забивается ржавчиной и песком, особенно в старых домах.</p>
+
+<p>При проверке сливного насоса (помпы) listen to the sound. Глухой гул без вращения крыльчатки указывает на заклинивание инородным предметом (косточка от бюстгальтера, монета). Если насос молчит полностью, проверьте наличие напряжения на его клеммах. Отсутствие напряжения при работающем модуле говорит об обрыве цепи или неисправности самого <strong>электронасоса</strong>.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Совет: Перед откручиванием сливного фильтра всегда подстилайте плоскую емкость для воды и тряпку. В шланге и насосе может оставаться до 1 литра грязной воды, которая выльется при снятии пробки.</p></aside>
+
+<h2 id="проверка-электродвигателя-и-блокировки-люка">Проверка электродвигателя и блокировки люка</h2>
+
+<p>Двигатель — сердце стиральной машины. В моделях <em>Candy</em> чаще всего используются коллекторные моторы, ресурс которых ограничен износом <strong>графитовых щеток</strong>. Если машина перестала крутить барабан, но гудит, или крутит рывками, первым делом проверяйте длину щеток. Если они короче 1.5 см, их необходимо заменить.</p>
+
+<p>Блокировка люка (УБЛ) — еще один критический узел. Если после запуска программы не слышен характерный щелчок и не загорается индикатор замка, машина не начнет стирку. Диагностика УБЛ проста: проверьте, входит ли язычок замка в отверстие, и прозвоните контакты устройства. Часто окисление контактов приводит к ложным срабатываниям системы защиты.</p>
+
+<p>Также стоит обратить внимание на ремень привода. Если он растянут или имеет трещины, двигатель будет вращаться, но барабан стоять на месте или вращаться медленно. Визуальный осмотр ремня через верхнюю крышку (сняв крышку) часто позволяет сразу выявить проблему без глубокой разборки.</p>
+
+<h2 id="анализ-состояния-нагревательного-элемента-тэн">Анализ состояния нагревательного элемента (ТЭН)</h2>
+
+<p>Отсутствие нагрева воды — распространенная проблема, особенно в регионах с жесткой водой. Накипь, образующаяся на <strong>ТЭНе</strong>, не только снижает эффективность нагрева, но и может привести к перегоранию элемента или пробою на корпус. Диагностика ТЭНа проводится с помощью мультиметра в режиме измерения сопротивления.</p>
+
+<p>Нормальное сопротивление исправного ТЭНа для машин <em>Candy</em> обычно составляет около 25-35 Ом. Если прибор показывает бесконечность — цепь разорвана, элемент сгорел. Если сопротивление близко к нулю — произошло короткое замыкание. Также важно проверить отсутствие пробоя на корпус, измерив сопротивление между контактами и металлической трубкой ТЭНа.</p>
+
+<p>В некоторых моделях ошибка нагрева может быть вызвана не самим ТЭНом, а неисправностью датчика температуры (термистора), который встроен в ТЭН или установлен рядом. Если датчик "врет" и показывает, что вода уже горячая, модуль управления не подаст напряжение на нагреватель.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Замена ТЭНа — процедура средней сложности, требующая аккуратности. Главное — не повредить резиновый уплотнитель бака при извлечении старого элемента и плотно посадить новый, чтобы избежать протечек.</p></aside>
+
+<h2 id="частые-вопросы-и-ответы-faq">Частые вопросы и ответы (FAQ)</h2>
+
+<details>
+<summary>Как сбросить ошибку на стиральной машине Candy?</summary>
+<p>Для сброса ошибки попробуйте выключить машину кнопкой питания, подождать 10-15 секунд и включить снова. Если ошибка сохраняется, значит, неисправность не устранена. Некоторые модели сбрасываются длительным удержанием кнопки "Старт/Пауза" или комбинацией кнопок, указанной в инструкции.</p>
+</details>
+
+<details>
+<summary>Что делать, если машина пишет ошибку, но воду сливает?</summary>
+<p>Это может указывать на неисправность датчика уровня воды (прессостата) или засорение воздуховода, идущего к нему. Машина "думает", что вода еще в баке, хотя физически её там нет. Проверьте трубку прессостата на наличие воды и засоров.</p>
+</details>
+
+<details>
+<summary>Можно ли стирать, если горит индикатор ошибки?</summary>
+<p>Категорически не рекомендуется. Продолжение работы может привести к затоплению соседей, выходу из строя модуля управления или возгоранию. Сначала необходимо провести диагностику и устранить причину сбоя.</p>
+</details>
+
+<details>
+<summary>Почему машина Candy не открывает люк после стирки?</summary>
+<p>Чаще всего это связано с остатком воды в баке. Машина блокирует люк в целях безопасности. Проверьте сливной фильтр и насос. Если воды нет, возможно, неисправен механизм замка (УБЛ) или отошел провод.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/st/stiralnaya-mashina-bosch-ne-slivaet-vodu-i-gudit.html" class="pb-related-card">
+                <span class="pb-related-title">Стиральная машина Bosch не сливает воду и гудит: причины и ремонт</span>
+                <span class="pb-related-desc">Почему стиральная машина Bosch гудит и не сливает воду? Полный гид по диагностике насоса, фильтра и </span>
+            </a><a href="/articles/z/zn/znak-sliva-na-stiralnoj-mashine.html" class="pb-related-card">
+                <span class="pb-related-title">Знак слива на стиральной машине: расшифровка и ремонт</span>
+                <span class="pb-related-desc">Горит значок слива на стиральной машине? Узнайте причины блокировки, расшифровку кодов и пошаговую и</span>
+            </a><a href="/articles/k/ka/kak-snyat-amortizatory-stiralnoj-mashiny-indezit.html" class="pb-related-card">
+                <span class="pb-related-title">Как снять амортизаторы стиральной машины Indesit: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробный гид по замене амортизаторов в стиральных машинах Indesit. Как снять заднюю и переднюю пане</span>
+            </a><a href="/articles/u/u-/u-stiralnoj-mashiny-ne-otkryvaetsya-dver-posle-stirki-kak-otkryt.html" class="pb-related-card">
+                <span class="pb-related-title">Не открывается дверь стиральной машины: как открыть и причины</span>
+                <span class="pb-related-desc">Заблокировался люк стиральной машины после стирки? Узнайте, как безопасно открыть дверь, сбросить ош</span>
+            </a><a href="/articles/t/te/techet-stiralka-gde-poroshok.html" class="pb-related-card">
+                <span class="pb-related-title">Течет стиралка где порошок: причины, поиск и ремонт своими руками</span>
+                <span class="pb-related-desc">Почему течет стиральная машина со стороны лотка? Разбираем засоры, поломки клапана и трещины бункера</span>
+            </a><a href="/articles/s/sl/slivnoj-patrubok-stiralnoj-mashiny-samsung.html" class="pb-related-card">
+                <span class="pb-related-title">Сливной патрубок стиральной машины Samsung: замена и чистка</span>
+                <span class="pb-related-desc">Полная инструкция по чистке, ремонту и замене сливного патрубка стиральных машин Samsung. Как устран</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🧺 Мастер Стирки</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/remont-stiralnykh-mashin/">🔧 Ремонт стиральных машин</a> · <a href="/category/kody-oshibok/">⚠️ Коды ошибок</a> · <a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a> · <a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a> · <a href="/category/bytovaya-khimiya/">🧴 Бытовая химия</a> · <a href="/category/udalenie-pyaten/">🧼 Удаление пятен</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Стирки. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

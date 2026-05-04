@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🧺</text></svg>">
+    <title>Программатор для стиральных машин Bosch WFF 1200: ремонт и прошивка — Мастер Стирки</title>
+    <meta name="description" content="Ремонт электронного модуля Bosch WFF 1200. Выбор программатора, чтение и запись прошивки EEPROM, устранение ошибок E67, диагностика платы управления.">
+    <link rel="canonical" href="https://master-stirki.vercel.app/articles/p/pr/programmator-dlya-stiralnykh-mashin-bosch-wff-1200.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Программатор для стиральных машин Bosch WFF 1200: ремонт и прошивка">
+    <meta property="og:description" content="Ремонт электронного модуля Bosch WFF 1200. Выбор программатора, чтение и запись прошивки EEPROM, устранение ошибок E67, диагностика платы управления.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777869443">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🧺</span>
+                <span class="pb-logo-text">Мастер Стирки</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/remont-stiralnykh-mashin/" class="pb-nav-active">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/remont-stiralnykh-mashin/" class="pb-dropdown-item">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/" class="pb-dropdown-item">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/" class="pb-dropdown-item">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/" class="pb-dropdown-item">👕 Уход за тканями</a>
+<a href="/category/bytovaya-khimiya/" class="pb-dropdown-item">🧴 Бытовая химия</a>
+<a href="/category/udalenie-pyaten/" class="pb-dropdown-item">🧼 Удаление пятен</a>
+<a href="/category/obzory-tekhniki/" class="pb-dropdown-item">🏠 Обзоры техники</a>
+<a href="/category/chistka-i-obsluzhivanie/" class="pb-dropdown-item">✨ Чистка и обслуживание</a>
+<a href="/category/aksessuary-dlya-stirki/" class="pb-dropdown-item">🎱 Аксессуары для стирки</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-stiralnykh-mashin/">Ремонт стиральных машин</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Программатор для стиральных машин Bosch WFF 1200: ремонт и прошивка</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#типы-неисправностей-модуля-управления-bosch-wff-1200">Типы неисправностей модуля управления Bosch WFF 1200</a></li><li><a href="#выбор-оборудования-для-перепрошивки-eeprom">Выбор оборудования для перепрошивки EEPROM</a></li><li><a href="#процесс-снятия-и-установки-микросхемы-памяти">Процесс снятия и установки микросхемы памяти</a></li><li><a href="#работа-с-программным-обеспечением-и-дампами">Работа с программным обеспечением и дампами</a></li><li><a href="#диагностика-после-перепрошивки">Диагностика после перепрошивки</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/n/na/na-stiralnoj-mashine-samsung-ne-blokiruetsya-dver.html">Самсунг не блокирует дверь: причины и решение</a></li><li><a href="/articles/s/st/stiralnaya-mashinka-indezit-zamena-podshipnika-na-barabane.html">Замена подшипника в стиральной машине Indesit: пошаговая инструкция</a></li><li><a href="/articles/s/st/stiralnaya-mashina-samsung-oshibka-6e-chto-oznachaet.html">Ошибка 6E в стиральной машине Samsung: расшифровка и ремонт</a></li><li><a href="/articles/z/za/zamok-na-stiralnuyu-mashinu-candy.html">Замок на стиральную машину Candy: ремонт и замена</a></li><li><a href="/articles/b/ba/bachok-stiralnoj-mashiny-samsung.html">Бачок стиральной машины Самсунг: устройство, поломки и замена</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Программатор для стиральных машин Bosch WFF 1200: руководство по ремонту</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#типы-неисправностей-модуля-управления-bosch-wff-1200">Типы неисправностей модуля управления Bosch WFF 1200</a></li><li><a href="#выбор-оборудования-для-перепрошивки-eeprom">Выбор оборудования для перепрошивки EEPROM</a></li><li><a href="#процесс-снятия-и-установки-микросхемы-памяти">Процесс снятия и установки микросхемы памяти</a></li><li><a href="#работа-с-программным-обеспечением-и-дампами">Работа с программным обеспечением и дампами</a></li><li><a href="#диагностика-после-перепрошивки">Диагностика после перепрошивки</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Стиральные машины серии <em>Bosch WFF 1200</em>, несмотря на солидный возраст, продолжают активно эксплуатироваться во многих домохозяйствах благодаря своей надежности и простоте конструкции. Однако электроника не вечна, и со временем владельцы могут столкнуться с проблемами в работе модуля управления, который перестает корректно реагировать на команды или вовсе отказывается запускать циклы стирки. В таких ситуациях критически важным инструментом для мастера или продвинутого пользователя становится <strong>программатор для стиральных машин Bosch WFF 1200</strong>, позволяющий восстановить заводские настройки или обновить микрокод.</p>
+
+<p>Процесс восстановления работоспособности контроллера требует не только специального оборудования, но и глубокого понимания архитектуры системы управления данной модели. Ошибки в процессе перепрошивки могут привести к полной неработоспособности устройства, поэтому к выбору инструмента и метода воздействия на микросхему памяти нужно подходить с максимальной осторожностью. В этой статье мы подробно разберем, какие устройства подходят для работы с платой управления этой модели и как правильно провести диагностику.</p>
+
+<p>Стоит сразу отметить, что <em>Bosch WFF 1200</em> использует специфические микросхемы EEPROM, которые требуют определенных протоколов обмена данными. Универсальные решения могут не справиться с задачей или потребовать сложной настройки, поэтому специалисты часто обращаются к специализированным комплектам. <strong>Диагностика</strong> начинается именно с определения типа неисправности: программный сбой или физическое повреждение компонентов платы.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Перед началом любых работ с электронным модулем обязательно отключите стиральную машину от электросети. Остаточное напряжение на конденсаторах может вывести программатор из строя.</p>
+</blockquote>
+
+<h2 id="типы-неисправностей-модуля-управления-bosch-wff-1200">Типы неисправностей модуля управления Bosch WFF 1200</h2>
+
+<p>Прежде чем подключать <strong>программатор</strong>, необходимо четко понимать, с какой именно проблемой вы столкнулись. Модули управления в стиральных машинах Bosch этой серии подвержены нескольким типичным поломкам, связанным как с программной частью, так и с"железом". Часто пользователи путают программный сбой с выходом из строя силовых элементов, что приводит к unnecessary замене дорогостоящих компонентов.</p>
+
+<p>Одной из самых распространенных проблем является повреждение данных в энергонезависимой памяти. Это может произойти из-за скачков напряжения в сети или естественного износа ячеек памяти микросхемы. В результате машина может зависать на определенном этапе цикла, хаотично переключать режимы или выдавать ошибку <code>E67</code>, которая как раз и указывает на проблемы с коммуникацией или памятью процессора.</p>
+
+<p>Физические повреждения платы также встречаются нередко. Влага, попавшая внутрь корпуса модуля, вызывает коррозию контактов и дорожек. В таких случаях <em>перепрошивка</em> не поможет — требуется полноценный <strong>ремонт электроники</strong> с заменой сгоревших элементов. Однако, если визуально плата цела, а машина ведет себя неадекватно, вероятность необходимости работы с прошивкой крайне высока.</p>
+
+<ul>
+<li>🔌 <strong>Скачки напряжения:</strong> Резкие перепады в сети вызывают запись ошибочных данных в память EEPROM.</li>
+<li>💧 <strong>Влажность:</strong> Конденсат внутри модуля приводит к окислению контактов микросхем.</li>
+<li>🔄 <strong>Сбои циклов:</strong> Машина бесконечно набирает или сливает воду из-за потери калибровочных данных.</li>
+<li>❌ <strong>Ошибка E67:</strong> Специфический код неисправности, указывающий на сбой связи процессора с периферией.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Если на плате видны следы гари или вздувшиеся конденсаторы, использование программатора бесполезно и опасно. Сначала восстановите целостность электрических цепей.</p>
+</blockquote>
+
+<p>Важно различать симптомы, чтобы не тратить время на перепрограммирование исправной микросхемы. Иногда проблема кроется в датчиках или исполнительных механизмах, которые просто не могут выполнить команду, хотя модуль управления полностью исправен. <strong>Диагностика</strong> должна быть комплексной.</p>
+
+<div class="pb-poll" id="poll-50eacf16"><div class="pb-poll-question">📊 С какой проблемой в работе стиральной машины вы столкнулись?</div><div class="pb-poll-option" data-poll="50eacf16" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Машина не включается/Ошибки на дисплее/Не греет воду/Не сливает воду/Шумит при отжиме</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="выбор-оборудования-для-перепрошивки-eeprom">Выбор оборудования для перепрошивки EEPROM</h2>
+
+<p>Для работы с микросхемами памяти, установленными в модулях <em>Bosch WFF 1200</em>, требуется специализированное оборудование. Рынок предлагает множество решений, от дешевых китайских адаптеров до профессиональных стендов. Выбор зависит от того, планируете ли вы заниматься ремонтом профессионально или восстанавливаете одну конкретную машину для личных нужд.</p>
+
+<p>Наиболее популярным решением среди сервисных центров являются универсальные программаторы, поддерживающие широкий спектр микросхем серии <code>24Cxx</code> и <code>25Cxx</code>. Эти устройства позволяют считывать дампы памяти, редактировать их в HEX-редакторах и записывать обратно. Для <strong>Bosch WFF 1200</strong> чаще всего используются микросхемы с интерфейсом I2C, что упрощает задачу подключения.</p>
+
+<p>Профессиональные комплекты часто поставляются с собственным программным обеспечением, которое автоматически определяет тип микросхемы и предлагает подходящие алгоритмы записи. Это снижает риск ошибки оператора, но стоимость таких устройств может быть сопоставима с ценой б/у модуля управления. Для разового ремонта целесообразнее рассмотреть более бюджетные варианты или услуги сервисного центра.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Модель программатора</th>
+<th>Поддерживаемые микросхемы</th>
+<th>Интерфейс</th>
+<th>Сложность использования</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CH341A</td>
+<td>24Cxx, 25Cxx</td>
+<td>USB</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>TL866II Plus</td>
+<td>Широкий спектр</td>
+<td>USB</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>UPA-USB</td>
+<td>Авто/Бытовая техника</td>
+<td>USB</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>VVDI Prog</td>
+<td>Профессиональный</td>
+<td>USB</td>
+<td>Очень высокая</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>При выборе устройства обращайте внимание на наличие переходников (клипс) для выпаивания микросхем. В некоторых случаях можно прошить чип прямо на плате, но это требует высокой квалификации и риска повредить соседние компоненты. <strong>Безопасность</strong> процесса зависит от качества контактов.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для разового ремонта дешевле и проще выпаять микросхему EEPROM и прошить её на программаторе, чем паять переходник прямо на плате модуля.</p></aside>
+
+<h2 id="процесс-снятия-и-установки-микросхемы-памяти">Процесс снятия и установки микросхемы памяти</h2>
+
+<p>Работа с <strong>программатором для стиральных машин Bosch WFF 1200</strong> обычно требует физического доступа к микросхеме EEPROM. В большинстве случаев модули этой серии не имеют удобного разъема для перепрограммирования, поэтому микросхему приходится выпаивать. Это деликатная операция, требующая хорошего паяльного оборудования и навыков работы с мелкими компонентами.</p>
+
+<p>Сначала необходимо демонтировать модуль управления из корпуса стиральной машины и вскрыть его пластиковый кожух. Найдите на плате микросхему памяти — это маленький черный чип с 8 ножками, часто маркированный как <code>24Cxx</code> или имеющий логотип производителя (Atmel, STMicroelectronics). Аккуратно нагрейте контакты и снимите чип, стараясь не перегреть саму микросхему и печатную плату.</p>
+
+<p>После установки микросхемы в адаптер программатора и успешной записи новой прошивки, чип необходимо вернуть на место. Качество пайки критически важно: даже микроскопическая перемычка между ножками может привести к короткому замыканию и выходу процессора из строя при первом включении. Используйте лупу для визуального контроля качества работы.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист по демонтажу микросхемы</h4><label class="check-item"><input type="checkbox"><span>Обесточить модуль управления:Снять пластиковый кожух модуля:Найти микросхему EEPROM (8 ног):Аккуратно выпаять чип паяльником:Очистить контакты от остатков припоя:Проверить целостность дорожек</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 1</div></div>
+
+<p>Существует метод перепрошивки без выпаивания, с использованием специального переходника-клипсы. Однако в модулях <em>Bosch WFF 1200</em> плотность монтажа может не позволить надежно закрепить клипсу, а риск замыкания соседних элементов остается высоким. Поэтому классический метод с выпаиванием считается более надежным для этой модели.</p>
+
+<h2 id="работа-с-программным-обеспечением-и-дампами">Работа с программным обеспечением и дампами</h2>
+
+<p>После того как аппаратная часть готова, наступает очередь software. <strong>Программатор</strong> подключается к компьютеру, и запускается специализированное ПО. Для популярных моделей устройств, таких как CH341A, часто используется стандартный софт, идущий в комплекте, или универсальные утилиты вроде AsProgrammer.</p>
+
+<p>Первым шагом всегда должно быть считывание текущей прошивки (дампа) с неисправной микросхемы. Сохраните этот файл на компьютере под уникальным именем, указав дату и серийный номер машины. Это"золотой запас": если новая прошивка окажется нерабочей или поврежденной, вы всегда сможете вернуть оригинальное состояние, даже если машина перестанет реагировать на команды.</p>
+
+<p>Найти правильную прошивку для <em>Bosch WFF 1200</em> можно на специализированных форумах или в базах данных сервисных центров. Важноть не только модель машины, но и номер модуля управления (указан на наклейке) и тип установленного двигателя. Неправильная прошивка может привести к некорректной работе отжима или нагрева воды.</p>
+
+<details class="pb-accordion"><summary>Где искать надежные дампы прошивок?</summary><div class="pb-accordion-body"><p>Надежнее всего брать прошивки с проверенных сервисных форумов (например, Monitor.net.ru или Elektroschema.org). Избегайте скачивания файлов с сомнительных файлообменников, где код мог быть изменен или поврежден вирусами. Всегда проверяйте контрольную сумму файла, если такая информация доступна в описании.</p></div></details>
+
+<p>Процесс записи должен проходить без прерываний. Если в процессе записи произойдет сбой питания или отключение USB-кабеля, микросхема может быть повреждена безвозвратно. Используйте источники бесперебойного питания для компьютера, если в вашей сети бывают перебои с электричеством.</p>
+
+<h2 id="диагностика-после-перепрошивки">Диагностика после перепрошивки</h2>
+
+<p>После успешной записи новой прошивки и установки микросхемы обратно на плату модуля, необходимо провести тщательную визуальную проверку пайки. Убедитесь, что нет лишних капель припоя, замыкающих контакты. Только после этого модуль можно устанавливать в стиральную машину и подавать питание.</p>
+
+<p>При первом включении <strong>Bosch WFF 1200</strong> может вести себя необычно: машина может сразу начать набирать воду или крутить барабан в одну сторону. Это нормальная реакция на сброс настроек — модуль переходит в сервисный режим или режим калибровки. Не пугайтесь, дайте машинеить начальный цикл или прервите его кнопкой сброса, если инструкция предполагает такую возможность.</p>
+
+<p>Обязательно запустите тестовую стирку с полным циклом: нагрев, стирка, полоскание, отжим. Следите за тем, как машина набирает и сливает воду, нет ли ошибок на дисплее. Если машина прошла полный цикл без сбоев и кодов ошибок, ремонт можно считать успешным.</p>
+
+<ul>
+<li>👁️ <strong>Визуальный контроль:</strong> Проверка индикаторов и дисплея сразу после включения.</li>
+<li>💧 <strong>Тест налива:</strong> Проверка работы впускного клапана и датчика уровня воды.</li>
+<li>🔥 <strong>Проверка ТЭНа:</strong> Контроль нагрева воды (аккуратно, чтобы не сжечь ТЭН без воды).</li>
+<li>🌀 <strong>Тест отжима:</strong> Проверка работы двигателя на высоких оборотах.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Если после перепрошивки машина издает странные звуки или дымится, немедленно отключите питание. Это признак короткого замыкания или несовместимости прошивки.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Успешная перепрошивка решает только программные ошибки. Если после замены EEPROM проблема осталась, причина кроется в неисправных датчиках или процессоре модуля.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли прошить Bosch WFF 1200 без выпаивания микросхемы?</summary>
+<p>Теоретически это возможно с использованием специальных переходников-клипс, если на плате модуля есть доступ к контактам микросхемы и она не залита компаундом. Однако для модели <em>WFF 1200</em> надежнее и безопаснее выпаять чип, так как плотность монтажа на старых платах высокая, и риск замыкания соседних элементов велик.</p>
+</details>
+
+<details>
+<summary>Где взять оригинальную прошивку для этой модели?</summary>
+<p>Оригинальные дампы можно найти на специализированных форумах по ремонту бытовой техники, введя в поиск номер модуля управления (E-Nr), указанный на наклейке. Также прошивку может предоставить официальный сервисный центр, но это платная услуга.</p>
+</details>
+
+<details>
+<summary>Что делать, если после прошивки машина пишет ошибку E67?</summary>
+<p>Ошибка <code>E67</code> часто указывает на проблему связи или поврежденную прошивку. Проверьте качество пайки микросхемы EEPROM. Если пайка в порядке, возможно, вы записали несовместимую версию прошивки или сам файл был поврежден при скачивании. Попробуйте найти другой дамп или проверить целостность дорожек на плате.</p>
+</details>
+
+<details>
+<summary>Нужен ли специальный программатор или подойдет универсальный?</summary>
+<p>Для микросхем памяти, используемых в <strong>Bosch WFF 1200</strong> (обычно серии 24C), подойдет большинство универсальных программаторов, поддерживающих интерфейс I2C, например, популярные модели на базе CH341A. Специализированный автомобильный или сложный промышленный программатор не обязателен.</p>
+</details>
+
+<details>
+<summary>Сбросит ли перепрошивка все настройки пользователя?</summary>
+<p>Да, при замене микросхемы EEPROM или записи нового дампа все пользовательские настройки и калибровочные данные будут сброшены к заводским. Машину может потребоваться заново откалибровать, запустив тестовый режим или первую стирку без белья.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/n/na/na-stiralnoj-mashine-samsung-ne-blokiruetsya-dver.html" class="pb-related-card">
+                <span class="pb-related-title">Самсунг не блокирует дверь: причины и решение</span>
+                <span class="pb-related-desc">Дверь стиральной машины Самсунг не блокируется? Узнайте причины поломки УБЛ, ошибки управления и спо</span>
+            </a><a href="/articles/s/st/stiralnaya-mashinka-indezit-zamena-podshipnika-na-barabane.html" class="pb-related-card">
+                <span class="pb-related-title">Замена подшипника в стиральной машине Indesit: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробный гид по замене подшипника барабана в стиральных машинах Indesit. Разбор бака, выбор смазки,</span>
+            </a><a href="/articles/s/st/stiralnaya-mashina-samsung-oshibka-6e-chto-oznachaet.html" class="pb-related-card">
+                <span class="pb-related-title">Ошибка 6E в стиральной машине Samsung: расшифровка и ремонт</span>
+                <span class="pb-related-desc">Что означает ошибка 6E в стиралке Самсунг? Полный гид по устранению неисправности: проверка тэна, да</span>
+            </a><a href="/articles/z/za/zamok-na-stiralnuyu-mashinu-candy.html" class="pb-related-card">
+                <span class="pb-related-title">Замок на стиральную машину Candy: ремонт и замена</span>
+                <span class="pb-related-desc">Как починить замок на стиральной машине Candy. Причины поломки УБЛ, коды ошибок, пошаговая замена лю</span>
+            </a><a href="/articles/b/ba/bachok-stiralnoj-mashiny-samsung.html" class="pb-related-card">
+                <span class="pb-related-title">Бачок стиральной машины Самсунг: устройство, поломки и замена</span>
+                <span class="pb-related-desc">Почему лопнул или потек бак стиральной машины Самсунг? Инструкция по разборке, ремонту трещин и заме</span>
+            </a><a href="/articles/s/sl/slivnoj-klapan-stiralnoj-mashiny-indezit.html" class="pb-related-card">
+                <span class="pb-related-title">Сливной клапан стиральной машины Индезит: устройство, ремонт, замена</span>
+                <span class="pb-related-desc">Подробный разбор сливного клапана стиральной машины Indesit. Симптомы неисправности, проверка мульти</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🧺 Мастер Стирки</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/remont-stiralnykh-mashin/">🔧 Ремонт стиральных машин</a> · <a href="/category/kody-oshibok/">⚠️ Коды ошибок</a> · <a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a> · <a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a> · <a href="/category/bytovaya-khimiya/">🧴 Бытовая химия</a> · <a href="/category/udalenie-pyaten/">🧼 Удаление пятен</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Стирки. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🧺</text></svg>">
+    <title>Схема платы управления LG: диагностика, коды ошибок, ремонт — Мастер Стирки</title>
+    <meta name="description" content="Полный разбор схемы платы управления стиральной машины LG: поиск неисправностей, расшифровка контактов, коды ошибок и ремонт модуля своими руками.">
+    <link rel="canonical" href="https://master-stirki.vercel.app/articles/s/sk/skhema-platy-upravleniya-stiralnoj-mashiny-lg.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Схема платы управления LG: диагностика, коды ошибок, ремонт">
+    <meta property="og:description" content="Полный разбор схемы платы управления стиральной машины LG: поиск неисправностей, расшифровка контактов, коды ошибок и ремонт модуля своими руками.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777869443">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🧺</span>
+                <span class="pb-logo-text">Мастер Стирки</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/remont-stiralnykh-mashin/" class="pb-nav-active">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/remont-stiralnykh-mashin/" class="pb-dropdown-item">🔧 Ремонт стиральных машин</a>
+<a href="/category/kody-oshibok/" class="pb-dropdown-item">⚠️ Коды ошибок</a>
+<a href="/category/stirka-verkhnej-odezhdy/" class="pb-dropdown-item">🧥 Стирка верхней одежды</a>
+<a href="/category/ukhod-za-tkanyami/" class="pb-dropdown-item">👕 Уход за тканями</a>
+<a href="/category/bytovaya-khimiya/" class="pb-dropdown-item">🧴 Бытовая химия</a>
+<a href="/category/udalenie-pyaten/" class="pb-dropdown-item">🧼 Удаление пятен</a>
+<a href="/category/obzory-tekhniki/" class="pb-dropdown-item">🏠 Обзоры техники</a>
+<a href="/category/chistka-i-obsluzhivanie/" class="pb-dropdown-item">✨ Чистка и обслуживание</a>
+<a href="/category/aksessuary-dlya-stirki/" class="pb-dropdown-item">🎱 Аксессуары для стирки</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/remont-stiralnykh-mashin/">Ремонт стиральных машин</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Схема платы управления LG: диагностика, коды ошибок, ремонт</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#типовая-структура-и-основные-узлы-модуля">Типовая структура и основные узлы модуля</a></li><li><a href="#визуальная-диагностика-и-поиск-неисправностей">Визуальная диагностика и поиск неисправностей</a></li><li><a href="#расшифровка-схемы-ключевые-элементы">Расшифровка схемы: ключевые элементы</a></li><li><a href="#анализ-распространенных-кодов-ошибок">Анализ распространенных кодов ошибок</a></li><li><a href="#замена-элементов-и-пайка-платы">Замена элементов и пайка платы</a></li><li><a href="#профилактика-и-защита-электроники">Профилактика и защита электроники</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/st/stiralnaya-mashina-voda-letsya-iz-otdeleniya-dlya-poroshka.html">Вода льется из порошкоприемника: причины и ремонт своими руками</a></li><li><a href="/articles/s/sl/sletel-remen-v-stiralnoj-mashine.html">Слетел ремень в стиральной машине: как поставить и заменить</a></li><li><a href="/articles/s/st/stiralnaya-mashina-bosch-oshibka-17.html">Ошибка 17 Bosch: почему не сливает воду и как починить</a></li><li><a href="/articles/z/za/zamena-podshipnika-v-stiralnoj.html">Замена подшипника в стиральной машине: полная инструкция</a></li><li><a href="/articles/n/na/nasos-stiralnoj-mashiny-indezit.html">Насос стиральной машины Индезит: симптомы поломки и замена</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Схема платы управления стиральной машины LG: диагностика и ремонт</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#типовая-структура-и-основные-узлы-модуля">Типовая структура и основные узлы модуля</a></li><li><a href="#визуальная-диагностика-и-поиск-неисправностей">Визуальная диагностика и поиск неисправностей</a></li><li><a href="#расшифровка-схемы-ключевые-элементы">Расшифровка схемы: ключевые элементы</a></li><li><a href="#анализ-распространенных-кодов-ошибок">Анализ распространенных кодов ошибок</a></li><li><a href="#замена-элементов-и-пайка-платы">Замена элементов и пайка платы</a></li><li><a href="#профилактика-и-защита-электроники">Профилактика и защита электроники</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Стиральные машины <em>LG</em> заслуженно пользуются репутацией надежной техники, однако даже самые совершенные электронные узлы подвержены износу и внешним воздействиям. Когда на дисплее загорается код ошибки или машина перестает реагировать на команды, в 80% случаев проблема кроется в электронном блоке управления. Понимание того, как устроена <strong>схема платы управления стиральной машины LG</strong>, позволяет не только точно диагностировать поломку, но и часто восстановить работоспособность агрегата без дорогостоящей замены всего модуля.</p>
+
+<p>Электронный модуль — это «мозг» устройства, который обрабатывает сигналы от датчиков и управляет исполнительными механизмами: двигателем, насосом, ТЭНом и клапанами подачи воды. Современные платы представляют собой сложные многослойные конструкции, где каждый элемент выполняет строго определенную функцию. <strong>Диагностика</strong> начинается именно с визуального осмотра и проверки целостности дорожек, так как именно они чаще всего страдают от скачков напряжения или попадания влаги.</p>
+
+<p>Важно понимать, что схема может существенно отличаться в зависимости от серии и года выпуска модели. Однако базовые принципы построения цепей питания и управления остаются схожими для большинства моделей бренда. В этой статье мы подробно разберем типовые неисправности, способы их выявления и методы восстановления работоспособности платы.</p>
+
+<div class="pb-poll" id="poll-d29cf9e8"><div class="pb-poll-question">📊 Сталкивались ли вы с поломкой электроники в бытовой технике?</div><div class="pb-poll-option" data-poll="d29cf9e8" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, сгорела плата стиралки</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d29cf9e8" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, проблема с холодильником</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d29cf9e8" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Нет, техника работает исправно</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d29cf9e8" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Затрудняюсь ответить</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="типовая-структура-и-основные-узлы-модуля">Типовая структура и основные узлы модуля</h2>
+
+<p>Любая плата управления <em>LG</em> состоит из нескольких ключевых блоков, каждый из которых отвечает за свой участок работы. Центральным элементом является <strong>микропроцессор</strong>, который считывает показания датчиков и принимает решения на основе заложенной программы. Именно сбой в работе процессора или его обвязки часто приводит к зависанию машины или хаотичному поведению индикаторов.</p>
+
+<p>Вторым критически важным узлом является блок питания. Он преобразует сетевое напряжение 220 вольт в низковольтное питание для процессора и других микросхем (обычно 5В и 12В). <strong>Импульсный блок питания</strong> наиболее уязвим к скачкам напряжения в сети, что часто приводит к выгоранию входных элементов. В схемах <em>LG</em> часто используются специфические защитные варисторы, которые принимают удар на себя.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Перед началом любых работ с платой обязательно отключите стиральную машину от электросети. Остаточный заряд в конденсаторах может достигать опасных значений, поэтому не прикасайтесь к элементам платы сразу после отключения.</p>
+</blockquote>
+
+<p>Третий важный компонент — это драйверы управления исполнительными механизмами. На схеме они обычно представлены мощными транзисторами или симисторами, через которые подается ток на двигатель и ТЭН. Если машина перестала греть воду или крутить барабан, но гудит, проблема часто кроется именно в этих <strong>силовых ключах</strong>.</p>
+
+<details class="pb-accordion"><summary>Особенности прошивки LG</summary><div class="pb-accordion-body"><p>Программное обеспечение в стиральных машинах LG записано во флэш-память микросхемы. В редких случаях (менее 1%) причиной неработоспособности является сбой ПО, а не физическая поломка деталей. Восстановление требует специализированного программатора и дампа прошивки для конкретной модели.</p></div></details>
+
+<h2 id="визуальная-диагностика-и-поиск-неисправностей">Визуальная диагностика и поиск неисправностей</h2>
+
+<p>Первым этапом ремонта всегда должен быть тщательный визуальный осмотр. Снимите плату, аккуратно отсоединив все шлейфы и разъемы, и рассмотрите её под ярким светом, желательно с увеличительным стеклом. Ищите следы <strong>копоти</strong>, почернения текстолита или вздутия конденсаторов. Часто место пробоя видно невооруженным глазом.</p>
+
+<p>Особое внимание уделите состоянию пайки. Вибрации при отжиме могут приводить к микротрещинам в припое, особенно вокруг тяжелых элементов: трансформаторов, больших конденсаторов и разъемов. <strong>Холодная пайка</strong> — частая причина плавающих неисправностей, когда машина то работает, то выдает ошибку.</p>
+
+<ul>
+<li>🔍 Ищите вздувшиеся конденсаторы: верхняя крышка не должна быть выпуклой.</li>
+<li>🔍 Проверяйте целостность предохранителей: прозвоните их мультиметром в режиме измерения сопротивления.</li>
+<li>🔍 Осмотрите дорожки на предмет обрывов или следов коррозии от протечек.</li>
+<li>🔍 Обратите внимание на запах: запах гари укажет на сгоревший элемент быстрее, чем визуальный осмотр.</li>
+</ul>
+
+<p>Если визуальных дефектов нет, потребуется более глубокая <strong>прозвонка</strong> элементов мультиметром. Начинайте с входной группы: предохранителя, варистора и диодного моста. Часто сгорает именно варистор, защищающий схему от перенапряжения, и его замена может решить проблему, если скачок не был слишком мощным.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист визуального осмотра</h4><label class="check-item"><input type="checkbox"><span>Осмотреть плату на свету с лупой</span></label><label class="check-item"><input type="checkbox"><span>Проверить наличие нагара или запаха гари</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть конденсаторы на вздутие</span></label><label class="check-item"><input type="checkbox"><span>Проверить целостность дорожек под микросхемой питания</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в отсутствии следов воды или коррозии</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="расшифровка-схемы-ключевые-элементы">Расшифровка схемы: ключевые элементы</h2>
+
+<p>Для успешного ремонта необходимо уметь читать обозначения на плате. В схемах <em>LG</em> элементы маркируются стандартными буквенно-цифровыми кодами. Понимание того, что означает каждое обозначение, позволяет быстро находить нужные компоненты на принципиальной схеме или в сервис-мануале.</p>
+
+<p>Основу силовой части составляют <strong>симисторы</strong> (обычно обозначаются как TRIAC или Q). Они управляют подачей напряжения на нагревательный элемент и двигатель. Если машина не греет воду, первым делом проверяют симистор ТЭНа и цепь его управления. Пробой симистора часто приводит к тому, что ТЭН греет постоянно, даже когда машина выключена.</p>
+
+<p>В таблице ниже приведены основные обозначения элементов, которые вам встретятся при диагностике:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Обозначение</th>
+<th>Тип элемента</th>
+<th>Функция в схеме</th>
+<th>Частая неисправность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F1, F2</td>
+<td>Предохранитель</td>
+<td>Защита цепи от перегрузки</td>
+<td>Разрыв цепи (сгорание)</td>
+</tr>
+<tr>
+<td>VR1</td>
+<td>Варистор</td>
+<td>Защита от скачков напряжения</td>
+<td>Короткое замыкание (почернение)</td>
+</tr>
+<tr>
+<td>C1, C2</td>
+<td>Конденсатор</td>
+<td>Сглаживание пульсаций</td>
+<td>Вздутие, потеря емкости</td>
+</tr>
+<tr>
+<td>Q1, Q2</td>
+<td>Транзистор/Симистор</td>
+<td>Управление нагрузкой</td>
+<td>Пробой или обрыв</td>
+</tr>
+<tr>
+<td>R1, R2</td>
+<td>Резистор</td>
+<td>Ограничение тока</td>
+<td>Изменение сопротивления, обрыв</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Отдельного внимания заслуживает <strong>микроконтроллер</strong>. Это «черный ящик» с множеством ножек, который управляет всей логикой работы. Если сгорает сам процессор или его кварцевый генератор, ремонт часто становится экономически нецелесообразным, так как требует перепрошивки и замены чипа, что под силу только специализированным сервисам.</p>
+
+<h2 id="анализ-распространенных-кодов-ошибок">Анализ распространенных кодов ошибок</h2>
+
+<p>Стиральные машины <em>LG</em> оснащены развитой системой самодиагностики. При обнаружении неисправности плата управления выдает код ошибки на дисплей. Знание того, какой код за что отвечает, позволяет сузить круг поиска до конкретного узла схемы.</p>
+
+<p>Одной из самых частых ошибок является <strong>IE</strong> (No Water Inlet). Хотя она часто указывает на проблемы с водопроводом или клапаном, иногда причина кроется в отсутствии сигнала с датчика потока на плате управления. В этом случае проверяется целостность цепи от разъема до процессора.</p>
+
+<ul>
+<li>🚫 <strong>OE</strong> (Drain Error): Ошибка слива. Плата не видит сигнала о том, что вода ушла. Проверяйте цепь управления помпой и саму помпу.</li>
+<li>🔥 <strong>HE</strong> (Heating Error): Проблема с нагревом. Плата не фиксирует рост температуры. Проверяйте симистор ТЭНа и цепь датчика температуры.</li>
+<li>⚡ <strong>LE</strong> (Motor Error): Ошибка двигателя. Часто связана с таходатчиком или модулем управления двигателем (если он выносной).</li>
+<li>💧 <strong>AE</strong> (Leak Error): Активирована защита от протечек (аквастоп). Плата получила сигнал от поплавкового датчика в поддоне.</li>
+</ul>
+
+<blockquote>
+<p>⚠️ Внимание: Код ошибки <strong>dE</strong> (Door Error) указывает на проблему с блокировкой люка. Если замок исправен, но ошибка сохраняется, проверьте цепь, идущую от замка к плате управления — возможно, поврежден провод или окислен контакт.</p>
+</blockquote>
+
+<p>Иногда машина выдает код ошибки, который не соответствует реальной проблеме. Это явление называется «глюком» процессора. В таких случаях помогает полный сброс: отключите машину от сети на 15–20 минут. Если ошибка повторяется, значит, проблема аппаратная и требует ремонта схемы.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При замене симисторов или транзисторов всегда проверяйте соседние резисторы и диоды. Часто выход из строя силового элемента вызван скачком тока, который повреждает и элементы обвязки. Замена только главной детали может привести к повторному сгоранию.</p></aside>
+
+<h2 id="замена-элементов-и-пайка-платы">Замена элементов и пайка платы</h2>
+
+<p>Ремонт платы управления <em>LG</em> требует навыков работы с паяльником и знания основ электроники. Для замены элементов вам понадобится паяльник мощностью 40–60 Вт, припой, флюс и, возможно, отсос для припоя или оловоотсос. Важно использовать качественный припой с канифолью внутри.</p>
+
+<p>При выпаивании конденсаторов или симисторов старайтесь не перегревать плату. Длительное воздействие высокой температуры может привести к отслоению <strong>медных дорожек</strong> или повреждению внутренних слоев текстолита. Используйте пинцет для фиксации элемента и быстрого извлечения его из отверстия после расплавления припоя.</p>
+
+<p>Если вы заменяете предохранитель, никогда не используйте «жучки» (проволочные перемычки). Это прямая дорога к пожару. Устанавливайте только предохранители с аналогичными номиналами тока и напряжения. Для временной проверки можно использовать лампу последовательно с платой, чтобы ограничить ток в случае короткого замыкания.</p>
+
+<p>После замены элементов обязательно промойте место пайки спиртом или специальным очистителем контактов. Остатки флюса гигроскопичны и могут со временем вызвать коррозию или утечку тока, что приведет к новой поломке. <strong>Чистота пайки</strong> — залог долговечности ремонта.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Качество пайки и отсутствие замыканий между соседними контактами — критический фактор успеха. Используйте лупу для проверки каждого спаянного контакта перед установкой платы в корпус.</p></aside>
+
+<h2 id="профилактика-и-защита-электроники">Профилактика и защита электроники</h2>
+
+<p>Чтобы схема платы управления стиральной машины <em>LG</em> служила долго, необходимо минимизировать факторы риска. Главная угроза — это перепады напряжения в электросети. Установка стабилизатора напряжения или хотя бы качественного сетевого фильтра с защитой от импульсных помех значительно продлит жизнь электронике.</p>
+
+<p>Вторая по частоте причина выхода из строя — влага и коррозия. Регулярно проверяйте шланги и соединения на предмет протечек. Даже небольшая капля воды, попавшая на плату, может вызвать короткое замыкание. Если вы заметили повышенную влажность в помещении, где стоит машина, рассмотрите возможность улучшения вентиляции.</p>
+
+<p>Также важно использовать качественные моющие средства. Дешевые порошки могут содержать агрессивные химические вещества, пары которых оседают на плате и разъъедают контакты. <strong>Гелевые капсулы</strong> и качественные порошки менее агрессивны к электронике.</p>
+
+<ul>
+<li>⚡ Установите реле контроля напряжения для защиты от скачков в сети.</li>
+<li>💧 Регулярно очищайте сливной фильтр и проверяйте целостность патрубков.</li>
+<li>🧼 Используйте только проверенные средства для стирки без агрессивных добавок.</li>
+<li>🌬️ Обеспечьте хорошую вентиляцию ниши, где установлена стиральная машина.</li>
+</ul>
+
+<p>Соблюдение этих простых правил поможет избежать дорогостоящего ремонта. Помните, что профилактика всегда дешевле и проще, чем восстановление сгоревшей электроники. Бережное отношение к технике — это инвестиция в её долгую службу.</p>
+
+<details>
+<summary>Можно ли самостоятельно заменить сгоревший процессор на плате LG?</summary>
+<p>Теоретически можно, если у вас есть оборудование для пайки BGA-компонентов и программа-прошивальщик. Однако на практике это крайне сложно: нужно найти идентичную микросхему, считать с неё данные (если они не повреждены) или найти готовый дамп прошивки для вашей модели, и правильно запаять чип. В 95% случаев дешевле и надежнее купить новую или восстановленную плату целиком.</p>
+</details>
+
+<details>
+<summary>Почему после замены платы машина не видит модуль?</summary>
+<p>Современные платы <em>LG</em> часто требуют привязки к двигателю или настройки параметров. Если вы установили универсальную плату или модуль от другой модели, машина может не запуститься. Также проверьте правильность подключения всех шлейфов — даже один недожатый контакт может вызвать ошибку связи.</p>
+</details>
+
+<details>
+<summary>Как часто выходят из строя платы управления LG?</summary>
+<p>Платы <em>LG</em> считаются одними из самых надежных на рынке. При стабильном напряжении в сети они служат 10 и более лет без нареканий. Чаще всего поломки случаются из-за внешних факторов: скачков напряжения, протечек воды или попадания грызунов, а не из-за заводского брака.</p>
+</details>
+
+<details>
+<summary>Что делать, если после грозы машина перестала включаться?</summary>
+<p>Скорее всего, скачок напряжения пробил входную группу платы (варистор, предохранитель, диодный мост). В худшем случае сгорел блок питания или процессор. Необходимо снять плату и провести диагностику мультиметром. Если вы не обладаете навыками ремонта электроники, лучше обратиться в сервисный центр.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/st/stiralnaya-mashina-voda-letsya-iz-otdeleniya-dlya-poroshka.html" class="pb-related-card">
+                <span class="pb-related-title">Вода льется из порошкоприемника: причины и ремонт своими руками</span>
+                <span class="pb-related-desc">Почему течет вода из лотка стиральной машины? Полный разбор причин засоров, протечек шланга и неиспр</span>
+            </a><a href="/articles/s/sl/sletel-remen-v-stiralnoj-mashine.html" class="pb-related-card">
+                <span class="pb-related-title">Слетел ремень в стиральной машине: как поставить и заменить</span>
+                <span class="pb-related-desc">Слетел ремень в стиральной машине? Узнайте, как его правильно установить, проверить натяжение и заме</span>
+            </a><a href="/articles/s/st/stiralnaya-mashina-bosch-oshibka-17.html" class="pb-related-card">
+                <span class="pb-related-title">Ошибка 17 Bosch: почему не сливает воду и как починить</span>
+                <span class="pb-related-desc">Ошибка E:17 в стиральных машинах Bosch: причины появления, пошаговая инструкция по устранению засоро</span>
+            </a><a href="/articles/z/za/zamena-podshipnika-v-stiralnoj.html" class="pb-related-card">
+                <span class="pb-related-title">Замена подшипника в стиральной машине: полная инструкция</span>
+                <span class="pb-related-desc">Пошаговая замена подшипника в стиральной машине. Как снять барабан, выбрать детали и собрать узел. С</span>
+            </a><a href="/articles/n/na/nasos-stiralnoj-mashiny-indezit.html" class="pb-related-card">
+                <span class="pb-related-title">Насос стиральной машины Индезит: симптомы поломки и замена</span>
+                <span class="pb-related-desc">Как проверить и заменить сливной насос на стиральной машине Indesit. Признаки неисправности помпы, р</span>
+            </a><a href="/articles/p/po/pochemu-techet-stiralnaya-mashina-cherez-otsek-dlya-poroshka-lg.html" class="pb-related-card">
+                <span class="pb-related-title">Течет стиральная машина LG через лоток: причины и ремонт</span>
+                <span class="pb-related-desc">Почему течет стиральная машина LG через отсек для порошка? Полный разбор причин: засоры, давление во</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🧺 Мастер Стирки</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/remont-stiralnykh-mashin/">🔧 Ремонт стиральных машин</a> · <a href="/category/kody-oshibok/">⚠️ Коды ошибок</a> · <a href="/category/stirka-verkhnej-odezhdy/">🧥 Стирка верхней одежды</a> · <a href="/category/ukhod-za-tkanyami/">👕 Уход за тканями</a> · <a href="/category/bytovaya-khimiya/">🧴 Бытовая химия</a> · <a href="/category/udalenie-pyaten/">🧼 Удаление пятен</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© Мастер Стирки. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>
